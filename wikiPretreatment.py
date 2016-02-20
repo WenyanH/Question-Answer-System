@@ -18,7 +18,7 @@ for word in inputfile.read():
 words=words.replace('.',' . ').replace('?',' ? ').replace('!',' ! ').replace('\n\n', '\n')
 words=words.split(" ")
 for i in range(0, len(words)):
-    words[i]=words[i].replace(',',' , ') #Are other punctuations apart from comma need to be processed?
+    words[i]=words[i].replace(',',' , ').replace(':',' : ').replace('(',' ( ').replace(')',' ) ').replace('/',' / ').replace('\"',' \" ').replace('\'',' \' ')
 
 #Decide whether start a newline or not according to the next word's first character or the '\n'
 text=""
