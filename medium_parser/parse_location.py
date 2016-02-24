@@ -20,5 +20,5 @@ def parse_time(text):
 	else:
 		return None
 
-print(parse_time('ds dsa dw Guangzhou shsh rfq'))	
-print(parse_time('tiantui loves Shanghai girls'))	
+# print(parse_time('ds dsa dw Guangzhou shsh rfq'))	
+# print(parse_time('tiantui loves Shanghai girls'))	

@@ -32,4 +32,4 @@ def parse_time(text):
 
 
 
-print(parse_time("dsadas dsa sa Monday March 2:00 pm 31231 1892 4124 411"))
+# print(parse_time("dsadas dsa sa Monday March 2:00 pm 31231 1892 4124 411"))
