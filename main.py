@@ -10,7 +10,6 @@ def asking(num_easy=2, num_medium=1, num_hard=1):
     # prepare text
     # TODO: pick_sentences_from_file() @wenyanhu
 
-
     sentences = [
         "Weixiang was born in China in 1993 .",
         "Guanxi is taking photos ."
