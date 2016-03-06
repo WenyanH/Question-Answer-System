@@ -19,6 +19,8 @@ def convert_declarative_to_question(sentence):
     elif '$place$' in words:
         words.insert(0, 'Where')
         words.remove('$place$')
+    else:
+        return None
 
     words[0] = words[0][0].upper() + words[0][1:]
     return ' '.join(words)

@@ -1,4 +1,29 @@
 import re
+from lib import helper
+
+def medium_question_generator(line):
+	line = parse_time(line) or parse_location(line)
+	return helper.convert_declarative_to_question(line)
+
+def parse_location(text):
+	f = open('data/location.txt', 'r')
+	cities = []
+	for line in f:
+		cities.append(line.rstrip())
+	text = text.strip()
+	words = re.split(" ", text)
+	count = 0
+	for i in range(len(words)):
+		if words[i] in cities:
+			count += 1
+			words[i] = '$place$'
+	if count == 1:
+		s = ''
+		for word in words:
+			s += word + ' '
+		return s.strip()
+	else:
+		return None
 
 def parse_time(text):
 	Months = {'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'}
@@ -30,6 +55,7 @@ def parse_time(text):
 			s += word + ' '
 	return s.strip()
 
-
-
-# print(parse_time("dsadas dsa sa Monday March 2:00 pm 31231 1892 4124 411"))
+if __name__ == "__main__":
+	print(parse_time("Weixiang was born in China in 1993 ."))
+	print(parse_location('ds dsa dw Guangzhou shsh rfq'))
+	print(parse_location('tiantui loves Shanghai girls'))
