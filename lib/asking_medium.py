@@ -1,5 +1,5 @@
 import re
-from lib import helper
+import helper
 
 def medium_question_generator(line):
 	line = parse_time(line) or parse_location(line)
