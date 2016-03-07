@@ -1,6 +1,6 @@
 import sys
 from random import shuffle
-from lib import asking_easy, asking_medium
+from lib import asking_easy, asking_medium, asking_hard, helper
 
 def main():
     if len(sys.argv) != 2:
@@ -37,12 +37,12 @@ def read_sentences_from_file(file_name):
                 continue
 
             sentences.append(line)
-    shuffle(sentences)
-    # sentences.sort(key = lambda s: len(s))
+    # shuffle(sentences)
+    sentences.sort(key = lambda s: len(s))
 
     return sentences
 
-def asking(sentences, num_easy=5, num_medium=5, num_hard=1):
+def asking(sentences, num_easy=5, num_medium=5, num_hard=5):
     print "Asking..."
 
     # sentences = [
@@ -77,6 +77,10 @@ def asking(sentences, num_easy=5, num_medium=5, num_hard=1):
     for sen in sentences:
         if count >= num_hard:
             break
-        # TODO: finish asking_hard module
+        result = asking_hard.hard_question_generator(sen)
+        if result:
+            print "\t\t" + result
+            print "\t\t-" + sen
+            count += 1
 
 main()

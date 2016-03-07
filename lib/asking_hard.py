@@ -1,4 +1,4 @@
-# from lib import helper
+from lib import helper
 
 def hard_question_generator(line):
 	fin = open('data/antonyms.txt', 'r')
@@ -22,7 +22,7 @@ def hard_question_generator(line):
 		s = ''
 		for word in words:
 			s += word + ' '
-		return s 
+		return helper.convert_declarative_to_question(s)
 
     # 1. check if line can be a hard questions
     # 2. xxx

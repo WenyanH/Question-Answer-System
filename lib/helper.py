@@ -1,3 +1,5 @@
+import nltk
+
 def main():
     test = [
         "I am eating now",
@@ -8,7 +10,30 @@ def main():
     for t in test:
         print t, '->', convert_declarative_to_question(t)
 
+def is_sentence_perfect(sentence):
+    tokens = nltk.word_tokenize(sentence)
+    tagged = nltk.pos_tag(tokens)
+    tagged = [x[1] for x in tagged]
+    print tagged
+
+    # the first tag should be NN*
+    if tagged[0][:2] != 'NN':
+        return False
+
+    # VB* should exist in tags
+    for tag in tagged:
+        if tag[:2] == 'VB':
+            break
+    else:
+        return False
+
+    return True
+
 def convert_declarative_to_question(sentence):
+    # if not is_sentence_perfect(sentence):
+    #     return None
+    if sentence is None:
+        return None
     words = sentence.split(' ')
     if words[0] != 'I':
         words[0] = words[0][0].lower() + words[0][1:]
