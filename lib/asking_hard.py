@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-from lib import helper
-import random
-=======
 import helper
->>>>>>> origin/master
+import random
+
 
 def generate_antonyms(line):
 	fin_antonyms = open('data/antonyms.txt', 'r')
@@ -57,9 +54,11 @@ def generate_synonyms(line):
 def hard_question_generator(line):
 	ran_num = random.random()
 	if ran_num < 0.5:
-		generate_antonyms(line)
+		print(ran_num)
+		return generate_antonyms(line)
 	else:
-		generate_synonyms(line)
+		print(ran_num)
+		return generate_synonyms(line)
 	
 
     # 1. check if line can be a hard questions
@@ -71,6 +70,7 @@ def hard_question_generator(line):
 
 
 if __name__ == '__main__':
-	sentence = 'Xichen is ugly and tall .'
+	sentence = 'Xichen is fat and tall .'
 	print(sentence)
 	print(hard_question_generator(sentence))
+
