@@ -25,7 +25,7 @@ def read_sentences_from_file(file_name):
                 line = line[:start].strip() + ' ' + line[end+1:].strip()
 
             # Drop the line according to some rules
-            if ':' in line or '/' in line or len(line) < 3 or len(line.split(' ')) < 3:
+            if ':' in line or '/' in line or '\"' in line or len(line) < 3 or len(line.split(' ')) < 3:
                 continue
 
             # Drop the sentences with one comma
@@ -49,7 +49,6 @@ def asking(sentences, num_easy=5, num_medium=5, num_hard=5):
     #     "Weixiang was born in China in 1993 .",
     #     "Guanxi is taking photos ."
     # ]
-
     print "\tEasy"
     count = 0
     for sen in sentences:

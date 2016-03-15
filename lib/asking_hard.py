@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 from lib import helper
 import random
+=======
+import helper
+>>>>>>> origin/master
 
 def generate_antonyms(line):
 	fin_antonyms = open('data/antonyms.txt', 'r')
