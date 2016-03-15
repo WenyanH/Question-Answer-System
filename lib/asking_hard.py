@@ -1,4 +1,4 @@
-from lib import helper
+import helper
 
 def hard_question_generator(line):
 	fin = open('data/antonyms.txt', 'r')
