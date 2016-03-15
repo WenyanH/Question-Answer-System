@@ -54,10 +54,8 @@ def generate_synonyms(line):
 def hard_question_generator(line):
 	ran_num = random.random()
 	if ran_num < 0.5:
-		print(ran_num)
 		return generate_antonyms(line)
 	else:
-		print(ran_num)
 		return generate_synonyms(line)
 	
 
