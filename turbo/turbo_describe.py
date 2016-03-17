@@ -1,5 +1,7 @@
 import sys
 
+DEBUG = True
+
 class Record:
     def __init__(self, line):
         line = line.split('\t')
@@ -44,6 +46,11 @@ class Record:
             result += child.get_all_nodes()
         return result
 
+    def print_tree(self, depth=0):
+        print '\t'*depth, self.word
+        for child in self.children:
+            child.print_tree(depth + 1)
+
 def read_data(source):
     records = []
     # output_depth = sys.argv[1] if len(sys.argv) != 1 else -1
@@ -57,7 +64,9 @@ def read_data(source):
 
     head = build_dependency_tree(records)
     head.calculate_weight()
+    if DEBUG: head.print_tree()
     head.pruning()
+    if DEBUG: head.print_tree()
     return head.generate_sentence()
 
 
