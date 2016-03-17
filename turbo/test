@@ -31,3 +31,16 @@
 31	speakers	_	NNS	NNS	_	29	PMOD
 32	.	_	.	.	_	2	P
 
+
+1	Students	_	NNS	NNS	_	8	SUB
+2	who	_	WP	WP	_	1	NMOD
+3	were	_	VBD	VBD	_	2	SBAR
+4	taught	_	VBN	VBN	_	3	VC
+5	by	_	IN	IN	_	4	VMOD
+6	Allen	_	NNP	NNP	_	7	NMOD
+7	Black	_	NNP	NNP	_	5	PMOD
+8	win	_	VBP	VBP	_	0	ROOT
+9	the	_	DT	DT	_	10	NMOD
+10	award	_	NN	NN	_	8	OBJ
+11	.	_	.	.	_	8	P
+

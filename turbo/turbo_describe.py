@@ -15,7 +15,7 @@ class Record:
         if len(self.children) == 0:
             self.weight = 1
         else:
-            self.weight = 0
+            self.weight = 1
             for child in self.children:
                 self.weight += child.calculate_weight()
         return self.weight
@@ -44,11 +44,10 @@ class Record:
             result += child.get_all_nodes()
         return result
 
-
-def main():
+def read_data(source):
     records = []
-    output_depth = sys.argv[1] if len(sys.argv) != 1 else -1
-    for line in sys.stdin:
+    # output_depth = sys.argv[1] if len(sys.argv) != 1 else -1
+    for line in source:
         if len(line) == 1:
             continue
         node = Record(line)
@@ -59,8 +58,11 @@ def main():
     head = build_dependency_tree(records)
     head.calculate_weight()
     head.pruning()
-    print head.generate_sentence()
+    return head.generate_sentence()
 
+
+def main():
+    print read_data(sys.stdin)
 
 def build_dependency_tree(records, head=None):
     if head == None:
