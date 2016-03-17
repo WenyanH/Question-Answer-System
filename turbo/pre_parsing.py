@@ -10,8 +10,8 @@ with open(sys.argv[1]) as f:
 
 with open(sys.argv[1], 'w') as f:
     for line in lines:
-        line = re.sub('\(.*\)', '', line)
+        # line = re.sub('\(.*\)', '', line)
         line = re.sub(',', '', line)
         line = re.sub('-.*-', '', line)
-        
+
         f.write(line + '\n')

@@ -4,7 +4,7 @@ DEBUG = True
 
 class Record:
     def __init__(self, line):
-        line = line.split('\t')
+        line = line.strip().split('\t')
         self.index = line[0]
         self.word = line[1]
         self.head = line[6]
@@ -47,7 +47,7 @@ class Record:
         return result
 
     def print_tree(self, depth=0):
-        print '\t'*depth, self.word
+        print '\t'*depth, self.word, self.type
         for child in self.children:
             child.print_tree(depth + 1)
 
