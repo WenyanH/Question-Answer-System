@@ -11820,18 +11820,6 @@ virucidal viricidal
 cuneal wedge-shaped
 cuneiform wedge-shaped
 yeastlike yeasty
-.22_caliber 
-.22-caliber 
-.22_calibre 
-.22-calibre 
-.38_caliber 
-.38-caliber 
-.38_calibre 
-.38-calibre 
-.45_caliber 
-.45-caliber 
-.45_calibre 
-.45-calibre 
 graduated calibrated
 gathered collected
 ungathered uncollected
