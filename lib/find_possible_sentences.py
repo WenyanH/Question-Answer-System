@@ -4,7 +4,7 @@ import heapq
 def find_possible_sentences(texts, question, question_tags):
 	# @param
 	# 	texts: 2-d array of all sentences (after tokened)
-	# 	question: 1-d of question (tokened)
+	# 	question: string
 	# 	quesiton_tags: 1-d of tags of question
 	# @return
 	#	1-d array of index in texts
@@ -30,4 +30,3 @@ if __name__ == "__main__":
 	question_tags = ['VERB', 'NOUN', 'DET', 'ADJ', 'XXX', 'ADJ', 'NOUN', 'DSA']
 	text = [['John', 'is', 'a', 'handsome', 'director'], ['John', 'likes', 'Ravi'], ['John', 'is', 'a', 'handsome', 'and', 'stubborn', 'teacher', '.']]
 	print(find_possible_sentences(text, question, question_tags))
-

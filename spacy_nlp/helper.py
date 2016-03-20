@@ -40,7 +40,9 @@ if __name__ == '__main__':
         print token, token_get_tag(token), token_get_pos(token)
     print
 
-    print 'Noun Chunks', doc_get_noun_chunks(doc)
+    print 'Noun Chunks'
+    for chunk in doc.noun_chunks:
+        print(chunk.label, chunk.orth_, '<--', chunk.root.head.orth_)
     print
 
     print 'Root of sent:', sent_get_root(sent)

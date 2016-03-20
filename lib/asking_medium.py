@@ -1,9 +1,21 @@
 import re
 import helper
 
-def medium_question_generator(line):
-	line = parse_time(line) or parse_location(line)
-	return helper.convert_declarative_to_question(line)
+def medium_question_generator(line, noun_chunks):
+	# line = parse_time(line) or parse_location(line)
+	# return helper.convert_declarative_to_question(line)
+	return parse_noun(line, noun_chunks)
+
+def parse_noun(sent, noun_chunks):
+	# @param
+	#	sent: string
+	# 	noun_chunks: array of noun chunk
+	for chunk in noun_chunks:
+		if sent.startswith(chunk.orth_):
+			sent = sent.replace(chunk.orth_, 'What')
+			sent = sent.replace('.', '?')
+			return sent
+	return None
 
 def parse_location(text):
 	prep = {'at', 'on', 'in', 'before', 'after', 'by', 'around'}

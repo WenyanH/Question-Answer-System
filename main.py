@@ -1,15 +1,18 @@
 import sys
 from random import shuffle
 from lib import asking_easy, asking_medium, asking_hard, helper
+from lib.find_possible_sentences import find_possible_sentences
 from spacy_nlp import helper as spacy_helper
 
 def main():
-    if len(sys.argv) != 2:
-        print 'usage: python main.py input.txt'
+    if len(sys.argv) != 3:
+        print 'usage: python main.py input.txt question.txt'
         sys.exit(1)
 
     doc, sentences = read_sentences_from_file(sys.argv[1])
-    asking(sentences)
+    doc_q, questions = read_sentences_from_file(sys.argv[2], False, True)
+    # asking(sentences, doc)
+    answering(sentences, doc_q, questions)
 
 def wiki_article_format(text):
     # TODO:
@@ -17,7 +20,8 @@ def wiki_article_format(text):
     lines = text.split('\n')
     result = []
     for line in lines:
-        if len(line) < 10:
+        line = line.strip()
+        if len(line) < 20 or '.' not in line:
             continue
         try:
             result.append(unicode(line))
@@ -25,12 +29,28 @@ def wiki_article_format(text):
             continue
     return ' '.join(result)
 
-def read_sentences_from_file(file_name):
+def question_format(text):
+    lines = text.split('\n')
+    result = []
+    for line in lines:
+        line = line.strip()
+        if len(line) < 20 or '?' not in line:
+            continue
+        try:
+            result.append(unicode(line))
+        except:
+            continue
+    return ' '.join(result)
+
+def read_sentences_from_file(file_name, wiki=True, question=False):
     text = None
     print 'Reading file...'
     with open(file_name) as f:
         text = f.read()
-    text = wiki_article_format(text)
+    if wiki:
+        text = wiki_article_format(text)
+    if question:
+        text = question_format(text)
     print 'Done. Parsing text...'
     doc = spacy_helper.build_document(text)
     sents = spacy_helper.doc_get_all_sents(doc)
@@ -41,14 +61,21 @@ def read_sentences_from_file(file_name):
 def get_string_of_sent(sent):
     return ' '.join([token.orth_ for token in sent])
 
-def asking(sentences, num_easy=5, num_medium=5, num_hard=5):
-    print "Asking..."
+def get_string_of_text(sent_array):
+    text = []
+    for sent in sent_array:
+        text.append([token.orth_ for token in sent])
+    return text
+
+
+def asking(sentences, doc, num_easy=5, num_medium=5, num_hard=5):
+    print "Asking...\n"
 
     # sentences = [
     #     "Weixiang was born in China in 1993 .",
     #     "Guanxi is taking photos ."
     # ]
-    print "\tEasy"
+    print "Easy\n"
     count = 0
     for sen in sentences:
         if count >= num_easy:
@@ -56,22 +83,23 @@ def asking(sentences, num_easy=5, num_medium=5, num_hard=5):
         sen = get_string_of_sent(sen)
         result = asking_easy.easy_question_generator(sen)
         if result:
-            print "\t\t" + result
-            print "\t\t-" + sen
+            print result
+            print sen + '\n'
             count += 1
 
-    # print "\tMedium"
-    # count = 0
-    # for sen in sentences:
-    #     if count >= num_medium:
-    #         break
-    #     result = asking_medium.medium_question_generator(sen)
-    #     if result:
-    #         print "\t\t" + result
-    #         print "\t\t-" + sen
-    #         count += 1
+    print "Medium\n"
+    count = 0
+    for sen in sentences:
+        if count >= num_medium:
+            break
+        sen = get_string_of_sent(sen)
+        result = asking_medium.medium_question_generator(sen, doc.noun_chunks)
+        if result:
+            print result
+            print sen + '\n'
+            count += 1
 
-    print "\tHard"
+    print "Hard\n"
     count = 0
     for sen in sentences:
         if count >= num_hard:
@@ -79,8 +107,23 @@ def asking(sentences, num_easy=5, num_medium=5, num_hard=5):
         sen = get_string_of_sent(sen)
         result = asking_hard.hard_question_generator(sen)
         if result:
-            print "\t\t" + result
-            print "\t\t-" + sen
+            print result
+            print sen + '\n'
             count += 1
+
+def answering(sentences, doc_q, questions):
+    text_2d_array = get_string_of_text(sentences)
+
+    for sent in questions:
+        question_token = get_string_of_sent(sent)
+        question_tags = [token.pos_ for token in sent]
+
+        possible_sentences_index = find_possible_sentences(text_2d_array, question_token, question_tags)
+        print 'Question:', sent
+        for index, token in enumerate(sent):
+            if token.head is token:
+                print 'Root:', index, token
+        # for index in possible_sentences_index:
+        #     print 'Possible:', ' '.join(text_2d_array[index])
 
 main()
