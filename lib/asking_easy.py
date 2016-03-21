@@ -60,10 +60,11 @@ def easy_question_generator(line):
 							else:
 								col_out.append(arr[k])
 					#output
-					for m in col_out:
-						print m,
-					print ""	
-					print "finish ------------------"
+					#for m in col_out:
+					#	print m,
+					return ' '.join(col_out)
+					#print ""	
+					#print "finish ------------------"
 					break;
 			break;		
 		else:
