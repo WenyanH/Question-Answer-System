@@ -1,0 +1,4 @@
+README
+In the test data folder, the S08, S09, S10 mean the questions and answers sumarized by the year 2008, 2009, and 2010.
+In each folder, name_raw.txt is the original wiki article, name is the cleaned wiki article, and name.txt is the questions and the answers of this article.
+In the folder of Our_Team, there are articles and A&Q that are provided and answered by ourselves when in assignment 2 and 3.
