@@ -1,0 +1,37 @@
+Did Nikola Tesla die alone?	Nikola Tesla died alone.
+Did Nikola Tesla die alone?	Nikola Tesla died alone.
+Did Nikola Tesla die alone?	Yes
+Was Nikola Tesla close friends with Mark Twain?	Nikola Tesla was close friends with Mark Twain.
+Was Nikola Tesla close friends with Mark Twain?	Yes
+Did Nikola Tesla use a technique called picture thinking?	Nikola Tesla used a technique called picture thinking.
+Did Nikola Tesla use a technique called picture thinking?	Yes
+When did Nikola Tesla appear on the cover of Time Magazine?	On Tesla's 75th birthday in 1931, Time magazine put him on its cover.
+When did Nikola Tesla appear on the cover of Time Magazine?	1931
+Who became adversaries with Nikola Tesla?	Nikola Tesla became adversaries with Edison.
+Who became adversaries with Nikola Tesla?	Edison
+Where did Nikola Tesla move to in 1880?	In 1880, Nikola Tesla moved to Budapest.
+Where did Nikola Tesla move to in 1880?	Budapest
+Was Nikola Tesla's mother illiterate?	Nikola Tesla's mother never learned to read.
+Was Nikola Tesla's mother illiterate?	Yes
+How many siblings did Nikola Tesla have?	Nikola Tesla had four siblings.
+How many siblings did Nikola Tesla have?	4
+Was Nikola Tesla a vegetarian?	 In his later years Tesla became a vegetarian.
+Was Nikola Tesla a vegetarian?	Yes
+Is there a monument to Tesla at Niagara Falls, New York?	Yes
+Is there a monument to Tesla at Niagara Falls, New York?	NULL
+Was Tesla an American citizen?	Yes
+Was Tesla an American citizen?	NULL
+Was Tesla on the cover of Time magazine?	Yes
+Was Tesla on the cover of Time magazine?	NULL
+Where did Tesla study electrical engineering?	The Austrian Polytechnic in Graz
+Where did Tesla study electrical engineering?	NULL
+When did Tesla receive his last patent?	1928
+When did Tesla receive his last patent?	NULL
+What languages did Tesla speak?	Serbian, Czech, English, French, German, Hungarian, Italian, and Latin
+What languages did Tesla speak?	NULL
+Did Tesla win the Nobel Prize?	No
+Did Tesla win the Nobel Prize?	NULL
+Was Tesla rich at the time of his death?	No
+Was Tesla rich at the time of his death?	NULL
+What music group was named after Tesla?	Tesla
+What music group was named after Tesla?	NULL

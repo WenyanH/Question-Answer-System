@@ -1,0 +1,60 @@
+Is the leopard smaller than the other members of Panthera?	yes
+Is the leopard smaller than the other members of Panthera?	yes
+Is the leopard smaller than the other members of Panthera?	Yes
+Is a leopard larger and less lanky than a cheetah?	yes
+Is a leopard larger and less lanky than a cheetah?	Yes
+Are large pythons potential prey for leopards?	yes
+Are large pythons potential prey for leopards?	Yes
+What may a leopard be mistaken for?	A cheetah or a jaguar
+What may a leopard be mistaken for?	A cheetah or a jaguar
+What is a hybrid animal resulting from a union between a leopard and a puma?	a pumapard
+What is a hybrid animal resulting from a union between a leopard and a puma?	A pumapard
+Where do leopards often hide their kills?	in dense vegetation
+Where do leopards often hide their kills?	in dense vegetation or in trees
+How did early naturalists distinguish between leopards and panthers?	by the length of their tails
+How did early naturalists distinguish between leopards and panthers?	By the length of the tail, panthers having longer tails than leopards
+What are dark leopards known as colloquially?	Black Panthers
+What are dark leopards known as colloquially?	black panthers
+What shape are a leopard's black rosettes in East Africa?	circular
+What shape are a leopard's black rosettes in East Africa?	circular
+Is the leopard an Old World mammal?	yes
+Is the leopard an Old World mammal?	yes
+Is the leopard an Old World mammal?	.
+Is the leopard of the Felidae family?	yes
+Is the leopard of the Felidae family?	yes
+Is the leopard of the Felidae family?	NULL
+Is the leopard one of the four 'big cats'?	yes
+Is the leopard one of the four 'big cats'?	yes
+Is the leopard one of the four 'big cats'?	NULL
+Where is the leopard distributed?	southern Eurasia and Africa
+Where is the leopard distributed?	southern Eurasia and Africa, from Korea to South Africa and Spain
+Where is the leopard distributed?	NULL
+How long is a leopard's tail?	60 to 110cm
+How long is a leopard's tail?	60-110cm
+How long is a leopard's tail?	NULL
+How much does a leopard weigh?	Males are considerably larger than females and weigh 37 to 90 kg compared to 28 to 60 kg for females. 
+How much does a leopard weigh?	(because of ambiguity) - 28-90kg 
+How much does a leopard weigh?	NULL
+Does a male leopard weigh more than a female leopard?	yes
+Does a male leopard weigh more than a female leopard?	yes
+Does a male leopard weigh more than a female leopard?	NULL
+What is the difference between leopards and cheetahs?	The leopard has rosettes rather than cheetah's simple spots and the leopard is larger and less lanky than the cheetah.
+What is the difference between leopards and cheetahs?	The leopard has rosettes rather than cheetah's simple spots, but they lack internal spots, unlike the jaguar. The leopard is larger and less lanky than the cheetah but smaller than the jaguar.
+What is the difference between leopards and cheetahs?	NULL
+How does the distribution size of the leopard compare to the distribution of other wild cats?	As of 1996, the leopard had the largest distribution of any wild cat, although populations before and since have shown a declining trend and are fragmented outside of subsaharan Africa.
+How does the distribution size of the leopard compare to the distribution of other wild cats?	the leopard had the largest distribution of any wild cat.
+How does the distribution size of the leopard compare to the distribution of other wild cats?	NULL
+What resembles that of the similarly-sized cougar in the Americas?	The leopard's ecological role
+What was one of the many species described in Linnaeus's 18th-century work, Systema Naturae?	Felis pardus
+What sort of cats are solitary?	Leopards
+Are leopards circular?	No
+Is the leopard solitary?	Yes
+What centred in Sierra?	The leopard men
+Felis pardus was what?	One of the many species described in Linnaeus's 18th-century work, Systema Naturae
+Has the New Zealand Rugby League featured the Otahuhu Leopards and then the Tamaki Leopards ?	Yes
+Were the Leopard men a West African secret society who practised cannibalism ?	Yes
+Was the leopard tank a German designed tank which entered service in 1965 ?	Yes
+Is the black color heritable and caused by only one recessive gene locus ?	Yes
+Is the leopard -LRB- panthera pardus -RRB- an old world mammal of the felidae family and the smallest of the four (`` ` big cats ('' ' of the genus panthera , along with the tiger , lion , and jaguar?	Yes
+Can a panther be any of several species of large felid?	Yes
+Is the leopard an agile and graceful predator?	Yes

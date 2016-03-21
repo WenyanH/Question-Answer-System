@@ -1,0 +1,34 @@
+Does Vietnamese have a comparatively large number of vowels?	Yes.
+Does Vietnamese have a comparatively large number of vowels?	Yes.
+Is Vietnamese the mother tongue of the Vietnamese people?	Yes
+Is Vietnamese the mother tongue of the Vietnamese people?	Yes.
+Is Vietnamese the official administrative language of Vietnam?	Yes
+Is Vietnamese the official administrative language of Vietnam?	Yes.
+Was Vietnamese influenced by Chinese?	Much vocabulary has been borrowed from Chinese.
+Was Vietnamese influenced by Chinese?	Yes.
+When did written Vietnamese become the official administrative language?	the 20th century
+When did written Vietnamese become the official administrative language?	Vietnamese became the official administrative language by the 20th century.
+Have consonant clusters been lost?	Yes
+Have consonant clusters been lost?	Yes.
+Is the Red River Delta traditionally poor?	Not compared to Nghe An, Ha Tinh, or Quang Binh
+Is the Red River Delta traditionally poor?	Yes.
+What kind of words have been borrowed from Chinese?	Words that denote abstract ideas in the same way European languages borrow form Latin and Greek.
+What kind of words have been borrowed from Chinese?	Vietnamese adopts words from Chinese which express abstract ideas.
+Is Vietnam independent from France?	Yes.
+Was Vietnamese formally written using the Chinese writing system?	Yes, Vietnamese was *formerly* written using the Chinese writing system.
+Was Vietnamese formally written using the Chinese writing system?	NULL
+Does Vietnamese have a large number of vowels?	Yes, Vietnamese has a comparatively large number of vowels.
+Does Vietnamese have a large number of vowels?	NULL
+Does Vietnamese have dipthongs?	NULL
+What are the three dialect regions of Vietnamese?	The three regions are North, Central, and South.
+What are the three dialect regions of Vietnamese?	NULL
+When was the reunification of Vietnam?	The reunification of Vietnam occurred in 1975-76.
+When was the reunification of Vietnam?	NULL
+How many tones do Northern varieties have?	Northern Vietnamese has six tones.
+How many tones do Northern varieties have?	NULL
+Does Vietnamese borrow from Latin and Greek?	No, Vietnamese does not borrow from Latin and Greek.
+Does Vietnamese borrow from Latin and Greek?	NULL
+Did Vietnamese come to predominate politically in 2nd century BC?	No, Chinese came to predominate politically in the 2nd century B.C.
+Did Vietnamese come to predominate politically in 2nd century BC?	NULL
+Do more northern speakers speak the southern regional dialect than southern speakers speak the northern dialect?	More southern speakers speak the northern dialect than northerners speak the suthern dialect.
+Do more northern speakers speak the southern regional dialect than southern speakers speak the northern dialect?	NULL

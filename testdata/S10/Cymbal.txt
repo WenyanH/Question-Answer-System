@@ -1,0 +1,19 @@
+Is one of the parts of a cymbal called a disc?	no
+Is one of the parts of a cymbal called a disc?	no
+Is one of the parts of a cymbal called a disc?	NULL
+Are ride cymbals very common?	yes
+Are ride cymbals very common?	NULL
+Does Fender make cymbals?	no
+Does Fender make cymbals?	NULL
+What part of the cymbal is the bell?	The center of a Cymbal
+What part of the cymbal is the bell?	NULL
+What's the timber of ancient cimbals like? disfluent	like that of small hand-bells or of the notes of the keyed harmonica
+What's the timber of ancient cimbals like? disfluent	NULL
+What does it sound like to play cymbals with a cello bow?	squealing car brakes
+What does it sound like to play cymbals with a cello bow?	NULL
+What are cymbals made of?	brass
+What are cymbals made of?	NULL
+How many cymbals typically go in a drum kit?	at least 3
+How many cymbals typically go in a drum kit?	NULL
+What kinds of musical groups use cymbals?	Cymbals are used in modern orchestras and many military, marching, concert and other bands
+What kinds of musical groups use cymbals?	NULL

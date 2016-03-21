@@ -1,0 +1,19 @@
+Does the giant otter live in South America?	Yes
+Does the giant otter live in South America?	Yes
+Does the giant otter live in South America?	yes
+Do otters have claws?	Yes
+Do otters have claws?	yes
+Do otters eat fish?	Yes
+Do otters eat fish?	yes
+What is an otter's den called?	A holt
+What is an otter's den called?	holt
+Where do sea otters live?	Beside water
+Where do sea otters live?	Pacific coast of North America
+Why are otters vulnerable to prey depletion?	Prey-dependence
+Why are otters vulnerable to prey depletion?	prey-dependency
+Do otters enjoy playing?	Yes
+Do otters enjoy playing?	yes
+Do sea otters have a layer of fat like whales?	No
+Do sea otters have a layer of fat like whales?	no
+Is the otter in the same family as the badger?	Yes
+Is the otter in the same family as the badger?	yes

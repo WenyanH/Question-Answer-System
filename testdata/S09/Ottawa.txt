@@ -1,0 +1,29 @@
+Is Ottawa the capital of Canada?	Yes
+Is Ottawa the capital of Canada?	Yes
+Does Ottawa sit on the Ottowa River?	Yes
+Do small tremors occur in Ottawa?	Yes
+What is Ottawa's population?	1,190,982
+What are Ottawa's primary industries?	Logging and lumber
+What is Ottawa's junior ice hockey team?	the Ottawa 67's
+What is Ottawa's major league hockey team?	the Ottawa Senators
+What are Carleton University's athletic teams called?	Carleton Ravens
+Is Ottawa colder than Moscow in January?	Yes
+Is Ottawa on a river?	yes
+Is Ottawa on a river?	yes
+Does it snow in Ottawa?	yes
+Does it snow in Ottawa?	yes
+Was there a cholera outbreak in 1832?	yes
+Was there a cholera outbreak in 1832?	yes
+Who is the mayor of Ottawa?	Larry O'Brien
+Who is the mayor of Ottawa?	Larry O'Brien
+How many townships are in Ottawa?	eleven
+How many townships are in Ottawa?	eleven
+What's the main highway in Ottawa?	Highway 417, The Queensway
+What's the main highway in Ottawa?	provinical Highway 417
+What was Ottawa's name in 1850?	Bytown
+What was Ottawa's name in 1850?	Bytown
+Based on the average, in what year will the next small tremor occur in Ottawa?	2009
+Based on the average, in what year will the next small tremor occur in Ottawa?	2009
+Where were immigrants from in the 1800s?	Irish
+Where were immigrants from in the 1800s?	Ireland
+Are there also discussions of having OC Transpo Light Rail and STO Transitway networks linking on the Gatineau side of the Ottawa River ?	Yes.

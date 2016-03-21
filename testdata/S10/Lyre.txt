@@ -1,0 +1,19 @@
+Were the recitations of the Ancient Greeks accompanied by lyre playing?	Yes
+Were the recitations of the Ancient Greeks accompanied by lyre playing?	Yes
+Were the recitations of the Ancient Greeks accompanied by lyre playing?	NULL
+Does a classical lyre have a hollow body?	Yes
+Does a classical lyre have a hollow body?	NULL
+Is the lyre a stringed musical instrument?	Yes
+Is the lyre a stringed musical instrument?	NULL
+Which constellation is said to resemble a lyre shape?	Lyra
+Which constellation is said to resemble a lyre shape?	NULL
+How many raised arms are extending from the sound-chest of a classical lyre?	Two
+How many raised arms are extending from the sound-chest of a classical lyre?	NULL
+What were the strings of a classical lyre made of?	Gut
+What were the strings of a classical lyre made of?	NULL
+Is the foot pedal framework for a piano called a lyre?	Yes
+Is the foot pedal framework for a piano called a lyre?	NULL
+Where was the deepest note of the classical lyre in relation to the player's body?	It was farthest from the player's body.
+Where was the deepest note of the classical lyre in relation to the player's body?	NULL
+Does a standard piano have fewer strings than a harp?	No
+Does a standard piano have fewer strings than a harp?	NULL
