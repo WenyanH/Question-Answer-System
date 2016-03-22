@@ -1,0 +1,18 @@
+Did Becquerel study science at the École des Ponts et Chaussées?	Yes
+Did Becquerel study science at the École des Ponts et Chaussées?	Yes
+Did he become chief engineer in the Department of Bridges and Highways in 1892?	No
+Did he become chief engineer in the Department of Bridges and Highways in 1892?	yes
+Was Becquerel a French physicist?	Yes
+Was Becquerel a French physicist?	yes
+Whom did he share the Nobel Prize with?	Pierre and Marie Curie
+Whom did he share the Nobel Prize with?	Pierre and Marie Curie
+When did he die?	1908
+When did he die?	1908
+What is the SI unit for radioactivity called?	becquerel
+What is the SI unit for radioactivity called?	the becquerel (Bq)
+When Becquerel discovered radioactivity, whose work did he investigate?	Wilhelm Conrad Röntgen
+When Becquerel discovered radioactivity, whose work did he investigate?	Wilhelm Conrad RÃ¶ntgen
+Where are there craters named Becquerel?	Moon and Mars
+Where are there craters named Becquerel?	on the moon and on mars
+Why did Bequerel win the Nobel Prize in Physics?	discovery of spontaneous radioactivity
+Why did Bequerel win the Nobel Prize in Physics?	was the discoverer of radioactivity

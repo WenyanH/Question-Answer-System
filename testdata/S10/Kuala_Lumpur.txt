@@ -1,0 +1,37 @@
+Is Kuala Lumpur the capitol of Malaysia? disfluent	Yes
+Is Kuala Lumpur the capitol of Malaysia? disfluent	Yes
+Is Kuala Lumpur the capitol of Malaysia? disfluent	NULL
+Is Kuala Lumpur in the Selangor state?	Yes
+Is Kuala Lumpur in the Selangor state?	NULL
+What's the population of Kuala lumpur?	1.6 million
+What's the population of Kuala lumpur?	NULL
+What language do they speak in Kuala Lumpur?	Bahasa Melayu
+What language do they speak in Kuala Lumpur?	NULL
+What does the name "Kuala Lumpur" mean?	"muddy confluence," "muddy estuary," and "muddy city"
+What does the name "Kuala Lumpur" mean?	NULL
+What airports does Kuala Lumpur have?	Kuala Lumpur International Airport and Subang International Airport
+What airports does Kuala Lumpur have?	NULL
+How long was Kuala Lumpur occupied by the Japanese?	42 months
+How long was Kuala Lumpur occupied by the Japanese?	NULL
+How many seasons does Kuala Lumpur experience?	1
+How many seasons does Kuala Lumpur experience?	NULL
+When were the colonial buildings in Kuala Lumpur constructed?	toward the end of the 19th and early 20th centuries
+When were the colonial buildings in Kuala Lumpur constructed?	NULL
+Is it a host city for the Formula One World Championship?	Yes
+Is it a host city for the Formula One World Championship?	NULL
+is the central market located in the proximity of the pertama complex?	No
+is the central market located in the proximity of the pertama complex?	NULL
+is it home to the parliament of malaysia?	Yes
+is it home to the parliament of malaysia?	NULL
+when did kuala lumpur become a federal territory of malaysia?	February 1, 1974
+when did kuala lumpur become a federal territory of malaysia?	NULL
+What is the city's population?	1.6 million
+What is the city's population?	NULL
+What is the official religion in the country?	Islam
+What is the official religion in the country?	NULL
+Is there a more industrialized region in malaysia?	No
+Is there a more industrialized region in malaysia?	NULL
+after the 2008 elections, what party had the most parliament seats?	DAP
+after the 2008 elections, what party had the most parliament seats?	NULL
+what is the name of the event that draws the worlds top riders to malaysia?	KL Grand Prix CSI 5*
+what is the name of the event that draws the worlds top riders to malaysia?	NULL

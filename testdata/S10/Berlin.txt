@@ -1,0 +1,37 @@
+Is Berlin the capital city of Germany?	Berlin is the capital city of Germany.
+Is Berlin the capital city of Germany?	Berlin is the capital city of Germany.
+Is Berlin the capital city of Germany?	yes
+Is Berlin the largest city in Germany?	Berlin is Germany's largest city.
+Is Berlin the largest city in Germany?	yes
+Is Schloss Charlottenburg the largest existing palace in Berlin?	Schloss Charlottenburg is the largest existing palace in Berlin. 
+Is Schloss Charlottenburg the largest existing palace in Berlin?	yes
+Which building is the site of the German parliament?	The Reichstag building is the site of the German parliament. 
+Which building is the site of the German parliament?	The Reichstag building
+Which two sports events did the Olympiastadion host?	The Olympiastadion hosted the 1936 Summer Olympics and the 2006 FIFA World Cup final. 
+Which two sports events did the Olympiastadion host?	the 1936 Summer Olympics and the 2006 FIFA World Cup final
+Where is the Berliner Dom located?	The Berliner Dom is located on the Spree Island across from the site of the Berliner Stadtschloss and adjacent to the Lustgarten.
+Where is the Berliner Dom located?	on the Spree Island
+Which Berlin building did architect Norman Foster remodel in the 1990s?	The Reichstag building was remodeled by architect Norman Foster in the 1990s.
+Which Berlin building did architect Norman Foster remodel in the 1990s?	Reichstag building
+Why is Vattenfall shifting towards reliance on cleaner, renewable energy sources?	Because burning lignite produces harmful emissions, Vattenfall has announced a commitment to shift towards reliance on cleaner, renewable energy sources.
+Why is Vattenfall shifting towards reliance on cleaner, renewable energy sources?	Because burning lignite produces harmful emissions
+What are the names of the two zoos in Berlin?	The two zoos in Berlin are the Zoologischer Garten Berlin and the Tierpark Friedrichsfelde.
+What are the names of the two zoos in Berlin?	Zoologischer Garten Berlin and Tierpark Friedrichsfelde
+Is Berlin the headquarters of Springer?	Yes, Berlin is the headquarters of Springer.
+Is Berlin the headquarters of Springer?	NULL
+Does the Gendarmenmarkt border the French Cathedral?	Yes, the Gendarmenmarkt borders the French Cathedral.
+Does the Gendarmenmarkt border the French Cathedral?	NULL
+Is the Nauen plain north of Berlin?	No, the Nauen plain stretches to the west of Berlin.
+Is the Nauen plain north of Berlin?	NULL
+Where is the bust of Queen Nefertiti?	The bust of Queen Nefertiti is in the Altes Museum.
+Where is the bust of Queen Nefertiti?	NULL
+Where does the German President live?	The German President lives west of the center, Schloss Bellevue.
+Where does the German President live?	NULL
+When did Berlin give up its status as a free Hanseatic city?	In 1451 Berlin gave up its status as a free Hanseatic city.
+When did Berlin give up its status as a free Hanseatic city?	NULL
+Which is the busiest airport in Berlin?	Tegel International Airport is the busiest airport in Berlin.
+Which is the busiest airport in Berlin?	NULL
+How many occupation zones was Germany divided into after the war?	Germany was divided into four occupation zones after the war.
+How many occupation zones was Germany divided into after the war?	NULL
+Where was Popkomm held before moving to Berlin?	Popkomm was held in Cologne before moving to Berlin.
+Where was Popkomm held before moving to Berlin?	NULL

@@ -1,0 +1,19 @@
+Is Antwerp a city?	Yes
+Is Antwerp a city?	Yes
+Is Antwerp a city?	NULL
+Is Antwerp a municipality?	Yes
+Is Antwerp a municipality?	NULL
+Is Antwerp in Belgium?	Yes
+Is Antwerp in Belgium?	NULL
+What is Antwerp?	Antwerp is a city and municipality in Belgium.
+What is Antwerp?	NULL
+What is the population of the city of Antwerp?	Antwerp's population is 472,071.
+What is the population of the city of Antwerp?	NULL
+Where is the city of Antwerp?	Antwerp is in Belgium
+Where is the city of Antwerp?	NULL
+Why is Antwerp important to fashion?	Yes
+Why is Antwerp important to fashion?	NULL
+Antwerp is to the east of what river?	Antwerp is to the east of the Scheldt river
+Antwerp is to the east of what river?	NULL
+How many municipalities does Antwerp have?	None, Antwerp is a municipality.
+How many municipalities does Antwerp have?	NULL

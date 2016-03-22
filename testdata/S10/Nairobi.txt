@@ -1,0 +1,27 @@
+Is Nairobi the capital of Kenya?	Yes
+Is Nairobi the capital of Kenya?	Yes
+Is Nairobi the capital of Kenya?	NULL
+Was Nairobi founded in 1899?	Yes
+Was Nairobi founded in 1899?	NULL
+Is the current estimated population of Nairobi about 6 milion?	No
+Is the current estimated population of Nairobi about 6 milion?	NULL
+What is the current estimated population of Nairobi?	About 3 million
+What is the current estimated population of Nairobi?	NULL
+In what year was Nairobi founded?	1899
+In what year was Nairobi founded?	NULL
+Which embassy in Nairobi was bombed in August 1998?	The United States Embassy
+Which embassy in Nairobi was bombed in August 1998?	NULL
+How many civilians died in the 1998 U.S. embassy bombing?	Over two hundred
+How many civilians died in the 1998 U.S. embassy bombing?	NULL
+How many trades can the NSE make per day?	10 million trades
+How many trades can the NSE make per day?	NULL
+About how many people are estimated to live in Nairobi?	3 million
+About how many people are estimated to live in Nairobi?	NULL
+The district is bordered to the southwest by Uhuru Park and where?	Central Park
+When did the Catholic University of Eastern Africa which obtain its Letter of Interim Authority?	In 1989.
+Is Central Park adjacent to Uhuru Park?	Central Park is adjacent to Uhuru Park.
+Give an example of the highest growth rates of any city in Africa. 	 The growth rate of Nairobi is currently 6.9%,  an example of the highest growth rates of any city in Africa.
+Give an example of the most prominent cities in Africa politically and financially. 	Nairobi is now one of the most prominent cities in Africa politically and financially
+Is Nairobi not the capital as well as largest city of Kenya?	Nairobi is the capital and largest city of Kenya.
+Does the city and its surrounding area also form the Nairobi Province?	yes
+Does the name ``Nairobi'' come from the Maasai phrase Enkare Nyirobi, which translates to ``the place of cool waters''?	Yes.

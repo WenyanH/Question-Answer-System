@@ -1,0 +1,43 @@
+Do ants belong to the Hymenoptera order?	yes
+Do ants belong to the Hymenoptera order?	yes
+Do ants belong to the Hymenoptera order?	yes
+Are ants used in cuisine?	yes
+Are ants used in cuisine?	yes
+Does an ant's head contain sensory organs?	yes
+Does an ant's head contain sensory organs?	yes
+How do most ants travel?	most ants travel by walking
+How do most ants travel?	by walking
+In ant colonies, what are the fertile female ants called?	"queens"
+In ant colonies, what are the fertile female ants called?	queens
+Who wrote about ants in A Tramp Abroad?	mark twain wrote about ants
+Who wrote about ants in A Tramp Abroad?	Mark Twain
+Do the ants eat plants, meats, or both?	both
+What organs gives a bull ant its good sight?	compound eyes
+What may happen to red fire ants if we use boiling water on the queen?	nests of red fire ants may be destroyed
+What may happen to red fire ants if we use boiling water on the queen?	die
+Are ants found in Antartica?	No, there are no ants in antarctica.
+Are ants found in Antartica?	NULL
+Do male ants take flight before females?	Yes, male ants take flight before females.
+Do male ants take flight before females?	NULL
+Do worker ants have wings?	No, worker ants do not have wings.
+Do worker ants have wings?	NULL
+What are the three segments of an ant?	The head, mesosoma and metasoma are the three distinct body segments.
+What are the three segments of an ant?	NULL
+What are the ant colonies that lack queens called?	Colonies that lack queens are called gamergate colonies.
+What are the ant colonies that lack queens called?	NULL
+Where are bullet ants located?	Bullet ants are located in Central and South America.
+Where are bullet ants located?	NULL
+Do ants belong to the same order as bees?	Yes, ants belong to the same order as bees.
+Do ants belong to the same order as bees?	NULL
+What is the most common color of ants?	Most ants are red or black.
+What is the most common color of ants?	NULL
+Do all ants build nests?	No, not all ants build nests.
+Do all ants build nests?	NULL
+Ultraviolet vision was first discovered in ants by Sir who in 1881?	John Lubbok
+Do ants thrive in most ecosystems?	Yes.
+Are several species of ants able to use the Earths magnetic field?	yes
+Are termites actually more closely related to cockroaches as well as mantids?	Yes, termites are actually more closely related to cockroaches as well as mantids.
+Do some caterpillars produce vibrations as well as sounds?	yes
+Did ants evolve from wasp-like ancestors in the mid-Cretaceous period between 110 and 130 million years ago and diversified after the rise of flowering plants?	yes
+Is the ant a marsupial?	no
+Are they easily identified by their elbowed antennae and a distinctive node-like structure that forms a slender waist?	Yes, they are easily identified by their elbowed antennae and a distinctive node-like structure that forms a slender waist.

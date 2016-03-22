@@ -1,0 +1,18 @@
+Did Tesla study electrical engineering?	Yes
+Did Tesla study electrical engineering?	Yes
+Did Tesla study electrical engineering?	yes
+Was Tesla born in the United States?	No
+Was Tesla born in the United States?	no
+Was Tesla hired by Edison?	Yes
+Was Tesla hired by Edison?	yes
+When did Tesla demonstrate wireless communication (radio)?	1893
+When did Tesla demonstrate wireless communication (radio)?	1893
+What is the SI unit measuring magnetic flux density or magnetic induction?	the tesla
+What is the SI unit measuring magnetic flux density or magnetic induction?	the tesla
+Was Tesla regarded as a mad scientist?	Yes
+Was Tesla regarded as a mad scientist?	yes
+What type of current did Tesla invent?	AC
+Who was the victor of the "War of Currents"?	Tesla
+Who was the victor of the "War of Currents"?	Nikola Tesla
+Where did Tesla study electrical engineering?	the Austrian Polytechnic in Graz 
+Where did Tesla study electrical engineering?	Austrian Polytechnic in Graz

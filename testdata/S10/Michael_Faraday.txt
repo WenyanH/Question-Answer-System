@@ -1,0 +1,36 @@
+Did Albert Einstein keep a photograph of Faraday on his study wall?	Yes, Albert Einstein kept a photograph of Faraday on his study wall.
+Did Albert Einstein keep a photograph of Faraday on his study wall?	Yes, Albert Einstein kept a photograph of Faraday on his study wall.
+Did Albert Einstein keep a photograph of Faraday on his study wall?	yes
+Did Faraday marry Sarah Barnard?	Yes, Faraday married Sarah Barnard.
+Did Faraday marry Sarah Barnard?	yes
+Did Faraday also discover the laws of electrolysis?	Yes, Faraday also discovered the laws of  electrolysis.
+Did Faraday also discover the laws of electrolysis?	yes
+Who discovered benzene?	Michael Faraday discovered benzene.
+Who discovered benzene?	Michael Faraday
+Where was Michael Faraday born?	Michael Faraday was born in Newington Butts.
+Where was Michael Faraday born?	Newington Butts
+What is the Faraday effect?	The Faraday effect is the phenomenon that the plane of polarisation of linearly polarised light can be rotated by the application of an external magnetic field aligned in the direction the light is moving.
+What is the Faraday effect?	The plane of polarisation of linearly polarised light can be rotated by the application of an exernal magnetic field aligned in the direction the light is moving.
+Did Faraday discover diamagnetism?	Yes, Faraday discovered diamagnetism.
+Did Faraday discover diamagnetism?	yes
+How many siblings did Faraday have?	Faraday had three siblings.
+How many siblings did Faraday have?	two
+Where is Michael Faraday buried?	Michael Faraday is buried in the dissenters' section of Highgate Cemetery.
+Where is Michael Faraday buried?	in the dissenters' section of Highgate Cemetery
+Is faraday best known for his work with kinematics?	No
+Is faraday best known for his work with kinematics?	NULL
+was he active in the area now called environmental science?	Yes
+was he active in the area now called environmental science?	NULL
+did he discover benzene?	Yes
+did he discover benzene?	NULL
+who was his mentor?	John 'Mad Jack' Fuller
+who was his mentor?	NULL
+what happened in 1824?	NULL
+Who was Faraday's wife?	Sarah Barnard
+Who was Faraday's wife?	NULL
+did he advise the british government on the production of chemical weapons for use in the crimean war?	No
+did he advise the british government on the production of chemical weapons for use in the crimean war?	NULL
+did faraday have strong maritime interests?	Yes
+did faraday have strong maritime interests?	NULL
+does the charge reside on the interior of a charged conductor?	No
+does the charge reside on the interior of a charged conductor?	NULL
