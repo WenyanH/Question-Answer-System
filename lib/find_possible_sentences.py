@@ -14,12 +14,24 @@ def find_possible_sentences(texts, question, question_tags):
 	potential_sentences_index = []
 	question_tokens = question.split(" ")
 	for i in range(len(texts)):
-		weight = 0
+		weight = 0.0
 		for j in range(len(question_tags)):
 			if question_tags[j] == 'NOUN':
 				for k in range(len(texts[i])):
 					if question_tokens[j] == texts[i][k]:
 						weight = weight + 1
+			if question_tags[j] == 'VERB':
+				for k in range(len(texts[i])):
+					if question_tokens[j] == texts[i][k]:
+						weight = weight + 0.8
+			if question_tags[j] == 'ADJ':
+				for k in range(len(texts[i])):
+					if question_tokens[j] == texts[i][k]:
+						weight = weight + 0.5
+			if question_tags[j] == 'ADV':
+				for k in range(len(texts[i])):
+					if question_tokens[j] == texts[i][k]:
+						weight = weight + 0.3
 		heapq.heappush(heap, (weight*-1, i))
 	for i in range(3):
 		potential_sentences_index.append(heapq.heappop(heap)[1])
