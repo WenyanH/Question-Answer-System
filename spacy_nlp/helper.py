@@ -17,6 +17,10 @@ def doc_get_all_sents(doc):
 def doc_get_noun_chunks(doc):
     return [chunk.orth_ for chunk in doc.noun_chunks]
 
+def doc_get_noun_chunks_in_sent(doc, sentence):
+    chunks = [chunk.orth_ for chunk in doc.noun_chunks if chunk.orth_ in sentence]
+    return list(set(chunks))
+
 def sent_get_root(sent):
     return sent.root
 

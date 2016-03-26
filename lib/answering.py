@@ -1,5 +1,11 @@
-import nltk
 import heapq
+
+def answer_what(question, question_tags, sentence, sentece_tags, noun_chunks):
+	print 'Q:', question
+	print 'Q-tags:', question_tags
+	print 'S:', sentence
+	print 'S-tags:', sentece_tags
+	print 'Chunks:', noun_chunks
 
 def find_possible_sentences(texts, question, question_tags):
 	# @param

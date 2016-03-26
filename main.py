@@ -1,7 +1,9 @@
 import sys
 from random import shuffle
 from lib import asking_easy, asking_medium, asking_hard, helper
-from lib.find_possible_sentences import find_possible_sentences
+from lib import answering as answer
+from lib.question_type import question_type
+# from lib.find_possible_sentences import find_possible_sentences
 from spacy_nlp import helper as spacy_helper
 
 def main():
@@ -12,7 +14,7 @@ def main():
     doc, sentences = read_sentences_from_file(sys.argv[1])
     doc_q, questions = read_sentences_from_file(sys.argv[2], False, True)
     # asking(sentences, doc)
-    answering(sentences, doc_q, questions)
+    answering(doc, sentences, doc_q, questions)
 
 def wiki_article_format(text):
     # TODO:
@@ -84,7 +86,8 @@ def asking(sentences, doc, num_easy=5, num_medium=5, num_hard=5):
         result = asking_easy.easy_question_generator(sen)
         if result:
             print result
-            print sen + '\n'
+            # print sen + '\n'
+            print '\n'
             count += 1
 
     print "Medium\n"
@@ -111,19 +114,27 @@ def asking(sentences, doc, num_easy=5, num_medium=5, num_hard=5):
             print sen + '\n'
             count += 1
 
-def answering(sentences, doc_q, questions):
+def answering(doc, sentences, doc_q, questions):
     text_2d_array = get_string_of_text(sentences)
 
     for sent in questions:
         question_token = get_string_of_sent(sent)
         question_tags = [token.pos_ for token in sent]
 
-        possible_sentences_index = find_possible_sentences(text_2d_array, question_token, question_tags)
-        print 'Question:', sent
-        for index, token in enumerate(sent):
-            if token.head is token:
-                print 'Root:', index, token
-        # for index in possible_sentences_index:
-        #     print 'Possible:', ' '.join(text_2d_array[index])
+        possible_sentences_index = answer.find_possible_sentences(text_2d_array, question_token, question_tags)
+        # print 'Question:', sent
+        # for index, token in enumerate(sent):
+        #     if token.head is token:
+        #         print 'Root:', index, token
+        #         print 'Type:', question_type(get_string_of_sent(sent), index)
+
+        for index in possible_sentences_index:
+            poss_sentence = spacy_helper.doc_get_all_sents(doc)[index]
+            poss_sentence_token = ' '.join(text_2d_array[index])
+            poss_sentence_tags = [token.pos_ for token in poss_sentence]
+            answer.answer_what(question_token, question_tags, poss_sentence_token, poss_sentence_tags, spacy_helper.doc_get_noun_chunks_in_sent(doc, poss_sentence_token))
+            break
+        break
+        # print ' '.join(text_2d_array[possible_sentences_index[0]])
 
 main()
