@@ -10,7 +10,7 @@ be=['is', 'am','are','was','were']
 def pretreatment(s):
     tokens = nltk.word_tokenize(s.lower())
     sentence=list()
-    for i in range(0, len(tokens)):
+    for i in range(0, len(tokens) - 1):
         if tokens[i]=="n't":
             tokens[i]="not"
         if tokens[i] not in be:
