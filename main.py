@@ -127,14 +127,21 @@ def answering(doc, sentences, doc_q, questions):
         #     if token.head is token:
         #         print 'Root:', index, token
         #         print 'Type:', question_type(get_string_of_sent(sent), index)
+        # print sent
+        # print spacy_helper.doc_get_all_sents(doc)[possible_sentences_index[0]]
+
+        possible_sentences = []
+        noun_chunks_list = []
 
         for index in possible_sentences_index:
-            poss_sentence = spacy_helper.doc_get_all_sents(doc)[index]
+            possible_sentences.append(spacy_helper.doc_get_all_sents(doc)[index])
             poss_sentence_token = ' '.join(text_2d_array[index])
-            poss_sentence_tags = [token.pos_ for token in poss_sentence]
-            answer.answer_what(question_token, question_tags, poss_sentence_token, poss_sentence_tags, spacy_helper.doc_get_noun_chunks_in_sent(doc, poss_sentence_token))
-            break
+            noun_chunks_list.append(spacy_helper.doc_get_noun_chunks_in_sent(doc, poss_sentence_token))
+
+        # answer.answer_yesno(sent, possible_sentences)
+        answer.answer_what(sent, possible_sentences, noun_chunks_list)
         break
+
         # print ' '.join(text_2d_array[possible_sentences_index[0]])
 
 main()

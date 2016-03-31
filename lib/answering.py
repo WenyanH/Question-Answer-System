@@ -1,11 +1,29 @@
 import heapq
 
-def answer_what(question, question_tags, sentence, sentece_tags, noun_chunks):
-	print 'Q:', question
-	print 'Q-tags:', question_tags
-	print 'S:', sentence
-	print 'S-tags:', sentece_tags
-	print 'Chunks:', noun_chunks
+def answer_what(question, sentence_list, noun_chunks_list):
+	print 'Q:'
+	for word in question:
+		print word.orth_, '(' + word.pos_ + ')',
+	print
+
+	for sen, chunks in zip(sentence_list, noun_chunks_list):
+		print 'S:'
+		for word in sen:
+			print word.orth_, '(' + word.pos_ + ')',
+		print
+		print 'Chunks:', chunks
+
+def answer_yesno(question, sentence_list):
+	print 'Q:'
+	for word in question:
+		print word.orth_, '(' + word.pos_ + ')',
+	print
+
+	for sen in sentence_list:
+		print 'S:'
+		for word in sen:
+			print word.orth_, '(' + word.pos_ + ')',
+		print
 
 def find_possible_sentences(texts, question, question_tags):
 	# @param
