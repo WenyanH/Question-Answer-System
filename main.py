@@ -121,7 +121,7 @@ def answering(doc, sentences, doc_q, questions):
         question_token = get_string_of_sent(sent)
         question_tags = [token.pos_ for token in sent]
 
-        possible_sentences_index = answer.find_possible_sentences(text_2d_array, question_token, question_tags)
+        possible_sentences_index = answer.find_possible_sentences(doc, sent)
         # print 'Question:', sent
         # for index, token in enumerate(sent):
         #     if token.head is token:

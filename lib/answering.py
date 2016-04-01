@@ -1,4 +1,4 @@
-import heapq
+import heapq, sys
 
 def answer_what(question, sentence_list, noun_chunks_list):
 	print 'Q:'
@@ -26,7 +26,17 @@ def answer_yesno(question, sentence_list):
 			print word.orth_, '(' + word.pos_ + ')',
 		print
 
-def find_possible_sentences(texts, question, question_tags):
+def find_possible_sentences(doc, question):
+	for sent in doc.sents:
+		for token in sent:
+			print token.orth_, token.pos_, token.lemma_
+		print
+
+	for token in question:
+		print token.orth_, token.pos_, token.lemma_
+
+
+	sys.exit(0)
 	# @param
 	# 	texts: 2-d array of all sentences (after tokened)
 	# 	question: string
