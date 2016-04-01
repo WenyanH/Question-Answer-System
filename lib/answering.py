@@ -13,6 +13,7 @@ def answer_what(question, sentence_list, noun_chunks_list):
 		print
 		print 'Chunks:', chunks
 
+
 def answer_yesno(question, sentence_list):
 	print 'Q:'
 	for word in question:
@@ -44,10 +45,6 @@ def find_possible_sentences(texts, question, question_tags):
 				for k in range(len(texts[i])):
 					if question_tokens[j] == texts[i][k]:
 						weight = weight + 1
-			if question_tags[j] == 'VERB':
-				for k in range(len(texts[i])):
-					if question_tokens[j] == texts[i][k]:
-						weight = weight + 0.8
 			if question_tags[j] == 'ADJ':
 				for k in range(len(texts[i])):
 					if question_tokens[j] == texts[i][k]:
