@@ -1,4 +1,5 @@
 import heapq, sys
+import math
 
 def answer_what(question, sentence_list, noun_chunks_list):
 	print 'Q:'
@@ -12,6 +13,8 @@ def answer_what(question, sentence_list, noun_chunks_list):
 			print word.orth_, '(' + word.pos_ + ')',
 		print
 		print 'Chunks:', chunks
+
+	#for i in range(len(sentence_list))
 
 
 def answer_yesno(question, sentence_list):
@@ -114,8 +117,39 @@ def find_possible_sentences(doc, question):
 	for token in question:
 		print token.orth_, token.pos_, token.lemma_
 
+	potential_sentences_index = []
+	heap = []
+	total_number_sentence = len(doc.sents)
+	for sent in doc.sents:
+		weight = 0
+		frequency_in_sentence = {}
+		for token in sent:
+			if token.lemma_ in frequency_in_sentence:
+				frequency_in_sentence[token.lemma_] += 1
+			else:
+				frequency_in_sentence[token.lemma_] = 1
+		for token in sent:
+			count = 0
+			for sent2 in doc.sents:
+				for token2 in sent2:
+					if token2.lemma_ == token.lemma_:
+						count = count + 1
+						break
+			weight_temp = frequency_in_sentence[token.lemma_]*math.log(total_number_sentence/count)
+			for token_question in question:
+				if question_token.lemma_ == token.lemma_:
+					weight += weight_temp
+				break
+		heapq.heappush(heap, (weight*-1, doc.sents.index(sent)))
 
-	sys.exit(0)
+	for i in range(3):
+		potential_sentences_index.append(heapq.heappop(heap)[1])
+	print potential_sentences_index
+	return potential_sentences_index
+
+
+
+	# sys.exit(0)
 	# @param
 	# 	texts: 2-d array of all sentences (after tokened)
 	# 	question: string
@@ -123,29 +157,29 @@ def find_possible_sentences(doc, question):
 	# @return
 	#	1-d array of index in texts
 	#  tags = {ADJ, ADP, ADV, AUX, CONJ, DET, INTJ, NOUN, NUM, PART, PRON, PROPN, PUNCT, SCONJ, SYM, VERB, X, EOL, SPACE}
-	weight = 0
-	heap = []
-	potential_sentences_index = []
-	question_tokens = question.split(" ")
-	for i in range(len(texts)):
-		weight = 0.0
-		for j in range(len(question_tags)):
-			if question_tags[j] == 'NOUN':
-				for k in range(len(texts[i])):
-					if question_tokens[j] == texts[i][k]:
-						weight = weight + 1
-			if question_tags[j] == 'ADJ':
-				for k in range(len(texts[i])):
-					if question_tokens[j] == texts[i][k]:
-						weight = weight + 0.5
-			if question_tags[j] == 'ADV':
-				for k in range(len(texts[i])):
-					if question_tokens[j] == texts[i][k]:
-						weight = weight + 0.3
-		heapq.heappush(heap, (weight*-1, i))
-	for i in range(3):
-		potential_sentences_index.append(heapq.heappop(heap)[1])
-	return potential_sentences_index
+	# weight = 0
+	# heap = []
+	# potential_sentences_index = []
+	# question_tokens = question.split(" ")
+	# for i in range(len(texts)):
+	# 	weight = 0.0
+	# 	for j in range(len(question_tags)):
+	# 		if question_tags[j] == 'NOUN':
+	# 			for k in range(len(texts[i])):
+	# 				if question_tokens[j] == texts[i][k]:
+	# 					weight = weight + 1
+	# 		if question_tags[j] == 'ADJ':
+	# 			for k in range(len(texts[i])):
+	# 				if question_tokens[j] == texts[i][k]:
+	# 					weight = weight + 0.5
+	# 		if question_tags[j] == 'ADV':
+	# 			for k in range(len(texts[i])):
+	# 				if question_tokens[j] == texts[i][k]:
+	# 					weight = weight + 0.3
+	# 	heapq.heappush(heap, (weight*-1, i))
+	# for i in range(3):
+	# 	potential_sentences_index.append(heapq.heappop(heap)[1])
+	# return potential_sentences_index
 
 if __name__ == "__main__":
 	question = "Is John a handsome and stubborn teacher ?"
