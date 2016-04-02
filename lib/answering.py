@@ -128,6 +128,7 @@ def answer_yesno(question, sentence_list):
 
 def find_possible_sentences(docs, question):
 	potential_sentences_index = []
+	potential_sentences_prob = []
 	heap = []
 	total_number_sentence = len(docs)
 	#print total_number_sentence
@@ -159,8 +160,13 @@ def find_possible_sentences(docs, question):
 		heapq.heappush(heap, (weight * -1, docs.index(sent)))
 
 	for i in range(3):
-		potential_sentences_index.append(heapq.heappop(heap)[1])
-	return potential_sentences_index
+		pairs = heapq.heappop(heap)
+		potential_sentences_index.append(pairs[1])
+		potential_sentences_prob.append(-1 * pairs[0])
+
+	for i in range(len(potential_sentences_prob)):
+		potential_sentences_prob[i] = (potential_sentences_prob[i] - min(potential_sentences_prob))/(max(potential_sentences_prob) - min(potential_sentences_prob))
+	return potential_sentences_index, potential_sentences_prob
 
 	# @param
 	# 	texts: 2-d array of all sentences (after tokened)
