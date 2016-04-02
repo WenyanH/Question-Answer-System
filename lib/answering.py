@@ -1,5 +1,6 @@
 import heapq, sys
 import math
+from match_sentence import match_sentence
 
 def answer_what(question, sentence_list, noun_chunks_list):
 	print 'Q:'
@@ -63,7 +64,7 @@ def answer_yesno(question, sentence_list):
 	min_dis, min_align = match_sentence([word.orth_ for word in question], [word.orth_ for word in sentence_list[0]])
 
 	for i in range(1, 3):
-		dis, align = match_sentence([word.orth_ for word in question], [word.orth_ for word in "sentence_list[" + str(i) + "]"])
+		dis, align = match_sentence([word.orth_ for word in question], [word.orth_ for word in sentence_list[i]])
 		if min_dis > dis:
 			min_dis = dis
 			index = i
