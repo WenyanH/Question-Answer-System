@@ -34,19 +34,14 @@ def token_get_pos(token):
     return token.pos_
 
 if __name__ == '__main__':
-    doc = build_document('Students who were taught by Allen Black win the awards. Weixiang was born in China in 1993 . XiChen is always taking photoes at Shanghai . Tiantui loves dating with girls at Shanghai .')
+    doc = build_document('Spanish is one of the six official languages of the United Nations ,  and it is used as an official language by the European Union ,  the Organization of American States ,  and the Union of South American Nations ,  among many other international organizations ?')
     print 'Doc:', doc
     print
 
     sent = doc_get_all_sents(doc)[0]
-    print 'Tokens:'
-    for token in sent:
-        print token, token_get_tag(token), token_get_pos(token), token.ent_type, token.ent_iob
-    print
 
-    print 'Noun Chunks'
-    for chunk in doc.noun_chunks:
-        print(chunk.label, chunk.orth_, '<--', chunk.root.head.orth_)
+    for token in doc:
+        print token, token_get_tag(token), token_get_pos(token), token.ent_type, token.ent_iob
     print
 
     print 'Root of sent:', sent_get_root(sent)
@@ -55,6 +50,11 @@ if __name__ == '__main__':
     print 'parse token to its base'
     for token in doc:
         print token, '->', token_get_base(token)
+    print
+
+    print 'Noun Chunks'
+    for chunk in doc.noun_chunks:
+        print(chunk.label, chunk.orth_, '<--', chunk.root.head.orth_)
     print
 
     print 'Super sentens'

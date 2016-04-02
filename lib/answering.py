@@ -5,9 +5,10 @@ from match_sentence import match_sentence
 def answer_what(question, sentence_list):
 	best_answer = None
 	best_answer_prob = 0.0
-	for sent in sentence_list:
+	prob = [1.0, 0.5, 0.3]
+	for index, sent in enumerate(sentence_list):
 		this_answer, this_prob = _answer_what(question, sent)
-		if this_prob > best_answer_prob:
+		if this_prob * prob[index] > best_answer_prob:
 			best_answer = this_answer
 			best_answer_prob = this_prob
 	return best_answer
@@ -19,24 +20,30 @@ def _answer_what(question, sentence):
 	for chunk in sentence.noun_chunks:
 		if chunk.text not in question_string:
 			possible_answer.append(chunk)
+	for chunk in sentence.ents:
+		if chunk.text not in question_string:
+			possible_answer.append(chunk)
 
 	# find head token of each candidates
 	parent_answer_head = {}
 	for chunk in possible_answer:
 		head = chunk.root.head
-		while head in question:
-			parent_answer_head[head] = chunk
+		while head.text not in get_string_of_sent(question):
+			if head.head is head:
+				break
+			head = head.head
+		parent_answer_head[head] = chunk
 
 	# get the most possible candidate
 	result_head = find_shallowest_token(sentence, parent_answer_head.keys())
 	result_chunk = parent_answer_head[result_head]
 
 	# calc the probabilty of this answer
-	num_child_of_head = 0
+	num_child_of_head = 1
 	for node in result_head.children:
-		if node in question:
+		if node.text in get_string_of_sent(question):
 			num_child_of_head += 1
-	prob = float(num_child_of_head) / len(list(result_head.children))
+	prob = float(num_child_of_head) / (len(list(result_head.children)) + 1)
 
 	return result_chunk, prob
 

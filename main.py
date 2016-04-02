@@ -149,7 +149,8 @@ def answering(docs, docs_q):
         # question_answer = answer.answer_yesno(question_doc, possible_sentences)
         # print question_answer
         # break
+        print 'Answer:'
         question_answer = answer.answer_what(question_doc, possible_sentences)
-        print question_answer
+        print question_answer, '\n'
 
 main()
