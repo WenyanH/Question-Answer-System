@@ -1,4 +1,3 @@
-import nltk
 
 def main():
     test = [
@@ -9,25 +8,6 @@ def main():
     ]
     for t in test:
         print t, '->', convert_declarative_to_question(t)
-
-def is_sentence_perfect(sentence):
-    tokens = nltk.word_tokenize(sentence)
-    tagged = nltk.pos_tag(tokens)
-    tagged = [x[1] for x in tagged]
-    # print tagged, sentence
-
-    # # the first tag should be NN*
-    # if tagged[0][:2] != 'NN':
-    #     return False
-
-    # VB* should exist in tags
-    for tag in tagged:
-        if tag[:2] == 'VB':
-            break
-    else:
-        return False
-
-    return True
 
 def convert_declarative_to_question(sentence):
     if sentence is None:
