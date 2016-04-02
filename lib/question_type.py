@@ -7,25 +7,25 @@ def question_type(line, position):
 	col_up = ["Is", "Are", "Am", "Was", "Were"]
 	#question words
 	question_word = ["what", "What", "How", "how", "when", "When", "Where", "where", "who", "Who", "Why", "why"]
-	
+
 	#if position == 0, root can not be question words.
 	if position == 0:
 		return "YES/NO"
 
-	line = line.strip()	
-	#strategy 1: find question words. 
+	line = line.strip()
+	#strategy 1: find question words.
 	#if question words are not in the sentence, return "YES/NO"
 	arr = line.split(" ")
 	index = 0
 	for i in range(len(question_word)):
 		if question_word[i] in arr:
-			break; 		
+			break;
 		else:
-			index = index + 1;	
+			index = index + 1;
 	if index == len(question_word):
 		return "YES/NO"
-	
-	#strategy 2: Use dependency tree to find the root in the sentence. 
+
+	#strategy 2: Use dependency tree to find the root in the sentence.
 	#if the root is "BE", find question words; if the root is verb, find "BE";
 	mark = -1
 	#iterate each word to find the boundary
@@ -34,7 +34,7 @@ def question_type(line, position):
 		if not arr[j].isalnum():
 			#record the location of none-alnum
 			mark = j
-			print "mark       " + str(mark)		
+			# print "mark       " + str(mark)		
 
 	if arr[position] in col or arr[position] in col_up:
 		#find question words
@@ -48,7 +48,7 @@ def question_type(line, position):
 			if arr[k] in col or arr[k] in col_up:
 				return "YES/NO"
 		return "WH"
-	
+
 if __name__ == "__main__":
 	'''
 	print question_type("nning in the early 16th century ,  was Spanish taken to the colonies of the Spanish Empire ,  most notably to the Americas ,  as well as territories in Africa ,  Oceania and the Philippines ?", 10)
