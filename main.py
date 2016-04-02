@@ -132,6 +132,8 @@ def answering(docs, docs_q):
         type_of_question = question_type(get_string_of_sent(question_doc), get_root_of_doc(question_doc))
         print type_of_question
         possible_sentences_index = answer.find_possible_sentences(docs, question_doc)
+        for index in possible_sentences_index:
+            print docs[index]
         print possible_sentences_index
         continue
         # print 'Question:', sent

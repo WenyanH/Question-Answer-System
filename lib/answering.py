@@ -112,9 +112,11 @@ def find_possible_sentences(docs, question):
 	potential_sentences_index = []
 	heap = []
 	total_number_sentence = len(docs)
+	#print total_number_sentence
 	for sent in docs:
 		weight = 0
 		frequency_in_sentence = {}
+		exist_token = {}
 		for token in sent:
 			if token.lemma_ in frequency_in_sentence:
 				frequency_in_sentence[token.lemma_] += 1
@@ -130,8 +132,12 @@ def find_possible_sentences(docs, question):
 			weight_temp = frequency_in_sentence[token.lemma_] * math.log(total_number_sentence / count)
 			for token_question in question:
 				if token_question.lemma_ == token.lemma_:
-					weight += weight_temp
-				break
+					if token.lemma_ in exist_token:
+						continue
+					else:
+						weight += weight_temp
+						exist_token[token.lemma_] = 1
+		#print weight
 		heapq.heappush(heap, (weight * -1, docs.index(sent)))
 
 	for i in range(3):
