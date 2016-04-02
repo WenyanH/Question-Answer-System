@@ -2,10 +2,10 @@ from recursion import recursion
 
 def match_sentence(sentence1, sentence2):
 	#sentence1, sentence1_tag, sentence2_tag and sentence2 are arrays
-	print "sentence1:"
-	print sentence1
-	print "sentence2:"
-	print sentence2
+	#print "sentence1:"
+	#print sentence1
+	#print "sentence2:"
+	#print sentence2
 	
 	max_row = len(sentence1)
 	max_col = len(sentence2) 
@@ -66,7 +66,7 @@ def match_sentence(sentence1, sentence2):
 			align.append(str(row_coll[i] - 1) + "," + str(-1))
 		else:
 			align.append(str(-1) + "," + str(col_coll[i] - 1))
-	print align
+	#print align
 	'''
 	print "row_coll"
 	print row_coll
@@ -109,7 +109,7 @@ def match_sentence(sentence1, sentence2):
 	
 
 
-	print "finish-------------"
+	#print "finish-------------"
 
 	#analyze conditions of transposition
 	return count, align
