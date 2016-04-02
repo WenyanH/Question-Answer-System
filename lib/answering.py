@@ -19,18 +19,6 @@ def answer_what(question, sentence_list, noun_chunks_list):
 
 
 def answer_yesno(question, sentence_list):
-	'''
-	print 'Q:'
-	for word in question:
-		print word.orth_, '(' + word.pos_ + ')',
-	print
-
-	for sen in sentence_list:
-		print 'S:'
-		for word in sen:
-			print word.orth_, '(' + word.pos_ + ')',
-		print
-	'''
 	negative_words= []
 	dic_antonyms = {}
 	dic_synonyms = {}
@@ -48,18 +36,6 @@ def answer_yesno(question, sentence_list):
 		dic_synonyms[arr[0]] = arr[1]
 		dic_synonyms[arr[1]] = arr[0]
 
-	'''
-	question_pos = [word.pos_ for word in question]
-	question_orth = [word.orth_ for word in question]
-	sentence0_pos = [word.pos_ for word in sentence_list[0]]
-	sentence0_orth = [word.orth_ for word in sentence_list[0]]
-	sentence1_pos = [word.pos_ for word in sentence_list[1]]
-	sentence1_orth = [word.orth_ for word in sentence_list[1]]
-	sentence2_pos = [word.pos_ for word in sentence_list[2]]
-	sentence2_orth = [word.orth_ for word in sentence_list[2]]
-	'''
-
-
 	index = 0
 	min_dis, min_align = match_sentence([word.orth_ for word in question], [word.orth_ for word in sentence_list[0]])
 
@@ -69,7 +45,6 @@ def answer_yesno(question, sentence_list):
 			min_dis = dis
 			index = i
 			min_align = align
-
 
 	question_sign = 0
 	sentence_sign = 0
