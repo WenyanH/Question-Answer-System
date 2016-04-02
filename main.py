@@ -138,8 +138,8 @@ def answering(doc, sentences, doc_q, questions):
             poss_sentence_token = ' '.join(text_2d_array[index])
             noun_chunks_list.append(spacy_helper.doc_get_noun_chunks_in_sent(doc, poss_sentence_token))
 
-        # answer.answer_yesno(sent, possible_sentences)
-        answer.answer_what(sent, possible_sentences, noun_chunks_list)
+        answer.answer_yesno(sent, possible_sentences)
+        #answer.answer_what(sent, possible_sentences, noun_chunks_list)
         break
 
         # print ' '.join(text_2d_array[possible_sentences_index[0]])

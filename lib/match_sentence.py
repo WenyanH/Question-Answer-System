@@ -134,10 +134,16 @@ def match_sentence(sentence1, sentence2):
 
 
 if __name__ == "__main__":
-	match_sentence(["when", "I", "go", "to", "school", "you", "are", "so", "beautiful"], ["you", "are", "so", "beautiful", "time"], ["you", "are", "so", "beautiful"], ["pron", "deter", "noun", "time"])
-	match_sentence(["you", "are", "so", "beautiful", "when", "I", "go", "to", "school"], ["you", "are", "so", "beautiful", "time"], ["you", "are", "so", "beautiful"], ["pron", "deter", "noun", "time"])
-	match_sentence(["in", "fact", ",", "you", "are", "so", "beautiful", "when", "I", "go", "to", "school"], ["you", "are", "so", "beautiful", "time"], ["in", "fact", ",", "I", "am", "a", "good", "student", "and", "a", "good", "man"], ["pron", "deter", "noun", "time"])
-	match_sentence(["in", "fact", ",", "you", "are", "so", "beautiful", "when", "I", "go", "to", "school"], ["you", "are", "so", "beautiful", "time"], ["in", "fact", ",", "I", "am", "a", "good", "student"], ["pron", "deter", "noun", "time"])
-	match_sentence(["a", "b", ",", "you", "are", "so", "beautiful", "when", "I", "go", "to", "school"], ["you", "are", "so", "beautiful", "time"], ["in", "fact", ",", "I", "am"], ["pron", "deter", "noun", "time"])
+	#match_sentence(["when", "I", "go", "to", "school", "you", "are", "so", "beautiful"], ["you", "are", "so", "beautiful", "time"], ["you", "are", "so", "beautiful"], ["pron", "deter", "noun", "time"])
+	match_sentence(["when", "I", "go", "to", "school", "you", "are", "so", "beautiful"], ["you", "are", "so", "beautiful"])
+	#match_sentence(["you", "are", "so", "beautiful", "when", "I", "go", "to", "school"], ["you", "are", "so", "beautiful", "time"], ["you", "are", "so", "beautiful"], ["pron", "deter", "noun", "time"])
+	match_sentence(["you", "are", "so", "beautiful", "when", "I", "go", "to", "school"], ["you", "are", "so", "beautiful"])
+	#match_sentence(["in", "fact", ",", "you", "are", "so", "beautiful", "when", "I", "go", "to", "school"], ["you", "are", "so", "beautiful", "time"], ["in", "fact", ",", "I", "am", "a", "good", "student", "and", "a", "good", "man"], ["pron", "deter", "noun", "time"])
+	match_sentence(["in", "fact", ",", "you", "are", "so", "beautiful", "when", "I", "go", "to", "school"], ["in", "fact", ",", "I", "am", "a", "good", "student", "and", "a", "good", "man"])
+	#match_sentence(["in", "fact", ",", "you", "are", "so", "beautiful", "when", "I", "go", "to", "school"], ["you", "are", "so", "beautiful", "time"], ["in", "fact", ",", "I", "am", "a", "good", "student"], ["pron", "deter", "noun", "time"])
+	#match_sentence(["a", "b", ",", "you", "are", "so", "beautiful", "when", "I", "go", "to", "school"], ["you", "are", "so", "beautiful", "time"], ["in", "fact", ",", "I", "am"], ["pron", "deter", "noun", "time"])
 	#match_sentence(["But", "spanish", "the", "official", "or", "national", "language", "in", "Spain", ",", "Equatorial", "Guinea", ",", "and", "19", "countries", "in", "the", "Americas"], [], ["spanish", "the", "official", "or", "national", "language", "in", "Spain", ",", "Equatorial", "Guinea", ",", "and", "19", "countries", "in", "the", "Americas"], [])
+	match_sentence(["in", "fact", ",", "you", "are", "so", "beautiful", "when", "I", "go", "to", "school"], ["in", "fact", ",", "I", "am", "a", "good", "student"])
+	match_sentence(["a", "b", ",", "you", "are", "so", "beautiful", "when", "I", "go", "to", "school"], ["in", "fact", ",", "I", "am"])
+	match_sentence(["But", "spanish", "the", "official", "or", "national", "language", "in", "Spain", ",", "Equatorial", "Guinea", ",", "and", "19", "countries", "in", "the", "Americas"], ["spanish", "the", "official", "or", "national", "language", "in", "Spain", ",", "Equatorial", "Guinea", ",", "and", "19", "countries", "in", "the", "Americas"])
 	
