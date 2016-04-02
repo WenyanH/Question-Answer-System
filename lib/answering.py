@@ -60,6 +60,21 @@ def get_string_of_sent(sent):
 
 
 def answer_yesno(question, sentence_list):
+	#preprocess
+	#lowercase, delete "BE"
+	question = []
+	sentence_list = []
+	sentence_one = []
+	for word in question_old:
+		if (not word.lemma_ == "be") and (not word.orth_.ispunct()):
+			question.append(word)
+	for sentence in sentence_list_old:
+		for word in sentence:
+			if not word.lemma_ == "be" and (not word.orth_.ispunct()):
+				sentence.append(word)
+			sentence_list.append(sentence_one)
+		sentence_one = []	
+
 	negative_words= []
 	dic_antonyms = {}
 	dic_synonyms = {}
@@ -78,14 +93,15 @@ def answer_yesno(question, sentence_list):
 		dic_synonyms[arr[1]] = arr[0]
 
 	index = 0
-	min_dis, min_align = match_sentence([word.orth_ for word in question], [word.orth_ for word in sentence_list[0]])
+	min_dis, min_align = match_sentence([word.orth_.lower() for word in question], [word.orth_lower() for word in sentence_list[0]])
 
 	for i in range(1, 3):
-		dis, align = match_sentence([word.orth_ for word in question], [word.orth_ for word in sentence_list[i]])
+		dis, align = match_sentence([word.orth_lower() for word in question], [word.orth_lower() for word in sentence_list[i]])
 		if min_dis > dis:
 			min_dis = dis
 			index = i
 			min_align = align
+
 
 	question_sign = 0
 	sentence_sign = 0
@@ -96,21 +112,23 @@ def answer_yesno(question, sentence_list):
 		if (int(arr[0]) != -1) and (int(arr[1]) != -1):
 			# find antonyms
 			#!!!original form
-			if question[int(arr[0])].lemma_ in dic_synonyms and dic_synonyms.get(question[int(arr[0])].lemma_) == sentence_list[index][int(arr[1])].lemma_:
+			if question[int(arr[0])].lemma_.lower() in dic_synonyms and dic_synonyms.get(question[int(arr[0])].lemma_.lower()) == sentence_list[index][int(arr[1])].lemma_.lower():
 				antonyms = True
 			# find synonyms
-			elif question[int(arr[0])].lemma_ in dic_antonyms and dic_antonyms.get(question[int(arr[0])].lemma_) == sentence_list[index][int(arr[1])].lemma_:
+			elif question[int(arr[0])].lemma_.lower() in dic_antonyms and dic_antonyms.get(question[int(arr[0])].lemma_.lower()) == sentence_list[index][int(arr[1])].lemma_.lower():
 				continue
 			else:
 				print "answer: NO"
 				return "NO"
 		# -1 condition find negative words
 		else:
+			#not check clauses
+
 
 			#orignial form
-			if (int(arr[0]) == -1) and sentence_list[index][int(arr[1])].lemma_ in negative_words:
+			if (int(arr[0]) == -1) and sentence_list[index][int(arr[1])].lemma_.lower() in negative_words:
 				sentence_sign = sentence_sign + 1
-			elif (int(arr[1]) == -1) and question[int(arr[0])].lemma_ in negative_words:
+			elif (int(arr[1]) == -1) and question[int(arr[0])].lemma_.lower() in negative_words:
 				question_sign = question_sign + 1
 
 	if antonyms == True:
