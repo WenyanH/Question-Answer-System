@@ -2,13 +2,12 @@ import heapq, sys
 import math
 from match_sentence import match_sentence
 
-def answer_what(question, sentence_list):
+def answer_what(question, sentence_list, sentence_prob):
 	best_answer = None
 	best_answer_prob = 0.0
-	prob = [1.0, 0.5, 0.3]
 	for index, sent in enumerate(sentence_list):
 		this_answer, this_prob = _answer_what(question, sent)
-		if this_prob * prob[index] > best_answer_prob:
+		if this_prob * sentence_prob[index] > best_answer_prob:
 			best_answer = this_answer
 			best_answer_prob = this_prob
 	return best_answer
@@ -162,10 +161,8 @@ def find_possible_sentences(docs, question):
 	for i in range(3):
 		pairs = heapq.heappop(heap)
 		potential_sentences_index.append(pairs[1])
-		potential_sentences_prob.append(-1 * pairs[0])
+		potential_sentences_prob.append(-1 * pairs[0] / 100.0)
 
-	for i in range(len(potential_sentences_prob)):
-		potential_sentences_prob[i] = (potential_sentences_prob[i] - min(potential_sentences_prob))/(max(potential_sentences_prob) - min(potential_sentences_prob))
 	return potential_sentences_index, potential_sentences_prob
 
 	# @param

@@ -130,7 +130,7 @@ def answering(docs, docs_q):
         print 'Answering:', question_doc
         type_of_question = question_type(get_string_of_sent(question_doc), get_root_of_doc(question_doc))
         # print type_of_question
-        possible_sentences_index = answer.find_possible_sentences(docs, question_doc)
+        possible_sentences_index, possible_sentences_prob = answer.find_possible_sentences(docs, question_doc)
         # print 'Question:', sent
         # for index, token in enumerate(sent):
         #     if token.head is token:
@@ -150,7 +150,7 @@ def answering(docs, docs_q):
         # print question_answer
         # break
         print 'Answer:'
-        question_answer = answer.answer_what(question_doc, possible_sentences)
+        question_answer = answer.answer_what(question_doc, possible_sentences, possible_sentences_prob)
         print question_answer, '\n'
 
 main()
