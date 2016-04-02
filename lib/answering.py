@@ -28,22 +28,22 @@ def answer_yesno(question, sentence_list):
 		print
 	'''
 	negative_words= []
-	dic_antonyms = {}	
-	dic_synonyms = {} 
-    f = open("data/negative_word_library.txt", "r")
-    for item in f.readlines():
-    	negative_words.append(item)
-    f = open("data/antonyms.txt", "r")
-    for item in f.readlines():
-    	arr = item.split(" ")
-    	dic_antonyms[arr[0]] = arr[1]
-    	dic_antonyms[arr[1]] = arr[0]
-    f = open("data/synonyms.txt", "r")
-    for item in f.readlines():
-    	arr = item.split(" ")
-    	dic_synonyms[arr[0]] = arr[1]
-    	dic_synonyms[arr[1]] = arr[0]
-    	
+	dic_antonyms = {}
+	dic_synonyms = {}
+	f = open("data/negative_word_library.txt", "r")
+	for item in f.readlines():
+		negative_words.append(item)
+	f = open("data/antonyms.txt", "r")
+	for item in f.readlines():
+		arr = item.split(" ")
+		dic_antonyms[arr[0]] = arr[1]
+		dic_antonyms[arr[1]] = arr[0]
+	f = open("data/synonyms.txt", "r")
+	for item in f.readlines():
+		arr = item.split(" ")
+		dic_synonyms[arr[0]] = arr[1]
+		dic_synonyms[arr[1]] = arr[0]
+
 	'''
 	question_pos = [word.pos_ for word in question]
 	question_orth = [word.orth_ for word in question]
@@ -58,7 +58,7 @@ def answer_yesno(question, sentence_list):
 
 	index = 0
 	min_dis, min_align = match_sentence([word.orth_ for word in question], [word.orth_ for word in sentence_list[0]])
-	
+
 	for i in range(1, 3):
 		dis, align = match_sentence([word.orth_ for word in question], [word.orth_ for word in "sentence_list[" + str(i) + "]"])
 		if min_dis > dis:
@@ -74,14 +74,14 @@ def answer_yesno(question, sentence_list):
 	for item in align:
 		arr = item.split(',')
 		if (int(arr[0]) != -1) and (int(arr[1]) != -1):
-			# find antonyms 
+			# find antonyms
 			#!!!original form
-			if question[int(arr[0])].lemma_ in dic_synonyms and dic_synonyms.get(question[int(arr[0])].lemma_) == sentence_list[index][int(arr[1])].lemma_:	
+			if question[int(arr[0])].lemma_ in dic_synonyms and dic_synonyms.get(question[int(arr[0])].lemma_) == sentence_list[index][int(arr[1])].lemma_:
 				antonyms = True
 			# find synonyms
-			elif question[int(arr[0])].lemma_ in dic_antonyms and dic_antonyms.get(question[int(arr[0])].lemma_) == sentence_list[index][int(arr[1])].lemma_:	
+			elif question[int(arr[0])].lemma_ in dic_antonyms and dic_antonyms.get(question[int(arr[0])].lemma_) == sentence_list[index][int(arr[1])].lemma_:
 				continue
-			else
+			else:
 				print "answer: NO"
 				return "NO"
 		# -1 condition find negative words
@@ -94,27 +94,25 @@ def answer_yesno(question, sentence_list):
 				question_sign = question_sign + 1
 
 	if antonyms == True:
-		question_sign = question_sign + 1 			
+		question_sign = question_sign + 1
 	if (question_sign % 2) == (sentence_sign % 2):
-		print "answer: YES"	
+		print "answer: YES"
 		return "YES"
 	else:
 		print "answer: NO"
-		return "NO"			
-	  			
-	
+		return "NO"
+
+
 	f.close()
-	
-def find_possible_sentences(doc, question):
-	for sent in doc.sents:
-		for token in sent:
+
+def find_possible_sentences(docs, question):
+	for sentence_document in docs:
+		for token in sentence_document:
 			print token.orth_, token.pos_, token.lemma_
 		print
 
 	for token in question:
 		print token.orth_, token.pos_, token.lemma_
-
-
 	sys.exit(0)
 	# @param
 	# 	texts: 2-d array of all sentences (after tokened)
