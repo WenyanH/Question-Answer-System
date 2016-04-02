@@ -128,29 +128,18 @@ def answering(docs, docs_q):
     # text_2d_array = get_string_of_text(sentences)
 
     for question_doc in docs_q:
-
+        print 'Answering:', question_doc
         type_of_question = question_type(get_string_of_sent(question_doc), get_root_of_doc(question_doc))
-        print type_of_question
+        # print type_of_question
         possible_sentences_index = answer.find_possible_sentences(docs, question_doc)
-        print possible_sentences_index
-        continue
-        # print 'Question:', sent
-        # for index, token in enumerate(sent):
-        #     if token.head is token:
-        #         print 'Root:', index, token
-        #         print 'Type:', question_type(get_string_of_sent(sent), index)
-        # print sent
-        # print spacy_helper.doc_get_all_sents(doc)[possible_sentences_index[0]]
-
         possible_sentences = []
-        noun_chunks_list = []
-
+        print 'Possible sentences:'
         for index in possible_sentences_index:
-            possible_sentences.append(spacy_helper.doc_get_all_sents(doc)[index])
-            poss_sentence_token = ' '.join(text_2d_array[index])
-            noun_chunks_list.append(spacy_helper.doc_get_noun_chunks_in_sent(doc, poss_sentence_token))
+            print docs[index]
+            possible_sentences.append(docs[index])
+        print
 
-        answer.answer_yesno(sent, possible_sentences)
+        answer.answer_yesno(question_doc, possible_sentences)
         # answer.answer_what(sent, possible_sentences, noun_chunks_list)
         break
 
