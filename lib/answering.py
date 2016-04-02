@@ -109,19 +109,10 @@ def answer_yesno(question, sentence_list):
 	f.close()
 
 def find_possible_sentences(docs, question):
-	for sentence_document in docs:
-		for token in sentence_document:
-			print token.orth_, token.pos_, token.lemma_
-		print
-
-	for token in question:
-		print token.orth_, token.pos_, token.lemma_
-
-
 	potential_sentences_index = []
 	heap = []
-	total_number_sentence = len(doc.sents)
-	for sent in doc.sents:
+	total_number_sentence = len(docs)
+	for sent in docs:
 		weight = 0
 		frequency_in_sentence = {}
 		for token in sent:
@@ -131,26 +122,21 @@ def find_possible_sentences(docs, question):
 				frequency_in_sentence[token.lemma_] = 1
 		for token in sent:
 			count = 0
-			for sent2 in doc.sents:
+			for sent2 in docs:
 				for token2 in sent2:
 					if token2.lemma_ == token.lemma_:
 						count = count + 1
 						break
-			weight_temp = frequency_in_sentence[token.lemma_]*math.log(total_number_sentence/count)
+			weight_temp = frequency_in_sentence[token.lemma_] * math.log(total_number_sentence / count)
 			for token_question in question:
-				if question_token.lemma_ == token.lemma_:
+				if token_question.lemma_ == token.lemma_:
 					weight += weight_temp
 				break
-		heapq.heappush(heap, (weight*-1, doc.sents.index(sent)))
+		heapq.heappush(heap, (weight * -1, docs.index(sent)))
 
 	for i in range(3):
 		potential_sentences_index.append(heapq.heappop(heap)[1])
-	print potential_sentences_index
 	return potential_sentences_index
-
-
-
-	# sys.exit(0)
 
 	# @param
 	# 	texts: 2-d array of all sentences (after tokened)
