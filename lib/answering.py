@@ -135,7 +135,7 @@ def find_possible_sentences(docs, question):
 				for token2 in sent2:
 					if token2.lemma_ == token.lemma_:
 						count = count + 1
-						break
+					break
 			weight_temp = frequency_in_sentence[token.lemma_]*math.log(total_number_sentence/count)
 			for token_question in question:
 				if question_token.lemma_ == token.lemma_:
