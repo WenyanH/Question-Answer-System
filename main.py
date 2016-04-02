@@ -126,16 +126,11 @@ def get_root_of_doc(doc):
 
 def answering(docs, docs_q):
     # text_2d_array = get_string_of_text(sentences)
-
     for question_doc in docs_q:
         print 'Answering:', question_doc
         type_of_question = question_type(get_string_of_sent(question_doc), get_root_of_doc(question_doc))
         # print type_of_question
         possible_sentences_index = answer.find_possible_sentences(docs, question_doc)
-        for index in possible_sentences_index:
-            print docs[index]
-        print possible_sentences_index
-        continue
         # print 'Question:', sent
         # for index, token in enumerate(sent):
         #     if token.head is token:
@@ -147,14 +142,14 @@ def answering(docs, docs_q):
         possible_sentences = []
         print 'Possible sentences:'
         for index in possible_sentences_index:
-            print docs[index]
+            print get_string_of_sent(docs[index])
             possible_sentences.append(docs[index])
         print
 
-        answer.answer_yesno(question_doc, possible_sentences)
-        # answer.answer_what(sent, possible_sentences, noun_chunks_list)
-        break
-
-        # print ' '.join(text_2d_array[possible_sentences_index[0]])
+        # question_answer = answer.answer_yesno(question_doc, possible_sentences)
+        # print question_answer
+        # break
+        question_answer = answer.answer_what(question_doc, possible_sentences)
+        print question_answer
 
 main()

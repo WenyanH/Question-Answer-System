@@ -2,20 +2,55 @@ import heapq, sys
 import math
 from match_sentence import match_sentence
 
-def answer_what(question, sentence_list, noun_chunks_list):
-	print 'Q:'
-	for word in question:
-		print word.orth_, '(' + word.pos_ + ')',
-	print
+def answer_what(question, sentence_list):
+	best_answer = None
+	best_answer_prob = 0.0
+	for sent in sentence_list:
+		this_answer, this_prob = _answer_what(question, sent)
+		if this_prob > best_answer_prob:
+			best_answer = this_answer
+			best_answer_prob = this_prob
+	return best_answer
 
-	for sen, chunks in zip(sentence_list, noun_chunks_list):
-		print 'S:'
-		for word in sen:
-			print word.orth_, '(' + word.pos_ + ')',
-		print
-		print 'Chunks:', chunks
+def _answer_what(question, sentence):
+	# find chunks that is not in question
+	possible_answer = []
+	question_string = get_string_of_sent(question)
+	for chunk in sentence.noun_chunks:
+		if chunk.text not in question_string:
+			possible_answer.append(chunk)
 
-	#for i in range(len(sentence_list))
+	# find head token of each candidates
+	parent_answer_head = {}
+	for chunk in possible_answer:
+		head = chunk.root.head
+		while head in question:
+			parent_answer_head[head] = chunk
+
+	# get the most possible candidate
+	result_head = find_shallowest_token(sentence, parent_answer_head.keys())
+	result_chunk = parent_answer_head[result_head]
+
+	# calc the probabilty of this answer
+	num_child_of_head = 0
+	for node in result_head.children:
+		if node in question:
+			num_child_of_head += 1
+	prob = float(num_child_of_head) / len(list(result_head.children))
+
+	return result_chunk, prob
+
+def find_shallowest_token(doc, token_list):
+	nodes = [doc.sents.next().root]
+	while len(nodes) != 0:
+		temp = nodes.pop(0)
+		if temp in token_list:
+			return temp
+		for child in temp.children:
+			nodes.append(child)
+
+def get_string_of_sent(sent):
+    return ' '.join([token.orth_ for token in sent])
 
 
 def answer_yesno(question, sentence_list):
