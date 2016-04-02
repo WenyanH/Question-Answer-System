@@ -150,7 +150,12 @@ def answering(docs, docs_q):
         # print question_answer
         # break
         print 'Answer:'
-        question_answer = answer.answer_what(question_doc, possible_sentences, possible_sentences_prob)
+        question_answer = None
+        if type_of_question == 'WH':
+            question_answer = answer.answer_what(question_doc, possible_sentences, possible_sentences_prob)
+        elif type_of_question == 'YES/NO':
+            question_answer = answer.answer_yesno(question_doc, possible_sentences)
+            
         print question_answer, '\n'
 
 main()

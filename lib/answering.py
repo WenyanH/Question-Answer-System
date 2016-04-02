@@ -59,21 +59,21 @@ def get_string_of_sent(sent):
     return ' '.join([token.orth_ for token in sent])
 
 
-def answer_yesno(question, sentence_list):
+def answer_yesno(question_old, sentence_list_old):
 	#preprocess
 	#lowercase, delete "BE"
 	question = []
 	sentence_list = []
 	sentence_one = []
 	for word in question_old:
-		if (not word.lemma_ == "be") and (not word.orth_.ispunct()):
+		if (not word.lemma_ == "be") and (not word.is_punct):
 			question.append(word)
 	for sentence in sentence_list_old:
 		for word in sentence:
-			if not word.lemma_ == "be" and (not word.orth_.ispunct()):
-				sentence.append(word)
+			if not word.lemma_ == "be" and (not word.is_punct):
+				sentence_one.append(word)
 			sentence_list.append(sentence_one)
-		sentence_one = []	
+		sentence_one = []
 
 	negative_words= []
 	dic_antonyms = {}
@@ -93,10 +93,10 @@ def answer_yesno(question, sentence_list):
 		dic_synonyms[arr[1]] = arr[0]
 
 	index = 0
-	min_dis, min_align = match_sentence([word.orth_.lower() for word in question], [word.orth_lower() for word in sentence_list[0]])
+	min_dis, min_align = match_sentence([word.orth_.lower() for word in question], [word.orth_.lower() for word in sentence_list[0]])
 
 	for i in range(1, 3):
-		dis, align = match_sentence([word.orth_lower() for word in question], [word.orth_lower() for word in sentence_list[i]])
+		dis, align = match_sentence([word.orth_.lower() for word in question], [word.orth_.lower() for word in sentence_list[i]])
 		if min_dis > dis:
 			min_dis = dis
 			index = i
@@ -118,7 +118,6 @@ def answer_yesno(question, sentence_list):
 			elif question[int(arr[0])].lemma_.lower() in dic_antonyms and dic_antonyms.get(question[int(arr[0])].lemma_.lower()) == sentence_list[index][int(arr[1])].lemma_.lower():
 				continue
 			else:
-				print "answer: NO"
 				return "NO"
 		# -1 condition find negative words
 		else:
@@ -134,10 +133,8 @@ def answer_yesno(question, sentence_list):
 	if antonyms == True:
 		question_sign = question_sign + 1
 	if (question_sign % 2) == (sentence_sign % 2):
-		print "answer: YES"
 		return "YES"
 	else:
-		print "answer: NO"
 		return "NO"
 
 
