@@ -1,6 +1,7 @@
 import heapq, sys
 import math
 from match_sentence import match_sentence
+from abbre_align import abbre_align
 
 def answer_what(question, sentence_list, sentence_prob):
 	best_answer = None
@@ -62,6 +63,7 @@ def get_string_of_sent(sent):
 def answer_yesno(question_old, sentence_list_old):
 	#preprocess
 	#lowercase, delete "BE"
+	#print sentence_list_old
 	question = []
 	sentence_list = []
 	sentence_one = []
@@ -69,12 +71,15 @@ def answer_yesno(question_old, sentence_list_old):
 		if (not word.lemma_ == "be") and (not word.is_punct):
 			question.append(word)
 	for sentence in sentence_list_old:
+		#print "sentence"
+		#print sentence
+		#print 
 		for word in sentence:
 			if not word.lemma_ == "be" and (not word.is_punct):
 				sentence_one.append(word)
-			sentence_list.append(sentence_one)
+		sentence_list.append(sentence_one)
 		sentence_one = []
-	
+	#print sentence_list
 	
 
 	negative_words= []
@@ -99,14 +104,20 @@ def answer_yesno(question_old, sentence_list_old):
 
 	index = 0
 	min_dis, min_align = match_sentence([word.orth_.lower() for word in question], [word.orth_.lower() for word in sentence_list[0]])
+	#print "index" + str(index)
 
 	for i in range(1, 3):
 		dis, align = match_sentence([word.orth_.lower() for word in question], [word.orth_.lower() for word in sentence_list[i]])
+		#print "dis:" + str(dis)
 		if min_dis > dis:
 			min_dis = dis
 			index = i
 			min_align = align
-
+	#print "index" + str(index)				
+	#print "before"
+	#print min_align
+	#print "index" + str(index)
+	min_align = abbre_align(min_align)
 	#print "align"
 	#print min_align
 
@@ -114,9 +125,10 @@ def answer_yesno(question_old, sentence_list_old):
 	sentence_sign = 0
 	antonyms = False
 
-	for item in align:
+	for item in min_align:
 		arr = item.split(',')
 		if (int(arr[0]) != -1) and (int(arr[1]) != -1):
+			#print "1"
 			# find antonyms
 			#!!!original form
 			if question[int(arr[0])].lemma_.lower() in dic_antonyms and dic_antonyms.get(question[int(arr[0])].lemma_.lower()) == sentence_list[index][int(arr[1])].lemma_.lower():
