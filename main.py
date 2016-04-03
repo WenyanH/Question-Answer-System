@@ -1,4 +1,4 @@
-import sys
+import sys, codecs
 from random import shuffle
 from lib import asking_easy, asking_medium, asking_hard
 from lib import answering as answer
@@ -26,7 +26,7 @@ def main():
 def wiki_article_format(text):
     # TODO:
     # remove some unrelated sentences like external links
-    lines = text.split('\n')
+    lines = [line.orth_ for line in nlp(text).sents]
     result = []
     for line in lines:
         line = line.strip()
@@ -54,7 +54,7 @@ def question_format(text):
 def read_sentences_from_file(file_name, wiki=True, question=False):
     text = []
     print 'Reading file...'
-    with open(file_name) as f:
+    with codecs.open(file_name, encoding='utf-8') as f:
         text = f.read()
     if wiki:
         text = wiki_article_format(text)
@@ -155,7 +155,7 @@ def answering(docs, docs_q):
             question_answer = answer.answer_what(question_doc, possible_sentences, possible_sentences_prob)
         elif type_of_question == 'YES/NO':
             question_answer = answer.answer_yesno(question_doc, possible_sentences)
-            
+
         print question_answer, '\n'
 
 main()
