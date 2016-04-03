@@ -19,8 +19,8 @@ def recursion(memo, row_coll, col_coll, row_index, col_index, direc):
 	if col_index - 1 >= 0:
 		distance.append(str(memo[row_index][col_index - 1]) + "+" + "3")
 	
-	for i in range(3):
-		for j in range(i + 1, 3):
+	for i in range(len(distance)):
+		for j in range(i + 1, len(distance)):
 			if int(distance[i].split("+")[0]) > int(distance[j].split("+")[0]):
 				temp = distance[i]
 				distance[i] = distance[j]
