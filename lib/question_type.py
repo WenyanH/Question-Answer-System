@@ -1,7 +1,9 @@
+import string
 def question_type(line, position):
 	#can not judge negation sentences
-
-
+	#line unicode
+	#print type(line)
+	#print "position:" + str(position)
 	#collection
 	col = ["is", "are", "am", "was", "were"]
 	col_up = ["Is", "Are", "Am", "Was", "Were"]
@@ -16,6 +18,7 @@ def question_type(line, position):
 	#strategy 1: find question words.
 	#if question words are not in the sentence, return "YES/NO"
 	arr = line.split(" ")
+	#type(arr[0])
 	index = 0
 	for i in range(len(question_word)):
 		if question_word[i] in arr:
@@ -31,24 +34,30 @@ def question_type(line, position):
 	#iterate each word to find the boundary
 	for j in range(position):
 		#determine whether number or alphabet
-		if not arr[j].isalnum():
+		sign = False
+		for i in range(len(arr[j])):
+			if arr[j].strip()[i] in string.ascii_letters or arr[j].strip()[i] in string.digits:
+				sign = True
+				break
 			#record the location of none-alnum
+		if sign == False:
 			mark = j
 			# print "mark       " + str(mark)		
-
-	if arr[position] in col or arr[position] in col_up:
+	#print "mark" + str(mark)
+	#if arr[position] in col or arr[position] in col_up:
 		#find question words
-		for k in range(mark + 1, position):
-			if arr[k] in question_word:
-				return "WH"
-		return "YES/NO"
+	for k in range(mark + 1, position):
+		if arr[k] in question_word:
+			return "WH"
+	return "YES/NO"
+	'''
 	else:
 		#find "BE"
 		for k in range(mark + 1, position):
 			if arr[k] in col or arr[k] in col_up:
 				return "YES/NO"
 		return "WH"
-
+	'''	
 if __name__ == "__main__":
 	'''
 	print question_type("nning in the early 16th century ,  was Spanish taken to the colonies of the Spanish Empire ,  most notably to the Americas ,  as well as territories in Africa ,  Oceania and the Philippines ?", 10)
