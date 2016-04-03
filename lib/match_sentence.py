@@ -105,7 +105,7 @@ def match_sentence(sentence1, sentence2):
 		else:
 			#print "transpose && i + count: " + str(i) + str(count)
 			count = count + 1
-	# print count 
+	#print "count:" + str(count) 
 
 
 
