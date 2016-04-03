@@ -75,6 +75,7 @@ def answer_yesno(question_old, sentence_list_old):
 			sentence_list.append(sentence_one)
 		sentence_one = []
 	
+	
 
 	negative_words= []
 	dic_antonyms = {}
