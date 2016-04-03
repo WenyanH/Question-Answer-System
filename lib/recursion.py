@@ -18,7 +18,14 @@ def recursion(memo, row_coll, col_coll, row_index, col_index, direc):
 		distance.append(str(memo[row_index - 1][col_index]) + "+" + "2")
 	if col_index - 1 >= 0:
 		distance.append(str(memo[row_index][col_index - 1]) + "+" + "3")
-	distance.sort()
+	
+	for i in range(3):
+		for j in range(i + 1, 3):
+			if int(distance[i].split("+")[0]) > int(distance[j].split("+")[0]):
+				temp = distance[i]
+				distance[i] = distance[j]
+				distance[j] = temp	
+	#distance.sort()
 	#mini = distance[0].split(",")[1]
 	#medi = distance[1].split(",")[1]
 	#maxi = distance[2].split(",")[1]
