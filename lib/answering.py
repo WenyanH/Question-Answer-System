@@ -64,6 +64,9 @@ def answer_yesno(question_old, sentence_list_old):
 	#preprocess
 	#lowercase, delete "BE"
 	#print sentence_list_old
+
+
+	#not should can do did does!!!
 	question = []
 	sentence_list = []
 	sentence_one = []
