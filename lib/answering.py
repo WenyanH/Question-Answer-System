@@ -65,14 +65,14 @@ def answer_yesno(question_old, sentence_list_old):
 	#lowercase, delete "BE"
 	#print sentence_list_old
 
-	delete_word = ["it", "be", "do", "can"]
+	delete_word = ["it", "be", "do", "can", "could", "will", "would", "need","should", "must", "shall", "may", "might", "the", "of", "a", "an", "anyone", "anything", "to"]
 	#not should can do did does!!!
 	question = []
 	sentence_list = []
 	sentence_one = []
 	for word in question_old:
 		#if (not word.lemma_ == "it") and (not word.lemma_ == "be") and (not word.lemma_ == "do") and (not word.lemma_ == "can") and (not word.is_punct):
-		if (not word.lemma_ in delete_word) and (not word.is_punct):
+		if (not word.lemma_.lower() in delete_word) and (not word.is_punct):
 			question.append(word)
 	print "question"
 	print question
@@ -82,7 +82,7 @@ def answer_yesno(question_old, sentence_list_old):
 		#print 
 		for word in sentence:
 			#if (not word.lemma_ == "it") and (not word.lemma_ == "be") and (not word.lemma_ == "do") and (not word.lemma_ == "can") and (not word.is_punct):
-			if (not word.lemma_ in delete_word) and (not word.is_punct):
+			if (not word.lemma_.lower() in delete_word) and (not word.is_punct):
 				sentence_one.append(word)
 		print "sentence"
 		print sentence_one
@@ -112,11 +112,11 @@ def answer_yesno(question_old, sentence_list_old):
 		#dic_synonyms[arr[1]] = arr[0]
 
 	index = 0
-	min_dis, min_align = match_sentence([word.orth_.lower() for word in question], [word.orth_.lower() for word in sentence_list[0]])
+	min_dis, min_align = match_sentence([word.lemma_.lower() for word in question], [word.lemma_.lower() for word in sentence_list[0]])
 	#print "index" + str(index)
 
 	for i in range(1, 3):
-		dis, align = match_sentence([word.orth_.lower() for word in question], [word.orth_.lower() for word in sentence_list[i]])
+		dis, align = match_sentence([word.lemma_.lower() for word in question], [word.lemma_.lower() for word in sentence_list[i]])
 		#print "dis:" + str(dis)
 		if min_dis > dis:
 			min_dis = dis
