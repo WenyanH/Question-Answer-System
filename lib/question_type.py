@@ -10,14 +10,19 @@ def question_type(line, position):
 	#question words
 	question_word = ["what", "What", "How", "how", "when", "When", "Where", "where", "who", "Who", "Why", "why"]
 
-	#if position == 0, root can not be question words.
-	if position == 0:
-		return "YES/NO"
+	
 
 	line = line.strip()
 	#strategy 1: find question words.
 	#if question words are not in the sentence, return "YES/NO"
 	arr = line.split(" ")
+	
+	#if position == 0, root can not be question words.
+	if position == 0:
+		if arr[0] in question_word: 
+			return "YES/NO"
+		return "WH"
+	
 	#type(arr[0])
 	index = 0
 	for i in range(len(question_word)):
