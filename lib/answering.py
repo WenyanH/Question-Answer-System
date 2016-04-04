@@ -97,12 +97,12 @@ def answer_yesno(question_old, sentence_list_old):
 	f = open("data/antonyms.txt", "r")
 	for item in f.readlines():
 		arr = item.split(" ")
-		dic_antonyms[unicode(arr[0])] = unicode(arr[1].strip())
+		dic_antonyms[unicode(arr[0].strip().lower())] = unicode(arr[1].strip().lower())
 		#dic_antonyms[arr[1]] = arr[0]
 	f = open("data/synonyms.txt", "r")
 	for item in f.readlines():
 		arr = item.split(" ")
-		dic_synonyms[unicode(arr[0])] = unicode(arr[1].strip())
+		dic_synonyms[unicode(arr[0].strip().lower())] = unicode(arr[1].strip().lower())
 		#dic_synonyms[arr[1]] = arr[0]
 
 	index = 0

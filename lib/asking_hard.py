@@ -1,4 +1,4 @@
-import helper
+import asking_easy
 import random
 
 
@@ -24,7 +24,7 @@ def generate_antonyms(line):
 		s = ''
 		for word in words:
 			s += word + ' '
-		return helper.convert_declarative_to_question(s)
+		return asking_easy.easy_question_generator(s)
 
 def generate_synonyms(line):
 	fin_synonyms = open('data/synonyms.txt', 'r')
@@ -48,7 +48,7 @@ def generate_synonyms(line):
 		s = ''
 		for word in words:
 			s += word + ' '
-		return helper.convert_declarative_to_question(s)
+		return asking_easy.easy_question_generator(s)
 
 
 def hard_question_generator(line):
@@ -57,7 +57,7 @@ def hard_question_generator(line):
 		return generate_antonyms(line)
 	else:
 		return generate_synonyms(line)
-	
+
 
     # 1. check if line can be a hard questions
     # 2. xxx
@@ -71,4 +71,3 @@ if __name__ == '__main__':
 	sentence = 'Xichen is fat and tall .'
 	print(sentence)
 	print(hard_question_generator(sentence))
-
