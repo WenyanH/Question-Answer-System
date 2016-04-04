@@ -65,21 +65,27 @@ def answer_yesno(question_old, sentence_list_old):
 	#lowercase, delete "BE"
 	#print sentence_list_old
 
-
+	delete_word = ["it", "be", "do", "can"]
 	#not should can do did does!!!
 	question = []
 	sentence_list = []
 	sentence_one = []
 	for word in question_old:
-		if (not word.lemma_ == "be") and (not word.lemma_ == "do") and (not word.lemma_ == "can") and (not word.is_punct):
+		#if (not word.lemma_ == "it") and (not word.lemma_ == "be") and (not word.lemma_ == "do") and (not word.lemma_ == "can") and (not word.is_punct):
+		if (not word.lemma_ in delete_word) and (not word.is_punct):
 			question.append(word)
+	print "question"
+	print question
 	for sentence in sentence_list_old:
 		#print "sentence"
 		#print sentence
 		#print 
 		for word in sentence:
-			if (not word.lemma_ == "be") and (not word.lemma_ == "do") and (not word.lemma_ == "can") and (not word.is_punct):
+			#if (not word.lemma_ == "it") and (not word.lemma_ == "be") and (not word.lemma_ == "do") and (not word.lemma_ == "can") and (not word.is_punct):
+			if (not word.lemma_ in delete_word) and (not word.is_punct):
 				sentence_one.append(word)
+		print "sentence"
+		print sentence_one
 		sentence_list.append(sentence_one)
 		sentence_one = []
 	#print sentence_list
