@@ -23,10 +23,10 @@ def abbre_align(align):
 			j = i + 1
 			while j < len_align_up:
 				#print  not (str(align_down[j]) == -1)
-				if not (int(align_up[j]) == -1):
+				if (not int(align_up[j]) == -1) or not ((int(align_down[j - 1]) + 1) == int(align_down[j])):
 					break
 				j = j + 1
-			if j - i > 3:
+			if j - i > 2:
 				i =  j - 1
 			else:
 				for k in range(i, j):
@@ -37,10 +37,10 @@ def abbre_align(align):
 			j = i + 1
 			while j < len_align_up:
 				#print  not (str(align_down[j]) == -1)
-				if not (int(align_down[j]) == -1):
+				if not (int(align_down[j]) == -1) or not ((int(align_up[j - 1]) + 1) == int(align_up[j])):
 					break
 				j = j + 1
-			if j - i > 3:
+			if j - i > 2:
 				i =  j - 1
 			else:
 				for k in range(i, j):
