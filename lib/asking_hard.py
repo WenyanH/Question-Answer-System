@@ -1,6 +1,32 @@
 import asking_easy
 import random
 
+def generate_special(line):
+	words = line.split(" ")
+	# hard_code for either... or ...
+	flag_either_or = False
+	if 'either' and 'or' in words:
+		flag_either_or = True
+		words[words.index('either')] = 'neither'
+		words[words.index('or')] = 'nor'
+	if flag_either_or == True:
+		s = ''
+		for word in words:
+			s+= word + ' '
+		return asking_easy.easy_question_generator(s)
+
+	# hard_code for neither... nor ...
+	flag_neither_nor = False
+	if 'neither' and 'nor' in words:
+		flag_neither_nor = True
+		words[words.index('neither')] = 'either'
+		words[words.index('nor')] = 'or'
+	if flag_neither_nor == True:
+		s = ''
+		for word in words:
+			s+= word + ' '
+		return asking_easy.easy_question_generator(s)
+
 
 def generate_antonyms(line):
 	fin_antonyms = open('data/antonyms.txt', 'r')
@@ -68,6 +94,6 @@ def hard_question_generator(line):
 
 
 if __name__ == '__main__':
-	sentence = 'Xichen is fat and tall .'
+	sentence = 'Xichen is neither fat nor tall .'
 	print(sentence)
-	print(hard_question_generator(sentence))
+	print(generate_special(sentence))
