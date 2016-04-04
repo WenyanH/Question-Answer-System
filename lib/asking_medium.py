@@ -7,6 +7,8 @@ def medium_question_generator(doc, sentence):
 	return asking_wh(doc, sentence)
 
 def create_question(sentence, replace_from, replace_to):
+	if replace_from.lower() in ['it', 'that', 'this', 'these', 'those', 'he', 'she', 'they', 'his', 'him', 'her', 'their', 'its']:
+		return None
 	sentence = sentence.replace(replace_from, replace_to)
 	sentence = sentence.replace('.', '?')
 	return sentence
@@ -17,17 +19,21 @@ def asking_wh(doc, sentence):
 	if ent and sentence.startswith(ent.orth_):
 		if ent.label_ in ['PERSON']:
 			return create_question(sentence, ent.orth_, 'Who')
-		elif ent.label_ in ['ORG', 'LOC', 'LOC']:
+		elif ent.label_ in ['LOC', 'LOC']:
 			return create_question(sentence, ent.orth_, 'Where')
 		elif ent.label_ in ['DATE', 'TIME']:
 			return create_question(sentence, ent.orth_, 'When')
+		elif ent.label_ in ['ORG']:
+			return create_question(sentence, ent.orth_, 'What')
 
 	# What Question
-	chunk = doc.noun_chunks.next()
-	if chunk and sentence.startswith(chunk.orth_):
-		if sentence.startswith(chunk.orth_):
-			return create_question(sentence, chunk.orth_, 'What')
-
+	try:
+		chunk = doc.noun_chunks.next()
+		if chunk and sentence.startswith(chunk.orth_):
+			if sentence.startswith(chunk.orth_):
+				return create_question(sentence, chunk.orth_, 'What')
+	except:
+		pass
 	return None
 #
 # def parse_location(text):
