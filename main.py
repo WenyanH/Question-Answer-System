@@ -49,8 +49,10 @@ def wiki_article_format(text):
     result = []
     for line in lines:
         line = line.strip()
-        if len(line) < 20 or '.' not in line or '\n' in line:
+        if len(line) < 20 or '.' not in line:
             continue
+        if '\n' in line:
+            line = line.split('\n')[-1]
         try:
             result.append(unicode(line))
         except:
