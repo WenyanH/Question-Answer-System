@@ -71,14 +71,14 @@ def answer_yesno(question_old, sentence_list_old):
 	sentence_list = []
 	sentence_one = []
 	for word in question_old:
-		if (not word.lemma_ == "be") and (not word.is_punct):
+		if (not word.lemma_ == "be") and (not word.lemma_ == "do") and (not word.lemma_ == "can") and (not word.is_punct):
 			question.append(word)
 	for sentence in sentence_list_old:
 		#print "sentence"
 		#print sentence
 		#print 
 		for word in sentence:
-			if not word.lemma_ == "be" and (not word.is_punct):
+			if (not word.lemma_ == "be") and (not word.lemma_ == "do") and (not word.lemma_ == "can") and (not word.is_punct):
 				sentence_one.append(word)
 		sentence_list.append(sentence_one)
 		sentence_one = []
@@ -117,12 +117,12 @@ def answer_yesno(question_old, sentence_list_old):
 			index = i
 			min_align = align
 	#print "index" + str(index)				
-	#print "before"
-	#print min_align
-	#print "index" + str(index)
+	print "before"
+	print min_align
+	print "index" + str(index)
 	min_align = abbre_align(min_align)
-	#print "align"
-	#print min_align
+	print "align"
+	print min_align
 
 	question_sign = 0
 	sentence_sign = 0
