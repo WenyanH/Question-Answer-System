@@ -20,8 +20,8 @@ def question_type(line, position):
 	#if position == 0, root can not be question words.
 	if position == 0:
 		if arr[0] in question_word: 
-			return "YES/NO"
-		return "WH"
+			return "WH"
+		return "YES/NO"
 	
 	#type(arr[0])
 	index = 0
