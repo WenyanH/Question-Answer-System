@@ -1,4 +1,5 @@
-import sys, codecs
+#!/usr/bin/python
+import sys, codecs, argparse
 from random import shuffle
 from lib import asking_easy, asking_medium, asking_hard
 from lib import answering as answer
@@ -10,8 +11,17 @@ nlp = None
 f_out = None
 
 def main():
-    if len(sys.argv) != 3 and len(sys.argv) != 4:
-        print 'usage: python main.py input.txt question.txt output'
+    parser = argparse.ArgumentParser()
+    parser.add_argument("wiki_article", help="wiki article no found")
+    parser.add_argument("question_text", help="question no found")
+    parser.add_argument("-o", "--output", help="output log to file")
+    parser.add_argument("-v", "--verbose", help="print details log", action="store_true")
+    parser.add_argument("--asking", help="run asking module", action="store_true")
+    parser.add_argument("--answering", help="run answering module", action="store_true")
+
+    args = parser.parse_args()
+    if not args.wiki_article or not args.question_text:
+        parser.print_help()
         sys.exit(1)
 
     print 'Reading data for NLP task...'
@@ -20,15 +30,17 @@ def main():
     print 'Done\n'
 
     global f_out
-    if len(sys.argv) == 4:
-        f_out = codecs.open(sys.argv[3], 'w', 'utf-8')
+    if args.output:
+        f_out = codecs.open(args.output, 'w', 'utf-8')
     else:
         f_out = sys.stdout
 
-    docs = read_sentences_from_file(sys.argv[1])
-    docs_q = read_sentences_from_file(sys.argv[2], False, True)
-    # asking(docs)
-    # answering(docs, docs_q)
+    docs = read_sentences_from_file(args.wiki_article)
+    docs_q = read_sentences_from_file(args.question_text, False, True)
+    if args.asking:
+        asking(docs)
+    if args.answering:
+        answering(docs, docs_q)
 
 def wiki_article_format(text):
     # TODO:
@@ -41,7 +53,6 @@ def wiki_article_format(text):
             continue
         try:
             result.append(unicode(line))
-            print line, len(result)
         except:
             continue
     return result
@@ -84,13 +95,13 @@ def get_string_of_sent(sent):
 
 
 def asking(docs, num_easy=5, num_medium=5, num_hard=5):
-    print "Asking...\n"
+    print "Asking..."
 
     # sentences = [
     #     "Weixiang was born in China in 1993 .",
     #     "Guanxi is taking photos ."
     # ]
-    f_out.write("Easy\n")
+    print("\nEasy\n\n")
     count = 0
     for doc in docs:
         if count >= num_easy:
@@ -98,22 +109,22 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
         sen = get_string_of_sent(doc)
         result = asking_easy.easy_question_generator(sen)
         if result:
-            f_out.write(result)
+            f_out.write(result + '\n')
             # print sen + '\n'
             count += 1
 
-    f_out.write("Medium\n")
+    print("\nMedium\n\n")
     count = 0
     for doc in docs:
         if count >= num_medium:
             break
         result = asking_medium.medium_question_generator(doc, get_string_of_sent(doc))
         if result:
-            f_out.write(result)
+            f_out.write(result + '\n')
             # print doc, '\n'
             count += 1
 
-    f_out.write("Hard\n")
+    print("\nHard\n\n")
     count = 0
     for doc in docs:
         if count >= num_hard:
@@ -121,7 +132,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
         sen = get_string_of_sent(doc)
         result = asking_hard.hard_question_generator(sen)
         if result:
-            f_out.write(result)
+            f_out.write(result + '\n')
             # print sen + '\n'
             count += 1
 
@@ -134,7 +145,7 @@ def get_root_of_doc(doc):
 def answering(docs, docs_q):
     # text_2d_array = get_string_of_text(sentences)
     for question_doc in docs_q:
-        print 'Answering:' + get_string_of_sent(question_doc) + '\n'
+        # print 'Answering:' + get_string_of_sent(question_doc) + '\n'
         f_out.write('Answering:' + get_string_of_sent(question_doc) + '\n\n')
         type_of_question = question_type(get_string_of_sent(question_doc), get_root_of_doc(question_doc))
         # print type_of_question
