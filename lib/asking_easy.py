@@ -1,8 +1,12 @@
 
 def easy_question_generator(line):
 	#collection
-	col = ["is", "are", "am", "was", "were"]
-	col_up = ["Is", "Are", "Am", "Was", "Were"]
+	col = ["is", "are", "am", "was", "were", "can", "could", "must", "should", "may", "might", "will", "would", "shall"]
+	col_up = ["Is", "Are", "Am", "Was", "Were", "Can", "Could", "Must", "Should", "May", "Might", "Will", "Would", "Shall"]
+
+	demon = ["it", "its", "this", "that", "those", "these"]
+	demon_up = ["It", "Its", "This", "That", "Those", "These"]
+
 
 	col_out = []
 	line = line.strip()
@@ -14,11 +18,24 @@ def easy_question_generator(line):
 			#iterate each word
 			for j in range(len(arr)):
 				#determine whether number or alphabet
-				if not arr[j].isalnum():
+				sign = False
+				for m in range(len(arr[j])):
+					if arr[j].strip()[m] in string.ascii_letters or arr[j].strip()[m] in string.digits:
+						sign = True
+						break
 					#record the location of none-alnum
-					mark = j 
+				if sign == False:
+					mark = j
+		
+
+
+				#if not arr[j].isalnum():
+					#record the location of none-alnum
+				#	mark = j 
 					#print "mark + " + str(mark)
 				if arr[j] == col[i]:
+					if j > 0 and (arr[j - 1] in demon or arr[j - 1] in demon_up)
+						break
 					#print "being + " + str(j)
 					if not (mark + 1) == j:	
 						#print "match + " + str(j)
