@@ -10,7 +10,7 @@ nlp = None
 f_out = None
 
 def main():
-    if len(sys.argv) != 4:
+    if len(sys.argv) != 3 and len(sys.argv) != 4:
         print 'usage: python main.py input.txt question.txt output'
         sys.exit(1)
 
@@ -20,12 +20,15 @@ def main():
     print 'Done\n'
 
     global f_out
-    f_out = codecs.open(sys.argv[3], 'w', 'utf-8')
+    if len(sys.argv) == 4:
+        f_out = codecs.open(sys.argv[3], 'w', 'utf-8')
+    else:
+        f_out = sys.stdout
 
     docs = read_sentences_from_file(sys.argv[1])
     docs_q = read_sentences_from_file(sys.argv[2], False, True)
     # asking(docs)
-    answering(docs, docs_q)
+    # answering(docs, docs_q)
 
 def wiki_article_format(text):
     # TODO:
@@ -34,10 +37,11 @@ def wiki_article_format(text):
     result = []
     for line in lines:
         line = line.strip()
-        if len(line) < 20 or '.' not in line:
+        if len(line) < 20 or '.' not in line or '\n' in line:
             continue
         try:
             result.append(unicode(line))
+            print line, len(result)
         except:
             continue
     return result
