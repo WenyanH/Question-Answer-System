@@ -1,4 +1,4 @@
-
+import string
 def easy_question_generator(line):
 	#collection
 	col = ["is", "are", "am", "was", "were", "can", "could", "must", "should", "may", "might", "will", "would", "shall"]
