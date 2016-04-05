@@ -18,8 +18,12 @@ def question_type(line, position):
 	
 	#if position == 0, root can not be question words.
 	if position == 0:
-		if arr[0] in question_word: 
-			return "WH"
+		if arr[0] in question_word:
+			for word in question_word:
+				if arr[0] == word:
+					if word.upper() == "HOW":
+						return (arr[0] + " " + arr[1]).upper()
+					return word.upper()
 		return "YES/NO"
 		#type(arr[0])
 	index = 0
@@ -51,7 +55,11 @@ def question_type(line, position):
 		#find question words
 	for k in range(mark + 1, position):
 		if arr[k] in question_word:
-			return "WH"
+			for word in question_word:
+				if arr[k] == word:
+					if word.upper() == "HOW":
+						return (arr[0] + " " + arr[1]).upper()
+					return word.upper()
 	return "YES/NO"
 	'''
 	else:
