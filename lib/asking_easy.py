@@ -34,7 +34,7 @@ def easy_question_generator(line):
 				#	mark = j 
 					#print "mark + " + str(mark)
 				if arr[j] == col[i]:
-					if j > 0 and (arr[j - 1] in demon or arr[j - 1] in demon_up)
+					if j > 0 and (arr[j - 1] in demon or arr[j - 1] in demon_up):
 						break
 					#print "being + " + str(j)
 					if not (mark + 1) == j:	
