@@ -40,17 +40,53 @@ def answer_what(question, sentence_list, sentence_prob):
 	best_answer_prob = 0.0
 	for index, sent in enumerate(sentence_list):
 		this_answer, this_prob = _answer_what(question, sent)
-		print this_prob, sentence_prob[index], '->', this_prob * sentence_prob[index]
+		# print this_prob, sentence_prob[index], '->', this_prob * sentence_prob[index]
 		if this_prob * sentence_prob[index] > best_answer_prob:
 			best_answer = this_answer
 			best_answer_prob = this_prob * sentence_prob[index]
-	return get_string_of_sent(best_answer)
+	return best_answer
 
-def _answer_when(question, sentence):
+def answer_when(question, sentence_list, sentence_prob):
 	pass
 
-def _answer_where(question, sentence):
+def answer_where(question, sentence_list, sentence_prob):
 	pass
+
+def answer_how_many(question, sentence_list, sentence_prob):
+	pass
+
+def _answer_by_entity(question, sentence, ent_list):
+	for chunk in sentence.ents:
+		if chunk.label_ in ent_list and \
+			chunk.orth_.lower() not in get_string_of_sent(question).lower():
+			return chunk
+	return None
+
+def answer_how(question, sentence_list, sentence_prob):
+	keywords = ['by']
+	for sent in sentence_list:
+		for k_word in keywords:
+			if k_word in get_string_of_sent(sent).lower():
+				# print k_word
+				result =  _answer_how(sent, k_word)
+				if result:
+					return result
+	return answer_what(question, sentence_list, sentence_prob)
+
+def _answer_how(sentence, keyword):
+	keyword = keyword.split(' ')[0]
+	tree_root = None
+	for token in sentence:
+		if token.orth_.lower() == keyword:
+			tree_root = token.head
+			break
+	else:
+		return None
+
+	result = ""
+	for token in tree_root.subtree:
+		result += token.orth_ + ' '
+	return result
 
 def _answer_what(question, sentence):
 	# find chunks that is not in question
@@ -87,7 +123,7 @@ def _answer_what(question, sentence):
 	prob = float(num_child_of_head) / (len(list(result_head.children)) + 1)
 
 	if prob > 0.3:
-		return result_chunk, prob
+		return get_string_of_sent(result_chunk), prob
 	else:
 		return get_string_of_sent(sentence), prob
 
@@ -260,7 +296,7 @@ def find_possible_sentences(docs, question):
 		for i in range(5):
 			pairs = heapq.heappop(heap)
 			potential_sentences_index.append(pairs[1])
-			potential_sentences_prob.append(-1 * pairs[0] / 100.0)		
+			potential_sentences_prob.append(-1 * pairs[0] / 100.0)
 
 	print potential_sentences_prob
 	return potential_sentences_index, potential_sentences_prob
