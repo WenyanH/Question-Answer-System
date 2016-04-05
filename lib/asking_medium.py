@@ -1,9 +1,6 @@
 import re
-import helper
 
 def medium_question_generator(doc, sentence):
-	# line = parse_time(line) or parse_location(line)
-	# return helper.convert_declarative_to_question(line)
 	return asking_wh(doc, sentence)
 
 def create_question(sentence, replace_from, replace_to):
