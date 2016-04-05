@@ -250,11 +250,19 @@ def find_possible_sentences(docs, question):
 		#print weight
 		heapq.heappush(heap, (weight * -1, docs.index(sent)))
 
-	for i in range(3):
-		pairs = heapq.heappop(heap)
-		potential_sentences_index.append(pairs[1])
-		potential_sentences_prob.append(-1 * pairs[0] / 100.0)
+	threshold = -1 * heap[0][0] / 100.0
+	if threshold > 0.1:
+		for i in range(3):
+			pairs = heapq.heappop(heap)
+			potential_sentences_index.append(pairs[1])
+			potential_sentences_prob.append(-1 * pairs[0] / 100.0)
+	else:
+		for i in range(5):
+			pairs = heapq.heappop(heap)
+			potential_sentences_index.append(pairs[1])
+			potential_sentences_prob.append(-1 * pairs[0] / 100.0)		
 
+	print potential_sentences_prob
 	return potential_sentences_index, potential_sentences_prob
 
 	# @param
