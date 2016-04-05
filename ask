@@ -1,0 +1,11 @@
+#!/usr/bin/python
+
+import main, sys
+
+wiki_article = sys.argv[1]
+number = int(sys.argv[2])
+
+main.main()
+
+docs = main.read_sentences_from_file(wiki_article)
+main.asking(docs, number/3, number/3, number/3)

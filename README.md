@@ -1,6 +1,16 @@
 # nlp-wiki-system
 
+## How to run
+
+```
+./ask testdata/Our_Team/Spanish_language_raw.txt 6
+./answer testdata/Our_Team/Spanish_language_raw.txt testdata/Our_Team/Spanish_language_question.txt
+```
+
+## Log
+
 02/20/2016 - wenyanh
+
 1. I have uploaded four wiki raw files we once used for our questions asking & answering in txt format.
 
 2. The wikiPretreament.py is used for pretreatment the wiki file into an operable txt file for your further steps.
@@ -12,6 +22,6 @@ It would be better if you could give me some advice. Or, need we complete this f
 
 
 02/22/2016 - xc2
+
 1. I have updated the file of creating easy question. The file deals with the verbs of be(is, are, am, was, were). One of the problem is to identify whether the first word is proper noun or not. My thought is to record the appearance of each word in the dictionary. Then we check whether the lower case of the first word is in the dictionary. If it is in the dictionary, it has lowercase format. So it is not a proper noun.  
-2. something have to do:
-调整asking easy策略： 加入dependency tree的root
+2. something have to do: 调整asking easy策略： 加入dependency tree的root
