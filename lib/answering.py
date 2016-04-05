@@ -3,6 +3,38 @@ import math
 from match_sentence import match_sentence
 from abbre_align import abbre_align
 
+def answer_wh(question, sentence_list, sentence_prob):
+	if 'why' in get_string_of_sent(question).lower():
+		return answer_why(question, sentence_list, sentence_prob)
+	else:
+		return answer_what(question, sentence_list, sentence_prob)
+
+def answer_why(question, sentence_list, sentence_prob):
+	keywords = ['because', 'due to']
+	for sent in sentence_list:
+		for k_word in keywords:
+			if k_word in get_string_of_sent(sent).lower():
+				# print k_word
+				result =  _answer_why(sent, k_word)
+				if result:
+					return result
+	return answer_what(question, sentence_list, sentence_prob)
+
+def _answer_why(sentence, keyword):
+	keyword = keyword.split(' ')[0]
+	tree_root = None
+	for token in sentence:
+		if token.orth_.lower() == keyword:
+			tree_root = token.head
+			break
+	else:
+		return None
+
+	result = ""
+	for token in tree_root.subtree:
+		result += token.orth_ + ' '
+	return result
+
 def answer_what(question, sentence_list, sentence_prob):
 	best_answer = None
 	best_answer_prob = 0.0
@@ -11,16 +43,18 @@ def answer_what(question, sentence_list, sentence_prob):
 		if this_prob * sentence_prob[index] > best_answer_prob:
 			best_answer = this_answer
 			best_answer_prob = this_prob
-	return best_answer
+	return get_string_of_sent(best_answer)
 
 def _answer_what(question, sentence):
 	# find chunks that is not in question
 	possible_answer = []
 	question_string = get_string_of_sent(question)
 	for chunk in sentence.noun_chunks:
+		print chunk, chunk.label_
 		if chunk.text not in question_string:
 			possible_answer.append(chunk)
 	for chunk in sentence.ents:
+		print chunk, chunk.label_
 		if chunk.text not in question_string:
 			possible_answer.append(chunk)
 
@@ -79,7 +113,7 @@ def answer_yesno(question_old, sentence_list_old):
 	for sentence in sentence_list_old:
 		#print "sentence"
 		#print sentence
-		#print 
+		#print
 		for word in sentence:
 			#if (not word.lemma_ == "it") and (not word.lemma_ == "be") and (not word.lemma_ == "do") and (not word.lemma_ == "can") and (not word.is_punct):
 			if (not word.lemma_.lower() in delete_word) and (not word.is_punct):
@@ -89,7 +123,7 @@ def answer_yesno(question_old, sentence_list_old):
 		sentence_list.append(sentence_one)
 		sentence_one = []
 	#print sentence_list
-	
+
 
 	negative_words= []
 	dic_antonyms = {}
@@ -122,7 +156,7 @@ def answer_yesno(question_old, sentence_list_old):
 			min_dis = dis
 			index = i
 			min_align = align
-	#print "index" + str(index)				
+	#print "index" + str(index)
 	print "before"
 	print min_align
 	print "index" + str(index)
@@ -162,7 +196,7 @@ def answer_yesno(question_old, sentence_list_old):
 
 	#print "question_sign:" + str(question_sign)
 	#print "sentence_sign:" + str(sentence_sign)
-	#print "antonyms:" + str(antonyms)			
+	#print "antonyms:" + str(antonyms)
 
 	if antonyms == True:
 		question_sign = question_sign + 1

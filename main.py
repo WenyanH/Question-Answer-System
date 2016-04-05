@@ -88,13 +88,6 @@ def read_sentences_from_file(file_name, wiki=True, question=False):
 
 def get_string_of_sent(sent):
     return unicode(' '.join([token.orth_ for token in sent]))
-#
-# def get_string_of_text(sent_array):
-#     text = []
-#     for sent in sent_array:
-#         text.append([token.orth_ for token in sent])
-#     return text
-
 
 def asking(docs, num_easy=5, num_medium=5, num_hard=5):
     print "Asking..."
@@ -145,21 +138,13 @@ def get_root_of_doc(doc):
     return None
 
 def answering(docs, docs_q):
-    # text_2d_array = get_string_of_text(sentences)
     for question_doc in docs_q:
         # print 'Answering:' + get_string_of_sent(question_doc) + '\n'
         f_out.write('Answering:' + get_string_of_sent(question_doc) + '\n\n')
         type_of_question = question_type(get_string_of_sent(question_doc), get_root_of_doc(question_doc))
         # print type_of_question
+        
         possible_sentences_index, possible_sentences_prob = answer.find_possible_sentences(docs, question_doc)
-        # print 'Question:', sent
-        # for index, token in enumerate(sent):
-        #     if token.head is token:
-        #         print 'Root:', index, token
-        #         print 'Type:', question_type(get_string_of_sent(sent), index)
-        # print sent
-        # print spacy_helper.doc_get_all_sents(doc)[possible_sentences_index[0]]
-
         possible_sentences = []
         f_out.write('Possible sentences:\n')
         for index in possible_sentences_index:
@@ -167,14 +152,10 @@ def answering(docs, docs_q):
             possible_sentences.append(docs[index])
         f_out.write('\n')
 
-        # question_answer = answer.answer_yesno(question_doc, possible_sentences)
-        # print question_answer
-        # break
         f_out.write('Answer:' + '\n')
         question_answer = None
         if type_of_question == 'WH':
-            question_answer = answer.answer_what(question_doc, possible_sentences, possible_sentences_prob)
-            question_answer = get_string_of_sent(question_answer)
+            question_answer = answer.answer_wh(question_doc, possible_sentences, possible_sentences_prob)
         elif type_of_question == 'YES/NO':
             question_answer = answer.answer_yesno(question_doc, possible_sentences)
 
