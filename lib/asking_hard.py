@@ -40,7 +40,7 @@ def generate_antonyms(line):
 	words = line.split(" ")
 	flag = False
 	for i in range(len(words)):
-		if words[i] in antonyms1:
+		if words[i] in antonyms1 and len(words[i])>=3:
 			flag = True
 			words[i] = antonyms2[antonyms1.index(words[i])]
 			break
@@ -64,7 +64,7 @@ def generate_synonyms(line):
 	words = line.split(" ")
 	flag = False
 	for i in range(len(words)):
-		if words[i] in synonyms1:
+		if words[i] in synonyms1 and len(words[i])>3:
 			flag = True
 			words[i] = synonyms2[synonyms1.index(words[i])]
 			break

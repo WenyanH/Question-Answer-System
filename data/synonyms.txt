@@ -11836,13 +11836,6 @@ keeled ridged
 sanitised sanitized
 sublimated sublimed
 tittering thoriated
-A.D. ad
-anno_Domini ad
-C.E. ce
-Common_Era ce
-B.C. bc
-before_Christ bc
-B.C.E. bce
 ahorse horseback
 ahorseback horseback
 hardly barely
@@ -11855,7 +11848,6 @@ essentially basically
 simply merely
 just merely
 only merely
-but merely
 simply plainly
 immensely vastly
 mostly largely
@@ -11891,10 +11883,8 @@ plum plumb
 amiss imperfectly
 to_the_full fully
 full fully
-good well
 badly ill
 poorly ill
-easily well
 badly ill
 comfortably well
 advantageously well
@@ -11936,12 +11926,10 @@ now_and_then occasionally
 now_and_again occasionally
 at_times occasionally
 from_time_to_time occasionally
-as equally
 every_bit equally
 long_since long_ago
 lang_syne long_ago
 practically much
-non not
 damn bloody
 all-fired bloody
 anyplace anywhere
@@ -12033,7 +12021,6 @@ in_spades decidedly
 by_all_odds decidedly
 genuinely truly
 really truly
-so indeed
 really in_truth
 truly in_truth
 of_course naturally
@@ -12067,7 +12054,6 @@ alas unfortunately
 hence therefore
 thence therefore
 thus therefore
-so therefore
 therefrom thence
 therefrom thence
 thereof thence
@@ -12229,7 +12215,6 @@ forrader ahead
 out_front ahead
 in_the_lead ahead
 right_along all_along
-on along
 likewise alike
 out_loud aloud
 loud loudly
@@ -12241,19 +12226,7 @@ willy-nilly randomly
 arbitrarily randomly
 at_random randomly
 every_which_way randomly
-around about
-around round
-around about
-around about
-around about
 desperately urgently
-almost about
-most about
-nearly about
-near about
-nigh about
-virtually about
-well-nigh about
 barely scantily
 principally chiefly
 primarily chiefly
@@ -12406,7 +12379,6 @@ when_first_seen at_first_blush
 for_the_first_time first
 and_so_on and_so_forth
 etcetera and_so_forth
-etc. and_so_forth
 forward forth
 onward forth
 at_bottom at_heart
@@ -12484,7 +12456,6 @@ collectively jointly
 conjointly jointly
 together_with jointly
 atrociously outrageously
-so then
 and_so then
 and_then then
 irrespective regardless
@@ -12549,7 +12520,6 @@ thenceforth thereafter
 of_all_time ever
 hands_down handily
 easy easily
-soft easy
 beyond_control out_of_hand
 in_point_of_fact in_fact
 as_a_matter_of_fact in_fact
@@ -12601,7 +12571,6 @@ all_the_time day_in_and_day_out
 en_bloc en_masse
 as_a_group en_masse
 every_now_and_then every_so_often
-solo alone
 unaccompanied alone
 above_all first_and_last
 exactly precisely
@@ -12695,7 +12664,6 @@ unsymmetrically asymmetrically
 reciprocally inversely
 to_a_great_extent heavily
 intemperately heavily
-hard heavily
 again_and_again over_and_over
 over_and_over_again over_and_over
 time_and_again over_and_over
@@ -12758,16 +12726,6 @@ videlicet namely
 very_much_like much_as
 exaggeratedly hyperbolically
 nimbly agilely
-et_al. et_al
-et_alibi et_al
-et_al. et_al
-et_alii et_al
-et_aliae et_al
-et_alia et_al
-cf. cf
-i.e. i
-ie i
-id_est i
 empathetically sympathetically
 gracefully graciously
 ungracefully ungraciously
@@ -12790,7 +12748,6 @@ staggeringly enormously
 munificently liberally
 generously liberally
 conveniently handily
-over all_over
 kinaesthetically kinesthetically
 haptically tactually
 contumaciously rebelliously
@@ -12903,7 +12860,6 @@ broadly_speaking broadly
 generally broadly
 behindhand behind
 in_arrears behind
-slow behind
 truly rightfully
 in_his_own_right in_one's_own_right
 in_her_own_right in_one's_own_right
@@ -12920,7 +12876,6 @@ strictly rigorously
 vauntingly boastfully
 big boastfully
 large boastfully
-o'er over
 strictly_speaking properly_speaking
 to_be_precise properly_speaking
 exultingly exultantly
@@ -12939,10 +12894,7 @@ dryly laconically
 drily laconically
 accommodatingly obligingly
 mistily vaguely
-off away
 forth away
-out away
-by aside
 away aside
 away aside
 apart aside
@@ -13006,8 +12958,6 @@ annually per_annum
 by_the_day per_diem
 'tween between
 ad_valorem ad_val
-A.M. ante_meridiem
-P.M. post_meridiem
 from_head_to_toe cap-a-pie
 lawfully legally
 de_jure legally
@@ -13017,8 +12967,6 @@ by_right_of_office ex_officio
 part-time half-time
 one-sidedly unilaterally
 chock-a-block chock
-C.O.D. c
-COD c
 cash_on_delivery c
 anticlockwise counterclockwise
 first foremost
@@ -13029,8 +12977,6 @@ biyearly semiannually
 midway halfway
 herewith hereby
 topsy-turvy higgledy-piggledy
-ibid. ibid
-ib. ibid
 ibidem ibid
 in_place in_situ
 at_an_equal_rate pari_passu
@@ -13479,7 +13425,6 @@ lengthwise lengthways
 longwise lengthways
 longways lengthways
 longitudinally lengthways
-slowly lento
 unenergetically lethargically
 obscenely lewdly
 wantonly licentiously
@@ -13566,7 +13511,6 @@ overseas oversea
 fastidiously painstakingly
 palely pallidly
 dimly pallidly
-past by
 pitiably pathetically
 pacifically peaceably
 querulously peevishly
@@ -13787,7 +13731,6 @@ one_at_a_time one_by_one
 deliberately measuredly
 hither_and_thither from_pillar_to_post
 sorely painfully
-best better
 out_of_view out_of_sight
 baby-like baby-wise
 coincidently coincidentally
@@ -13867,13 +13810,9 @@ retrieval recovery
 touching touch
 track_record record
 accomplished_fact fait_accompli
-sledding going
-reaching arrival
-coming advent
 entering entrance
 entry entrance
 ingress entrance
-incoming entrance
 enrollment registration
 enrolment registration
 emersion emergence
@@ -14275,7 +14214,6 @@ manipulation handling
 necropsy autopsy
 postmortem autopsy
 post-mortem autopsy
-PM autopsy
 postmortem_examination autopsy
 post-mortem_examination autopsy
 checkout check
@@ -27213,7 +27151,6 @@ coalhole coalbin
 coalpit coal_mine
 clothes_hanger coat_hanger
 dress_hanger coat_hanger
-coat coating
 arms coat_of_arms
 blazon coat_of_arms
 blazonry coat_of_arms
@@ -27242,10 +27179,6 @@ volute coil
 whorl coil
 helix coil
 volute_spring coil_spring
-blow coke
-nose_candy coke
-snow coke
-C coke
 cullender colander
 set_chisel cold_chisel
 coldcream cold_cream
