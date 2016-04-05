@@ -40,22 +40,29 @@ def answer_what(question, sentence_list, sentence_prob):
 	best_answer_prob = 0.0
 	for index, sent in enumerate(sentence_list):
 		this_answer, this_prob = _answer_what(question, sent)
+		print this_prob, sentence_prob[index], '->', this_prob * sentence_prob[index]
 		if this_prob * sentence_prob[index] > best_answer_prob:
 			best_answer = this_answer
-			best_answer_prob = this_prob
+			best_answer_prob = this_prob * sentence_prob[index]
 	return get_string_of_sent(best_answer)
+
+def _answer_when(question, sentence):
+	pass
+
+def _answer_where(question, sentence):
+	pass
 
 def _answer_what(question, sentence):
 	# find chunks that is not in question
 	possible_answer = []
-	question_string = get_string_of_sent(question)
+	question_string = get_string_of_sent(question).lower()
 	for chunk in sentence.noun_chunks:
-		print chunk, chunk.label_
-		if chunk.text not in question_string:
+		# print chunk, chunk.label_
+		if chunk.text.lower() not in question_string:
 			possible_answer.append(chunk)
 	for chunk in sentence.ents:
-		print chunk, chunk.label_
-		if chunk.text not in question_string:
+		# print chunk, chunk.label_
+		if chunk.text.lower() not in question_string:
 			possible_answer.append(chunk)
 
 	# find head token of each candidates
@@ -79,7 +86,10 @@ def _answer_what(question, sentence):
 			num_child_of_head += 1
 	prob = float(num_child_of_head) / (len(list(result_head.children)) + 1)
 
-	return result_chunk, prob
+	if prob > 0.3:
+		return result_chunk, prob
+	else:
+		return get_string_of_sent(sentence), prob
 
 def find_shallowest_token(doc, token_list):
 	nodes = [doc.sents.next().root]
