@@ -43,8 +43,6 @@ def main():
         answering(docs, docs_q)
 
 def wiki_article_format(text):
-    # TODO:
-    # remove some unrelated sentences like external links
     lines = [line.orth_ for line in nlp(text).sents]
     result = []
     for line in lines:
@@ -53,6 +51,8 @@ def wiki_article_format(text):
             continue
         if '\n' in line:
             line = line.split('\n')[-1]
+        if 'n\'t' in line:
+            line = line.replace('n\'t', ' not')
         try:
             result.append(unicode(line))
         except:
@@ -66,6 +66,8 @@ def question_format(text):
         line = line.strip()
         if len(line) < 20 or '?' not in line:
             continue
+        if 'n\'t' in line:
+            line = line.replace('n\'t', ' not')
         try:
             result.append(unicode(line))
         except:
@@ -143,7 +145,7 @@ def answering(docs, docs_q):
         f_out.write('Answering:' + get_string_of_sent(question_doc) + '\n\n')
         type_of_question = question_type(get_string_of_sent(question_doc), get_root_of_doc(question_doc))
         # print type_of_question
-        
+
         possible_sentences_index, possible_sentences_prob = answer.find_possible_sentences(docs, question_doc)
         possible_sentences = []
         f_out.write('Possible sentences:\n')
