@@ -8,7 +8,7 @@ def easy_question_generator(line, position):
 	demon_up = ["It", "Its", "This", "That", "Those", "These"]
 
 	if position == 0:
-		return "NO SENTENCE"
+		return None
 
 	col_out = []
 	line = line.strip()
@@ -30,7 +30,7 @@ def easy_question_generator(line, position):
 			question_word = i;
 			break;
 	if question_word == -1:
-		return "NO SENTENCES"
+		return None
 	for i in range(mark + 1):
 		col_out.append(arr[i])
 	#print mark
