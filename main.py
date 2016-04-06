@@ -132,6 +132,12 @@ def get_root_of_doc(doc):
             return index
     return None
 
+def get_last_token_of_doc(doc):
+    result = None
+    for token in doc:
+        result = token
+    return result
+
 def answering(docs, docs_q):
     for question_doc in docs_q:
         # print 'Answering:' + get_string_of_sent(question_doc) + '\n'
@@ -149,10 +155,23 @@ def answering(docs, docs_q):
 
         print('Answer:' + '\n')
         question_answer = None
-        if type_of_question == 'WH':
-            question_answer = answer.answer_wh(question_doc, possible_sentences, possible_sentences_prob)
+        if type_of_question == 'WHAT':
+            question_answer = answer.answer_what(question_doc, possible_sentences, possible_sentences_prob)
+        elif type_of_question == 'WHERE':
+            question_answer = answer.answer_where(question_doc, possible_sentences, possible_sentences_prob)
+        elif type_of_question == 'WHEN':
+            question_answer = answer.answer_when(question_doc, possible_sentences, possible_sentences_prob)
+        elif type_of_question == 'WHY':
+            question_answer = answer.answer_why(question_doc, possible_sentences, possible_sentences_prob)
         elif type_of_question == 'YES/NO':
             question_answer = answer.answer_yesno(question_doc, possible_sentences)
+        else:
+            # HOW *
+            word = get_last_token_of_doc(nlp(type_of_question))
+            if word.pos_ == 'VERB':
+                question_answer = answer.answer_how(question_doc, possible_sentences, possible_sentences_prob)
+            else:
+                question_answer = answer.answer_how_something(question_doc, possible_sentences, possible_sentences_prob, type_of_question)
 
         print(question_answer + '\n\n')
 
