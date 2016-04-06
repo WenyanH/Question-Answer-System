@@ -166,7 +166,7 @@ def answer_yesno(question_old, sentence_list_old):
 	#lowercase, delete "BE"
 	#print sentence_list_old
 
-	delete_word = ["it", "be", "do", "can", "could", "will", "would", "need","should", "must", "shall", "may", "might", "the", "of", "a", "an", "anyone", "anything", "to"]
+	delete_word = ["i", "you", "he", "she", "they", "it", "be", "do", "can", "could", "will", "would", "need","should", "must", "shall", "may", "might", "the", "of", "a", "an", "anyone", "anything", "to"]
 	#not should can do did does!!!
 	question = []
 	sentence_list = []
