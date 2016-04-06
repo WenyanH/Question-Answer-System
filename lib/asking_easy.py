@@ -35,6 +35,7 @@ def easy_question_generator(line, position):
 		col_out.append(arr[i])
 	#print mark
 	#print type(mark)
+	arr[mark + 1] = arr[mark + 1].lower()
 	if (mark == -1):
 		col_out.append(arr[question_word][0].upper() + arr[question_word][1: len(arr[question_word])])
 	else:
