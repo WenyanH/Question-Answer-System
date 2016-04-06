@@ -44,21 +44,21 @@ def answer_when(question, sentence_list, sentence_prob):
 	for sent in sentence_list:
 		result = _answer_by_entity(question, sent, ['DATE', 'TIME'])
 		if result != None:
-			return result
+			return get_string_of_sent(result)
 	return get_string_of_sent(sentence_list[0])
 
 def answer_who(question, sentence_list, sentence_prob):
 	for sent in sentence_list:
 		result = _answer_by_entity(question, sent, ['PERSON'])
 		if result != None:
-			return result
+			return get_string_of_sent(result)
 	return get_string_of_sent(sentence_list[0])
 
 def answer_where(question, sentence_list, sentence_prob):
 	for sent in sentence_list:
 		result = _answer_by_entity(question, sent, ['GPE', 'LOC', 'ORG', 'FACILITY'])
 		if result != None:
-			return result
+			return get_string_of_sent(result)
 	return get_string_of_sent(sentence_list[0])
 
 def answer_how_something(question, sentence_list, sentence_prob, question_type):
