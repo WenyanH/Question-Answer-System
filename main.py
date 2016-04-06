@@ -163,6 +163,8 @@ def answering(docs, docs_q):
             question_answer = answer.answer_when(question_doc, possible_sentences, possible_sentences_prob)
         elif type_of_question == 'WHY':
             question_answer = answer.answer_why(question_doc, possible_sentences, possible_sentences_prob)
+        elif type_of_question == 'WHO':
+            question_answer = answer.answer_who(question_doc, possible_sentences, possible_sentences_prob)
         elif type_of_question == 'YES/NO':
             question_answer = answer.answer_yesno(question_doc, possible_sentences)
         else:
