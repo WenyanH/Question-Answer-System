@@ -167,7 +167,7 @@ def answering(docs, docs_q):
             question_answer = answer.answer_yesno(question_doc, possible_sentences)
         else:
             # HOW *
-            word = get_last_token_of_doc(nlp(type_of_question))
+            word = get_last_token_of_doc(nlp(unicode(type_of_question)))
             if word.pos_ == 'VERB':
                 question_answer = answer.answer_how(question_doc, possible_sentences, possible_sentences_prob)
             else:
