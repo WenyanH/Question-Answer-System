@@ -249,12 +249,17 @@ def answer_yesno(question_old, sentence_list_old):
 				continue
 			else:
 				#print question[int(arr[0])].lemma_.lower()
-				return "NO"
+				if question[int(arr[0])].pos_.lower() == sentence_list[index][int(arr[1])].pos_.lower():
+					return "NO"
+				else:
+					if sentence_list[index][int(arr[1])].lemma_.lower() in negative_words:
+						sentence_sign = sentence_sign + 1
+					elif question[int(arr[0])].lemma_.lower() in negative_words:
+						question_sign = question_sign + 1
+
 		# -1 condition find negative words
 		else:
 			#not check clauses
-
-
 			#orignial form
 			if (int(arr[0]) == -1) and sentence_list[index][int(arr[1])].lemma_.lower() in negative_words:
 				sentence_sign = sentence_sign + 1
