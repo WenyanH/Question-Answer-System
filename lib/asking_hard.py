@@ -1,7 +1,7 @@
 import asking_easy
 import random
 
-def generate_special(line):
+def generate_special(line, root_index):
 	words = line.split(" ")
 	# hard_code for either... or ...
 	flag_either_or = False
@@ -13,7 +13,7 @@ def generate_special(line):
 		s = ''
 		for word in words:
 			s+= word + ' '
-		return asking_easy.easy_question_generator(s)
+		return asking_easy.easy_question_generator(s, root_index)
 
 	# hard_code for neither... nor ...
 	flag_neither_nor = False
@@ -25,10 +25,10 @@ def generate_special(line):
 		s = ''
 		for word in words:
 			s+= word + ' '
-		return asking_easy.easy_question_generator(s)
+		return asking_easy.easy_question_generator(s, root_index)
 
 
-def generate_antonyms(line):
+def generate_antonyms(line, root_index):
 	fin_antonyms = open('data/antonyms.txt', 'r')
 	antonyms1 = []
 	antonyms2 = []
@@ -50,9 +50,9 @@ def generate_antonyms(line):
 		s = ''
 		for word in words:
 			s += word + ' '
-		return asking_easy.easy_question_generator(s)
+		return asking_easy.easy_question_generator(s, root_index)
 
-def generate_synonyms(line):
+def generate_synonyms(line, root_index):
 	fin_synonyms = open('data/synonyms.txt', 'r')
 	synonyms1 = []
 	synonyms2 = []
@@ -74,15 +74,15 @@ def generate_synonyms(line):
 		s = ''
 		for word in words:
 			s += word + ' '
-		return asking_easy.easy_question_generator(s)
+		return asking_easy.easy_question_generator(s, root_index)
 
 
-def hard_question_generator(line):
+def hard_question_generator(line, root_index):
 	ran_num = random.random()
 	if ran_num < 0.5:
-		return generate_antonyms(line)
+		return generate_antonyms(line, root_index)
 	else:
-		return generate_synonyms(line)
+		return generate_synonyms(line, root_index)
 
 
     # 1. check if line can be a hard questions

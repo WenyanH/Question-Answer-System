@@ -4,11 +4,9 @@ from random import shuffle
 from lib import asking_easy, asking_medium, asking_hard
 from lib import answering as answer
 from lib.question_type import question_type
-# from lib.find_possible_sentences import find_possible_sentences
 from spacy.en import English
 
 nlp = None
-VERBOSE = 0
 
 def main():
     # parser = argparse.ArgumentParser()
@@ -99,7 +97,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
         if count >= num_easy:
             break
         sen = get_string_of_sent(doc)
-        result = asking_easy.easy_question_generator(sen)
+        result = asking_easy.easy_question_generator(sen, get_root_of_doc(doc))
         if result:
             print(result + '\n')
             # print sen + '\n'
@@ -122,7 +120,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
         if count >= num_hard:
             break
         sen = get_string_of_sent(doc)
-        result = asking_hard.hard_question_generator(sen)
+        result = asking_hard.hard_question_generator(sen, get_root_of_doc(doc))
         if result:
             print(result + '\n')
             # print sen + '\n'
