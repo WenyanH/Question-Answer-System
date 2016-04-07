@@ -175,8 +175,8 @@ def answer_yesno(question_old, sentence_list_old):
 		#if (not word.lemma_ == "it") and (not word.lemma_ == "be") and (not word.lemma_ == "do") and (not word.lemma_ == "can") and (not word.is_punct):
 		if (not word.lemma_.lower() in delete_word) and (not word.is_punct):
 			question.append(word)
-	print "question"
-	print question
+	#print "question"
+	#print question
 	for sentence in sentence_list_old:
 		#print "sentence"
 		#print sentence
@@ -185,8 +185,8 @@ def answer_yesno(question_old, sentence_list_old):
 			#if (not word.lemma_ == "it") and (not word.lemma_ == "be") and (not word.lemma_ == "do") and (not word.lemma_ == "can") and (not word.is_punct):
 			if (not word.lemma_.lower() in delete_word) and (not word.is_punct):
 				sentence_one.append(word)
-		print "sentence"
-		print sentence_one
+		#print "sentence"
+		#print sentence_one
 		sentence_list.append(sentence_one)
 		sentence_one = []
 	#print sentence_list
@@ -224,12 +224,12 @@ def answer_yesno(question_old, sentence_list_old):
 			index = i
 			min_align = align
 	#print "index" + str(index)
-	print "before"
-	print min_align
-	print "index" + str(index)
+	#print "before"
+	#print min_align
+	#print "index" + str(index)
 	min_align = abbre_align(min_align)
-	print "align"
-	print min_align
+	#print "align"
+	#print min_align
 
 	question_sign = 0
 	sentence_sign = 0
