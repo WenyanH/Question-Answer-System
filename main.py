@@ -99,9 +99,13 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
         sen = get_string_of_sent(doc)
         result = asking_easy.easy_question_generator(sen, get_root_of_doc(doc))
         if result:
-            print(result + '\n')
+            try:
+                print(result + '\n')
+                count += 1
+            except:
+                pass
             # print sen + '\n'
-            count += 1
+
 
     print("\nMedium\n\n")
     count = 0
@@ -110,9 +114,11 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
             break
         result = asking_medium.medium_question_generator(doc, get_string_of_sent(doc))
         if result:
-            print(result + '\n')
-            # print doc, '\n'
-            count += 1
+            try:
+                print(result + '\n')
+                count += 1
+            except:
+                pass
 
     print("\nHard\n\n")
     count = 0
@@ -122,9 +128,11 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
         sen = get_string_of_sent(doc)
         result = asking_hard.hard_question_generator(sen, get_root_of_doc(doc))
         if result:
-            print(result + '\n')
-            # print sen + '\n'
-            count += 1
+            try:
+                print(result + '\n')
+                count += 1
+            except:
+                pass
 
 def get_root_of_doc(doc):
     for index, token in enumerate(doc):
@@ -149,7 +157,11 @@ def answering(docs, docs_q):
         possible_sentences = []
         print('Possible sentences:\n')
         for index in possible_sentences_index:
-            print(get_string_of_sent(docs[index]) + '\n')
+            try:
+                print(get_string_of_sent(docs[index]) + '\n')
+            except:
+                print('print fail, continue')
+                pass
             possible_sentences.append(docs[index])
         print('\n')
 
@@ -175,7 +187,11 @@ def answering(docs, docs_q):
             else:
                 question_answer = answer.answer_how_something(question_doc, possible_sentences, possible_sentences_prob, type_of_question)
 
-        print(question_answer + '\n\n')
+        try:
+            print(question_answer + '\n\n')
+        except:
+            print('answer print fail, continue')
+            pass
 
 
 if __name__ == '__main__':
