@@ -6,7 +6,7 @@ def medium_question_generator(doc, sentence):
 def create_question(sentence, replace_from, replace_to):
 	if replace_from.lower() in ['it', 'that', 'this', 'these', 'those', 'he', 'she', 'they', 'his', 'him', 'her', 'their', 'its']:
 		return None
-	sentence = sentence.replace(replace_from, replace_to)
+	sentence = sentence.replace(replace_from, replace_to, 1)
 	sentence = sentence.replace('.', '?')
 	return sentence
 
