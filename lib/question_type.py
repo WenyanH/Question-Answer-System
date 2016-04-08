@@ -8,7 +8,7 @@ def question_type(line, position):
 	col = ["is", "are", "am", "was", "were"]
 	col_up = ["Is", "Are", "Am", "Was", "Were"]
 	#question words
-	question_word = ["what", "What", "How", "how", "when", "When", "Where", "where", "who", "Who", "Why", "why"]
+	question_word = ["what", "What", "How", "how", "when", "When", "Where", "where", "who", "Who", "Why", "why", "Which", "which"]
 
 
 	line = line.strip()
