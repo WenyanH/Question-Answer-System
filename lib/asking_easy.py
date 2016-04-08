@@ -34,17 +34,17 @@ def easy_question_generator(line_, position):
 		return None
 	#Special case:
 	#Solve feature like "Someone, called A, is a boy"
-	print line
-	print "position" + str(position)
-	print "mark" + str(mark)
+	#print line
+	#print "position" + str(position)
+	#print "mark" + str(mark)
 	#if line[position - 1].pos_ == "VERB":
 	#	position = position - 1
 	if line[question_word - 1].orth_ == unicode(","):	
-		#print type(line[question_word].orth_)
-		#print type(str(line[question_word].orth_))
-		#print str(line[question_word].orth_)
 		col_out.append(line[question_word].orth_.encode('utf8')[0].upper() + line[question_word].orth_.encode('utf8')[1: len(line[question_word].orth_)])
 		
+		#uppercase or lowercase for the first word
+		col_out.append(line[0].orth_.encode('utf8').lower())
+
 		for i in range(1, len(line) - 1):
 			if i == question_word:
 				continue
@@ -59,8 +59,8 @@ def easy_question_generator(line_, position):
 	#print mark
 	#print type(mark)
 
-	#determin uppercase or lowercase
-	upper_lower = line[mark + 1].orth_.lower()
+	#determine uppercase or lowercase
+	#upper_lower = line[mark + 1].orth_.encode('utf8').lower()
 
 
 	if (mark == -1):
@@ -69,7 +69,13 @@ def easy_question_generator(line_, position):
 		col_out.append(line[question_word].orth_.encode('utf8'))
 
 	for i in range(mark + 1, len(line) - 1):
-		if i == question_word:
+		#determine uppercase or lowercase
+		if i == (mark + 1):
+			col_out.append(line[mark + 1].orth_.encode('utf8').lower())
+		
+
+		#add question word	
+		elif i == question_word:
 			continue
 		else:
 			col_out.append(line[i].orth_.encode('utf8'))
