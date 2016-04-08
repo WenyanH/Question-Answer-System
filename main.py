@@ -186,6 +186,8 @@ def answering(docs, docs_q):
             else:
                 question_answer = answer.answer_how_something(question_doc, possible_sentences, possible_sentences_prob, type_of_question)
 
+        # Upper the first letter of question_answer
+        question_answer = question_answer[0].upper() + question_answer[1:]
         try:
             print(question_answer + '\n\n')
         except:
