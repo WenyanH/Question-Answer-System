@@ -96,8 +96,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
     for doc in docs:
         if count >= num_easy:
             break
-        sen = get_string_of_sent(doc)
-        result = asking_easy.easy_question_generator(sen, get_root_of_doc(doc))
+        result = asking_easy.easy_question_generator(doc, get_root_of_doc(doc))
         if result:
             try:
                 print(result + '\n')
