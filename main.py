@@ -167,7 +167,7 @@ def answering(docs, docs_q):
 
         print('Answer:' + '\n')
         question_answer = None
-        if type_of_question == 'WHAT':
+        if type_of_question == 'WHAT' or type_of_question == 'WHICH':
             question_answer = answer.answer_what(question_doc, possible_sentences, possible_sentences_prob)
         elif type_of_question == 'WHERE':
             question_answer = answer.answer_where(question_doc, possible_sentences, possible_sentences_prob)

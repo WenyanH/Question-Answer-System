@@ -1,0 +1,296 @@
+Reading data for NLP task...
+Done
+
+Reading file...
+Done. Parsing text...
+Done
+
+Reading file...
+Done. Parsing text...
+Done
+
+Answering:Is my Fair Lady a 1964 American musical film adaptation of the Lerner and Loewe eponymous stage musical based on the 1938 film adaptation of the original 1913 stage play Pygmalion by George Bernard Shaw ?
+
+
+[0.9227430956800194, 0.22151268913573274, 0.12059890135352092]
+Possible sentences:
+
+My Fair Lady is a 1964 American musical film adaptation of the Lerner and Loewe eponymous stage musical based on the 1938 film adaptation of the original 1913 stage play Pygmalion by George Bernard Shaw .
+
+My Fair Lady currently holds a 96 % approval rating on Rotten Tomatoes based on 46 reviews , with an average rating of 8.1/10 .
+
+With a screenplay by Alan Jay Lerner and directed by George Cukor , the film depicts a poor Cockney flower seller Eliza Doolittle who overhears an arrogant phonetics professor , Henry Higgins , as he casually wagers that he could teach her to speak " proper " English , thereby making her presentable in the high society of Edwardian London .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Is eliza 's ambition to work in a flower shop , but her thick accent makes her unsuitable ?
+
+
+[0.3992290313511843, 0.12746068646595943, 0.10225136174551182]
+Possible sentences:
+
+Eliza 's ambition is to work in a flower shop , but her thick accent makes her unsuitable .
+
+With a screenplay by Alan Jay Lerner and directed by George Cukor , the film depicts a poor Cockney flower seller Eliza Doolittle who overhears an arrogant phonetics professor , Henry Higgins , as he casually wagers that he could teach her to speak " proper " English , thereby making her presentable in the high society of Edwardian London .
+
+She makes little progress , but just as she , Higgins , and Pickering are about to give up , Eliza finally " gets it " ; she instantly begins to speak with an impeccable upper class accent .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Having come from India to meet Higgins , is pickering invited to stay with the professor ?
+
+
+[0.3171169579691167, 0.08607399459302385, 0.06396929655216146]
+Possible sentences:
+
+Having come from India to meet Higgins , Pickering is invited to stay with the professor .
+
+She meets her father , who has been left a large fortune by the wealthy American Higgins had sent him to and is resigned to marrying Eliza 's stepmother .
+
+She makes little progress , but just as she , Higgins , and Pickering are about to give up , Eliza finally " gets it " ; she instantly begins to speak with an impeccable upper class accent .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Is pickering intrigued and offers to cover all expenses if the experiment should be successful ?
+
+
+[0.4175797758306048, 0.061092475827643655, 0.047874917427820456]
+Possible sentences:
+
+Pickering is intrigued and offers to cover all expenses if the experiment should be successful .
+
+After all the effort she has put in , however , Eliza is given hardly any credit ; all the praise going to Higgins .
+
+She makes little progress , but just as she , Higgins , and Pickering are about to give up , Eliza finally " gets it " ; she instantly begins to speak with an impeccable upper class accent .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Is higgins impressed by the man 's honesty , his natural gift for language , and especially his brazen lack of morals ?
+
+
+[0.46623750508578515, 0.10712816487385483, 0.08723231274827509]
+Possible sentences:
+
+Higgins is impressed by the man 's honesty , his natural gift for language , and especially his brazen lack of morals .
+
+This , and his callous treatment towards her afterwards , especially his indifference to her future , causes her to throw Higgins ' slippers at him , and to walk out on him , leaving him mystified by her ingratitude .
+
+Part of the song is sung by Doolittle and his cronies just after Eliza gives him part of her earnings , immediately before she makes the decision to go to Higgins 's house to ask for speech lessons .
+
+
+
+Answer:
+
+YES
+
+
+Answering:What is a 1964 American musical film adaptation of the Lerner and Loewe eponymous stage musical based on the 1938 film adaptation of the original 1913 stage play Pygmalion by George Bernard Shaw ?
+
+
+[0.8168908973772117, 0.12059890135352092, 0.11566049083292501]
+Possible sentences:
+
+My Fair Lady is a 1964 American musical film adaptation of the Lerner and Loewe eponymous stage musical based on the 1938 film adaptation of the original 1913 stage play Pygmalion by George Bernard Shaw .
+
+With a screenplay by Alan Jay Lerner and directed by George Cukor , the film depicts a poor Cockney flower seller Eliza Doolittle who overhears an arrogant phonetics professor , Henry Higgins , as he casually wagers that he could teach her to speak " proper " English , thereby making her presentable in the high society of Edwardian London .
+
+My Fair Lady currently holds a 96 % approval rating on Rotten Tomatoes based on 46 reviews , with an average rating of 8.1/10 .
+
+
+
+Answer:
+
+My Fair Lady
+
+
+Answering:What won eight Academy Awards , including Best Picture , Best Actor , and Best Director ?
+
+
+[0.42599474789011055, 0.14536463548862202, 0.06516193076042964]
+Possible sentences:
+
+The film won eight Academy Awards , including Best Picture , Best Actor , and Best Director .
+
+Gene Allen , Cecil Beaton , and George James Hopkins won an Academy Award for Best Production Design for art direction of the film .
+
+The sound department earned an Academy Award for its efforts .
+
+
+
+Answer:
+
+The film
+
+
+Answering:Who selects as an example a young flower seller , Eliza Doolittle ( Audrey Hepburn ) , who has a strong Cockney accent ?
+
+
+[0.5185813734193142, 0.20864400332591393, 0.11164218690680672]
+Possible sentences:
+
+Higgins selects as an example a young flower seller , Eliza Doolittle ( Audrey Hepburn ) , who has a strong Cockney accent .
+
+With a screenplay by Alan Jay Lerner and directed by George Cukor , the film depicts a poor Cockney flower seller Eliza Doolittle who overhears an arrogant phonetics professor , Henry Higgins , as he casually wagers that he could teach her to speak " proper " English , thereby making her presentable in the high society of Edwardian London .
+
+In Covent Garden one evening , he boasts to a new acquaintance , Colonel Hugh Pickering ( Wilfrid Hyde - White ) , himself an expert in phonetics , that he could teach any person to speak in a way that he could pass them off as a duke or duchess at an embassy ball .
+
+
+
+Answer:
+
+Higgins
+
+
+Answering:Who 's ambition is to work in a flower shop , but her thick accent makes her unsuitable ?
+
+
+[0.3743799648533043, 0.1372689789960767, 0.11225243392518447]
+Possible sentences:
+
+Eliza 's ambition is to work in a flower shop , but her thick accent makes her unsuitable .
+
+With a screenplay by Alan Jay Lerner and directed by George Cukor , the film depicts a poor Cockney flower seller Eliza Doolittle who overhears an arrogant phonetics professor , Henry Higgins , as he casually wagers that he could teach her to speak " proper " English , thereby making her presentable in the high society of Edwardian London .
+
+This , and his callous treatment towards her afterwards , especially his indifference to her future , causes her to throw Higgins ' slippers at him , and to walk out on him , leaving him mystified by her ingratitude .
+
+
+
+Answer:
+
+Eliza
+
+
+Answering:What is intrigued and offers to cover all expenses if the experiment should be successful ?
+
+
+[0.3904992738195827, 0.061092475827643655, 0.057557422135869125]
+Possible sentences:
+
+Pickering is intrigued and offers to cover all expenses if the experiment should be successful .
+
+After all the effort she has put in , however , Eliza is given hardly any credit ; all the praise going to Higgins .
+
+Then , to his surprise , Eliza reappears in his study and it remains an open question what will happen next .
+
+
+
+Answer:
+
+Pickering
+
+
+Answering:Is my Fair Lord a 1964 American musical film adaptation of the Lerner and Loewe eponymous stage musical based on the 1938 film adaptation of the original 1913 stage play Pygmalion by George Bernard Shaw ?
+
+
+[0.8901621302998045, 0.18893172375551792, 0.12059890135352092]
+Possible sentences:
+
+My Fair Lady is a 1964 American musical film adaptation of the Lerner and Loewe eponymous stage musical based on the 1938 film adaptation of the original 1913 stage play Pygmalion by George Bernard Shaw .
+
+My Fair Lady currently holds a 96 % approval rating on Rotten Tomatoes based on 46 reviews , with an average rating of 8.1/10 .
+
+With a screenplay by Alan Jay Lerner and directed by George Cukor , the film depicts a poor Cockney flower seller Eliza Doolittle who overhears an arrogant phonetics professor , Henry Higgins , as he casually wagers that he could teach her to speak " proper " English , thereby making her presentable in the high society of Edwardian London .
+
+
+
+Answer:
+
+NO
+
+
+Answering:Is eliza 's ambition to idle in a flower shop , but her thick accent makes her unsuitable ?
+
+
+[0.36259341488988783, 0.12746068646595943, 0.10225136174551182]
+Possible sentences:
+
+Eliza 's ambition is to work in a flower shop , but her thick accent makes her unsuitable .
+
+With a screenplay by Alan Jay Lerner and directed by George Cukor , the film depicts a poor Cockney flower seller Eliza Doolittle who overhears an arrogant phonetics professor , Henry Higgins , as he casually wagers that he could teach her to speak " proper " English , thereby making her presentable in the high society of Edwardian London .
+
+She makes little progress , but just as she , Higgins , and Pickering are about to give up , Eliza finally " gets it " ; she instantly begins to speak with an impeccable upper class accent .
+
+
+
+Answer:
+
+NO
+
+
+Answering:Having go from India to meet Higgins , is pickering invited to stay with the professor ?
+
+
+[0.29514471219575455, 0.08607399459302385, 0.06396929655216146]
+Possible sentences:
+
+Having come from India to meet Higgins , Pickering is invited to stay with the professor .
+
+She meets her father , who has been left a large fortune by the wealthy American Higgins had sent him to and is resigned to marrying Eliza 's stepmother .
+
+She makes little progress , but just as she , Higgins , and Pickering are about to give up , Eliza finally " gets it " ; she instantly begins to speak with an impeccable upper class accent .
+
+
+
+Answer:
+
+NO
+
+
+Answering:Is pickering intrigued and offers to uncover all expenses if the experiment should be successful ?
+
+
+[0.3738852973059346, 0.061092475827643655, 0.047874917427820456]
+Possible sentences:
+
+Pickering is intrigued and offers to cover all expenses if the experiment should be successful .
+
+After all the effort she has put in , however , Eliza is given hardly any credit ; all the praise going to Higgins .
+
+She makes little progress , but just as she , Higgins , and Pickering are about to give up , Eliza finally " gets it " ; she instantly begins to speak with an impeccable upper class accent .
+
+
+
+Answer:
+
+NO
+
+
+Answering:Is higgins impressed by the man 's honesty , his lifelike gift for language , and especially his brazen lack of morals ?
+
+
+[0.422543026561115, 0.10712816487385483, 0.08723231274827509]
+Possible sentences:
+
+Higgins is impressed by the man 's honesty , his natural gift for language , and especially his brazen lack of morals .
+
+This , and his callous treatment towards her afterwards , especially his indifference to her future , causes her to throw Higgins ' slippers at him , and to walk out on him , leaving him mystified by her ingratitude .
+
+Part of the song is sung by Doolittle and his cronies just after Eliza gives him part of her earnings , immediately before she makes the decision to go to Higgins 's house to ask for speech lessons .
+
+
+
+Answer:
+
+NO
+
+

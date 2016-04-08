@@ -1,0 +1,299 @@
+Reading data for NLP task...
+Done
+
+Reading file...
+Done. Parsing text...
+Done
+
+Reading file...
+Done. Parsing text...
+Done
+
+Answering:Is aries one of the constellations of the zodiac ?
+
+
+[0.1059563423276249, 0.09574983485564091, 0.075999019592085]
+Possible sentences:
+
+Aries is one of the constellations of the zodiac .
+
+It is one of the 48 constellations described by the 2nd century astronomer Ptolemy , and remains one of the 88 modern constellations .
+
+In the description of the Babylonian zodiac given in the clay tablets known as the MUL.APIN , the constellation now known as Aries was the final station along the ecliptic .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Is aries a relatively dim constellation , possessing only four bright stars : Hamal ( Alpha Arietis , second magnitude ) , Sheratan ( Beta Arietis , third magnitude ) , Mesarthim ( Gamma Arietis , fourth magnitude ) , and 41 Arietis ( also fourth magnitude ) ?
+
+
+[1.2453620486000496, 0.191081679369601, 0.16171583335908807]
+Possible sentences:
+
+Aries is a relatively dim constellation , possessing only four bright stars : Hamal ( Alpha Arietis , second magnitude ) , Sheratan ( Beta Arietis , third magnitude ) , Mesarthim ( Gamma Arietis , fourth magnitude ) , and 41 Arietis ( also fourth magnitude ) .
+
+Alpha , Beta , and Gamma Arietis formed the head of the porpoise , while stars from Andromeda formed the body and the bright stars of Cassiopeia formed the tail .
+
+There is also one other star above the fourth magnitude , 41 Arietis .
+
+
+
+Answer:
+
+YES
+
+
+Answering:The few deep - are sky objects within the constellation quite faint and include several pairs of interacting galaxies ?
+
+
+[0.5263954616377782, 0.19234536077837583, 0.17106223206451157]
+Possible sentences:
+
+The few deep - sky objects within the constellation are quite faint and include several pairs of interacting galaxies .
+
+The few deep - sky objects in Aries are very dim .
+
+Nevertheless , several scientifically interesting galaxies lie within its borders ; it has spiral , elliptical , and interacting galaxies .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Is aries now recognized as an official constellation , albeit as a specific region of the sky , by the International Astronomical Union ?
+
+
+[0.5717547401065061, 0.17270195624576917, 0.14128590603937002]
+Possible sentences:
+
+Aries is now recognized as an official constellation , albeit as a specific region of the sky , by the International Astronomical Union .
+
+It was originally defined in ancient texts as a specific pattern of stars , and has remained a constellation since ancient times ; it now includes the ancient pattern as well as the surrounding stars .
+
+In 1922 , the International Astronomical Union defined its recommended three - letter abbreviation , " Ari " .
+
+
+
+Answer:
+
+YES
+
+
+Answering:In the description of the Babylonian zodiac given in the clay tablets known as the MUL.APIN , was the constellation now known as Aries the final station along the ecliptic ?
+
+
+[0.723437142905443, 0.12272983350812801, 0.10481223881584746]
+Possible sentences:
+
+In the description of the Babylonian zodiac given in the clay tablets known as the MUL.APIN , the constellation now known as Aries was the final station along the ecliptic .
+
+It was originally defined in ancient texts as a specific pattern of stars , and has remained a constellation since ancient times ; it now includes the ancient pattern as well as the surrounding stars .
+
+Aries is now recognized as an official constellation , albeit as a specific region of the sky , by the International Astronomical Union .
+
+
+
+Answer:
+
+YES
+
+
+Answering:What is one of the constellations of the zodiac ?
+
+
+[0.09574983485564091, 0.0949702194409438, 0.06501289670540389, 0.05407171771460119, 0.029957322735539908]
+Possible sentences:
+
+It is one of the 48 constellations described by the 2nd century astronomer Ptolemy , and remains one of the 88 modern constellations .
+
+Aries is one of the constellations of the zodiac .
+
+In the description of the Babylonian zodiac given in the clay tablets known as the MUL.APIN , the constellation now known as Aries was the final station along the ecliptic .
+
+However , some Islamic celestial globes depicted Aries as a nondescript four - legged animal with what may be antlers instead of horns .
+
+The generally accepted Arabic formation of Aries consisted of thirteen stars in a figure along with five " unformed " stars , four of which were over the animal 's hindquarters and one of which was the disputed star over Aries 's head .
+
+
+
+Answer:
+
+Aries
+
+
+Answering:What have incorporated the stars of Aries into different constellations including twin inspectors in China and a porpoise in the Marshall Islands ?
+
+
+[0.5895826480989591, 0.31398786228513914, 0.11867518242704637]
+Possible sentences:
+
+Different cultures have incorporated the stars of Aries into different constellations including twin inspectors in China and a porpoise in the Marshall Islands .
+
+Half a world away , in the Marshall Islands , several stars from Aries were incorporated into a constellation depicting a porpoise , along with stars from Cassiopeia , Andromeda , and Triangulum .
+
+It was originally defined in ancient texts as a specific pattern of stars , and has remained a constellation since ancient times ; it now includes the ancient pattern as well as the surrounding stars .
+
+
+
+Answer:
+
+Different cultures
+
+
+Answering:What is a relatively dim constellation , possessing only four bright stars : Hamal ( Alpha Arietis , second magnitude ) , Sheratan ( Beta Arietis , third magnitude ) , Mesarthim ( Gamma Arietis , fourth magnitude ) , and 41 Arietis ( also fourth magnitude ) ?
+
+
+[1.2343759257133686, 0.191081679369601, 0.16171583335908807]
+Possible sentences:
+
+Aries is a relatively dim constellation , possessing only four bright stars : Hamal ( Alpha Arietis , second magnitude ) , Sheratan ( Beta Arietis , third magnitude ) , Mesarthim ( Gamma Arietis , fourth magnitude ) , and 41 Arietis ( also fourth magnitude ) .
+
+Alpha , Beta , and Gamma Arietis formed the head of the porpoise , while stars from Andromeda formed the body and the bright stars of Cassiopeia formed the tail .
+
+There is also one other star above the fourth magnitude , 41 Arietis .
+
+
+
+Answer:
+
+Aries
+
+
+Answering:What appear to radiate from Aries , including the Daytime Arietids and the Epsilon Arietids ?
+
+
+[0.4035077791023312, 0.29421272222549466, 0.28331709769401275]
+Possible sentences:
+
+Other meteor showers radiating from Aries include the October Delta Arietids , Daytime Epsilon Arietids , Daytime May Arietids , Sigma Arietids , Nu Arietids , and Beta Arietids .
+
+Several meteor showers appear to radiate from Aries , including the Daytime Arietids and the Epsilon Arietids .
+
+Other meteor showers radiate from Aries during the day ; these include the Daytime Epsilon Arietids and the Northern and Southern Daytime May Arietids .
+
+
+
+Answer:
+
+the October Delta Arietids
+
+
+Answering:What is now recognized as an official constellation , albeit as a specific region of the sky , by the International Astronomical Union ?
+
+
+[0.5607686172198248, 0.17270195624576917, 0.14128590603937002]
+Possible sentences:
+
+Aries is now recognized as an official constellation , albeit as a specific region of the sky , by the International Astronomical Union .
+
+It was originally defined in ancient texts as a specific pattern of stars , and has remained a constellation since ancient times ; it now includes the ancient pattern as well as the surrounding stars .
+
+In 1922 , the International Astronomical Union defined its recommended three - letter abbreviation , " Ari " .
+
+
+
+Answer:
+
+Aries
+
+
+Answering:Is aries a relatively dim configuration , possessing only four bright stars : Hamal ( Alpha Arietis , second magnitude ) , Sheratan ( Beta Arietis , third magnitude ) , Mesarthim ( Gamma Arietis , fourth magnitude ) , and 41 Arietis ( also fourth magnitude ) ?
+
+
+[1.2274444539077691, 0.191081679369601, 0.16171583335908807]
+Possible sentences:
+
+Aries is a relatively dim constellation , possessing only four bright stars : Hamal ( Alpha Arietis , second magnitude ) , Sheratan ( Beta Arietis , third magnitude ) , Mesarthim ( Gamma Arietis , fourth magnitude ) , and 41 Arietis ( also fourth magnitude ) .
+
+Alpha , Beta , and Gamma Arietis formed the head of the porpoise , while stars from Andromeda formed the body and the bright stars of Cassiopeia formed the tail .
+
+There is also one other star above the fourth magnitude , 41 Arietis .
+
+
+
+Answer:
+
+NO
+
+
+Answering:The many deep - are sky objects within the constellation quite faint and include several pairs of interacting galaxies ?
+
+
+[0.47930015962465483, 0.17106223206451157, 0.1452500587652525]
+Possible sentences:
+
+The few deep - sky objects within the constellation are quite faint and include several pairs of interacting galaxies .
+
+Nevertheless , several scientifically interesting galaxies lie within its borders ; it has spiral , elliptical , and interacting galaxies .
+
+The few deep - sky objects in Aries are very dim .
+
+
+
+Answer:
+
+NO
+
+
+Answering:Is aries now accepted as an official constellation , albeit as a specific region of the sky , by the International Astronomical Union ?
+
+
+[0.5246594380933827, 0.17270195624576917, 0.14128590603937002]
+Possible sentences:
+
+Aries is now recognized as an official constellation , albeit as a specific region of the sky , by the International Astronomical Union .
+
+It was originally defined in ancient texts as a specific pattern of stars , and has remained a constellation since ancient times ; it now includes the ancient pattern as well as the surrounding stars .
+
+In 1922 , the International Astronomical Union defined its recommended three - letter abbreviation , " Ari " .
+
+
+
+Answer:
+
+NO
+
+
+Answering:In the description of the Babylonian zodiac given in the clay tablets unknown as the MUL.APIN , was the constellation now known as Aries the final station along the ecliptic ?
+
+
+[0.723437142905443, 0.12272983350812801, 0.10481223881584746]
+Possible sentences:
+
+In the description of the Babylonian zodiac given in the clay tablets known as the MUL.APIN , the constellation now known as Aries was the final station along the ecliptic .
+
+It was originally defined in ancient texts as a specific pattern of stars , and has remained a constellation since ancient times ; it now includes the ancient pattern as well as the surrounding stars .
+
+Aries is now recognized as an official constellation , albeit as a specific region of the sky , by the International Astronomical Union .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Was the MUL.APIN a comprehensive_examination table of the risings and settings of stars , which likely served as an agricultural calendar ?
+
+
+[0.4929871130970955, 0.15692529871143152, 0.125944322857354]
+Possible sentences:
+
+The MUL.APIN was a comprehensive table of the risings and settings of stars , which likely served as an agricultural calendar .
+
+Although likely compiled in the 12th or 11th century BC , the MUL.APIN reflects a tradition which marks the Pleiades as the vernal equinox , which was the case with some precision at the beginning of the Middle Bronze Age .
+
+print fail, continue
+
+
+Answer:
+
+YES
+
+

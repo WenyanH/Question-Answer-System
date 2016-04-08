@@ -1,0 +1,293 @@
+Reading data for NLP task...
+Done
+
+Reading file...
+Done. Parsing text...
+Done
+
+Reading file...
+Done. Parsing text...
+Done
+
+Answering:The Lord of the Rings : is the Return of the King a 2003 epic high fantasy film directed by Peter Jackson based on the second and third volumes of J. R. R. Tolkien 's The Lord of the Rings ?
+
+
+[0.8919705042214099, 0.1912877612143777, 0.18281478261050566]
+Possible sentences:
+
+The Lord of the Rings : The Return of the King is a 2003 epic high fantasy film directed by Peter Jackson based on the second and third volumes of J. R. R. Tolkien 's The Lord of the Rings .
+
+This was nearly twice the first - day total of The Lord of the Rings : The Fellowship of the Ring ( which earned $ 18.2 million on its opening day in 2001 ) , and a significant increase over The Lord of the Rings : The Two Towers as well ( which earned $ 26.1 million on its debut in 2002 ) .
+
+The substantial increase in initial box office totals caused optimistic studio executives to forecast that The Lord of the Rings : The Return of the King would surpass The Lord of the Rings : The Two Towers in total earnings .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Was the film the highest - grossing film of 2003 and , by the end of its theatrical run , the second highest - grossing film in history ?
+
+
+[0.45674422468610343, 0.3231793913443276, 0.31912474026324594]
+Possible sentences:
+
+The film was the highest - grossing film of 2003 and , by the end of its theatrical run , the second highest - grossing film in history .
+
+Outside the US and Canada , it is the seventh highest - grossing film , the highest - grossing 2003 film and the highest - grossing film of the trilogy .
+
+Worldwide , it is the thirteenth highest - grossing film when not adjusted for inflation , the highest - grossing 2003 film and the highest - grossing instalment in The Lord of the Rings trilogy .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Will gandalf deduces Sauron attack Gondor 's capital Minas Tirith , riding there with Pippin ?
+
+
+[0.4650345378054078, 0.21391527362284457, 0.16721818655158793]
+Possible sentences:
+
+Gandalf deduces Sauron will attack Gondor 's capital Minas Tirith , riding there with Pippin .
+
+( Bernard Hill ) rally their forces to help defend Gondor 's capital Minas Tirith from the looming threat , while Aragorn ( Viggo Mortensen ) finally claims the throne of Gondor and , with the aid of Legolas ( Orlando Bloom ) and Gimli ( John Rhys - Davies ) , summons the Army of the Dead to help him defeat Sauron .
+
+At Minas Tirith , Pippin explains to Denethor how Boromir died , and Gandalf explains to Pippin how Gondor fell into ruin .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Meanwhile , are frodo Baggins and Samwise Gamgee led by Gollum to Minas Morgul where they witness the fortress ' lord , the Witch - king of Angmar leading an Orc army to drive Denethor 's youngest son Faramir and his men from Osgiliath ?
+
+
+[1.2017918872321676, 0.222664080372868, 0.20376208495245493]
+Possible sentences:
+
+Meanwhile , Frodo Baggins and Samwise Gamgee are led by Gollum to Minas Morgul where they witness the fortress ' lord , the Witch - king of Angmar leading an Orc army to drive Denethor 's youngest son Faramir and his men from Osgiliath .
+
+print fail, continue
+Denethor falls into madness when he believes a wounded Faramir is dead from a futile effort to retake Osgiliath , leaving Gandalf to command the city defences against the Orc army under Gothmog .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Is realizing Frodo alive , Sam gives chase and rescues Frodo , returning the Ring to him ?
+
+
+[0.3879225205596634, 0.15638954723458823, 0.15178429838167629]
+Possible sentences:
+
+Realizing Frodo is alive , Sam gives chase and rescues Frodo , returning the Ring to him .
+
+Though Sam returns and drives Shelob off , he takes Frodo 's sword Sting and the Ring for safekeeping , believing him to be dead , before Frodo 's body is taken by Orcs to Cirith Ungol .
+
+Sam and Frodo get more time in Mordor : the fight among the orcs in the tower of Cirith Ungol is longer , and after Sam rescues Frodo , a sequence reveals a surviving Uruk sneaking off with Frodo 's mithril shirt .
+
+
+
+Answer:
+
+YES
+
+
+Answering:What of the Rings : The Return of the King is a 2003 epic high fantasy film directed by Peter Jackson based on the second and third volumes of J ? R ? R ? Tolkien 's The Lord of the Rings ?
+
+
+[0.7257899436064713, 0.1912877612143777, 0.18281478261050566]
+Possible sentences:
+
+The Lord of the Rings : The Return of the King is a 2003 epic high fantasy film directed by Peter Jackson based on the second and third volumes of J. R. R. Tolkien 's The Lord of the Rings .
+
+This was nearly twice the first - day total of The Lord of the Rings : The Fellowship of the Ring ( which earned $ 18.2 million on its opening day in 2001 ) , and a significant increase over The Lord of the Rings : The Two Towers as well ( which earned $ 26.1 million on its debut in 2002 ) .
+
+The substantial increase in initial box office totals caused optimistic studio executives to forecast that The Lord of the Rings : The Return of the King would surpass The Lord of the Rings : The Two Towers in total earnings .
+
+
+
+Answer:
+
+NO
+
+
+Answering:What 2 ( $ 1?31 billion ) surpassed The Return of the King 's final gross in 2011 ?
+
+
+[0.38430491369701947, 0.26934671372634655, 0.22472602030287242]
+Possible sentences:
+
+Part 2 ( $ 1.31 billion ) surpassed The Return of the King 's final gross in 2011 .
+
+print fail, continue
+If this is so , the total gross income for the trilogy would be in the region of $ 6 billion following an investment of $ 300 million ( $ 426 million including marketing costs ) .
+
+
+
+Answer:
+
+NO
+
+
+Answering:What was the highest - grossing film of 2003 and , by the end of its theatrical run , the second highest - grossing film in history ?
+
+
+[0.4904171829859682, 0.3338891948443879, 0.3231793913443276]
+Possible sentences:
+
+The film was the highest - grossing film of 2003 and , by the end of its theatrical run , the second highest - grossing film in history .
+
+In the US and Canada , it is the twenty - sixth highest - grossing film , the highest - grossing 2003 film , and the highest - grossing instalment in The Lord of the Rings trilogy .
+
+Outside the US and Canada , it is the seventh highest - grossing film , the highest - grossing 2003 film and the highest - grossing film of the trilogy .
+
+
+
+Answer:
+
+the highest - grossing film
+
+
+Answering:What included the awards for Best Picture , the first and only time a fantasy film has done so ; it was also the second sequel to win a Best Picture Oscar ( following The Godfather Part II ) and Best Director ?
+
+
+[1.0956293430341324, 0.7681379323226707, 0.5941571102552577]
+Possible sentences:
+
+The wins included the awards for Best Picture , the first and only time a fantasy film has done so ; it was also the second sequel to win a Best Picture Oscar ( following The Godfather Part II ) and Best Director .
+
+The film also won four Golden Globes ( including Best Picture for Drama and Best Director ) , five BAFTAs , two MTV Movie Awards , two Grammy Awards , nine Saturn Awards , the New York Film Critics Circle award for Best Picture , the Nebula Award for Best Script , and the Hugo Award for Best Dramatic Presentation , Long Form .
+
+The film was nominated for eleven Academy Awards : Best Picture , Best Director , Best Adapted Screenplay , Best Original Score , Best Original Song , Best Visual Effects , Best Art Direction , Best Costume Design , Best Make - up , Best Sound Mixing and Best Film Editing .
+
+
+
+Answer:
+
+NO
+
+
+Answering:What jointly holds the record for the largest number of Academy Awards won with Ben - Hur ( 1959 ) and Titanic ( 1997 ) ?
+
+
+[0.7273998040877118, 0.46268561181923773, 0.3768955926411673]
+Possible sentences:
+
+The film jointly holds the record for the largest number of Academy Awards won with Ben - Hur ( 1959 ) and Titanic ( 1997 ) .
+
+At the 76th Academy Awards in 2004 , the film won all the categories for which it was nominated and it holds the record for highest Academy Award totals along with Titanic and Ben Hur .
+
+The film also won four Golden Globes ( including Best Picture for Drama and Best Director ) , five BAFTAs , two MTV Movie Awards , two Grammy Awards , nine Saturn Awards , the New York Film Critics Circle award for Best Picture , the Nebula Award for Best Script , and the Hugo Award for Best Dramatic Presentation , Long Form .
+
+
+
+Answer:
+
+The film
+
+
+Answering:The Lady of the Rings : is the Return of the King a 2003 epic high fantasy film directed by Peter Jackson based on the second and third volumes of J. R. R. Tolkien 's The Lord of the Rings ?
+
+
+[0.8919705042214099, 0.1912877612143777, 0.18281478261050566]
+Possible sentences:
+
+The Lord of the Rings : The Return of the King is a 2003 epic high fantasy film directed by Peter Jackson based on the second and third volumes of J. R. R. Tolkien 's The Lord of the Rings .
+
+This was nearly twice the first - day total of The Lord of the Rings : The Fellowship of the Ring ( which earned $ 18.2 million on its opening day in 2001 ) , and a significant increase over The Lord of the Rings : The Two Towers as well ( which earned $ 26.1 million on its debut in 2002 ) .
+
+The substantial increase in initial box office totals caused optimistic studio executives to forecast that The Lord of the Rings : The Return of the King would surpass The Lord of the Rings : The Two Towers in total earnings .
+
+
+
+Answer:
+
+NO
+
+
+Answering:Was the film the highest - grossing film of 2003 and , by the beginning of its theatrical run , the second highest - grossing film in history ?
+
+
+[0.4249636863826241, 0.3231793913443276, 0.31912474026324594]
+Possible sentences:
+
+The film was the highest - grossing film of 2003 and , by the end of its theatrical run , the second highest - grossing film in history .
+
+Outside the US and Canada , it is the seventh highest - grossing film , the highest - grossing 2003 film and the highest - grossing film of the trilogy .
+
+Worldwide , it is the thirteenth highest - grossing film when not adjusted for inflation , the highest - grossing 2003 film and the highest - grossing instalment in The Lord of the Rings trilogy .
+
+
+
+Answer:
+
+NO
+
+
+Answering:Will gandalf deduces Sauron defend Gondor 's capital Minas Tirith , riding there with Pippin ?
+
+
+[0.4294810571905137, 0.2646670117751828, 0.16721818655158793]
+Possible sentences:
+
+Gandalf deduces Sauron will attack Gondor 's capital Minas Tirith , riding there with Pippin .
+
+( Bernard Hill ) rally their forces to help defend Gondor 's capital Minas Tirith from the looming threat , while Aragorn ( Viggo Mortensen ) finally claims the throne of Gondor and , with the aid of Legolas ( Orlando Bloom ) and Gimli ( John Rhys - Davies ) , summons the Army of the Dead to help him defeat Sauron .
+
+At Minas Tirith , Pippin explains to Denethor how Boromir died , and Gandalf explains to Pippin how Gondor fell into ruin .
+
+
+
+Answer:
+
+NO
+
+
+Answering:Meanwhile , are frodo Baggins and Samwise Gamgee led by Gollum to Minas Morgul where they witness the fortress ' lord , the Witch - queen of Angmar leading an Orc army to drive Denethor 's youngest son Faramir and his men from Osgiliath ?
+
+
+[1.180997471815369, 0.20376208495245493, 0.20186966495606964]
+Possible sentences:
+
+Meanwhile , Frodo Baggins and Samwise Gamgee are led by Gollum to Minas Morgul where they witness the fortress ' lord , the Witch - king of Angmar leading an Orc army to drive Denethor 's youngest son Faramir and his men from Osgiliath .
+
+Denethor falls into madness when he believes a wounded Faramir is dead from a futile effort to retake Osgiliath , leaving Gandalf to command the city defences against the Orc army under Gothmog .
+
+print fail, continue
+
+
+Answer:
+
+NO
+
+
+Answering:Is realizing Frodo dead , Sam gives chase and rescues Frodo , returning the Ring to him ?
+
+
+[0.3302081093283632, 0.18411543445698603, 0.15178429838167629]
+Possible sentences:
+
+Realizing Frodo is alive , Sam gives chase and rescues Frodo , returning the Ring to him .
+
+Though Sam returns and drives Shelob off , he takes Frodo 's sword Sting and the Ring for safekeeping , believing him to be dead , before Frodo 's body is taken by Orcs to Cirith Ungol .
+
+Sam and Frodo get more time in Mordor : the fight among the orcs in the tower of Cirith Ungol is longer , and after Sam rescues Frodo , a sequence reveals a surviving Uruk sneaking off with Frodo 's mithril shirt .
+
+
+
+Answer:
+
+NO
+
+

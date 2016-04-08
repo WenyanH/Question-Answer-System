@@ -1,0 +1,291 @@
+Reading data for NLP task...
+Done
+
+Reading file...
+Done. Parsing text...
+Done
+
+Reading file...
+Done. Parsing text...
+Done
+
+Answering:In cases where Simplified and Traditional Chinese scripts are identical , is the Chinese term written once ?
+
+
+[0.3799761902560781, 0.15174803643581222, 0.14378640165199494]
+Possible sentences:
+
+In cases where Simplified and Traditional Chinese scripts are identical , the Chinese term is written once .
+
+Calligraphy artists can write in traditional and simplified characters , but they tend to use traditional characters for traditional art .
+
+Various other written styles are also used in Chinese calligraphy , including seal script , cursive script and clerical script .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Is chinese spoken by the Han majority and many other ethnic groups in China ?
+
+
+[0.3080024065296568, 0.12198040473832909, 0.11626254150277232]
+Possible sentences:
+
+Chinese is spoken by the Han majority and many other ethnic groups in China .
+
+There are between 7 and 13 main regional groups of Chinese ( depending on classification scheme ) , of which the most spoken by far is Mandarin ( about 960 million ) , followed by Wu ( 80 million ) , Yue ( 60 million ) and Min ( 70 million ) .
+
+Other terms were coined by the Japanese by giving new senses to existing Chinese terms or by referring to expressions used in classical Chinese literature .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Are the varieties of Chinese usually described by native speakers as dialects of a single Chinese language , but linguists note that they are as diverse as a language family ?
+
+
+[0.6124654707215837, 0.23770081186793676, 0.23209720088580668]
+Possible sentences:
+
+The varieties of Chinese are usually described by native speakers as dialects of a single Chinese language , but linguists note that they are as diverse as a language family .
+
+John DeFrancis considers the mutual unintelligibility too great for the term " dialects " to be used to refer to the different varieties , but also objects to considering them as separate languages , as it incorrectly implies a set of disruptive " religious , economic , political , and other differences " between speakers that exist , for example , between French Catholics and English Protestants in Canada , but not between speakers of Cantonese and Mandarin in China , owing to China 's near - uninterrupted history of centralized government .
+
+Mutual intelligibility is considered by some linguists to be the main criterion for determining whether varieties are separate languages or dialects of a single language , although others do not regard it as decisive , particularly when cultural factors interfere as they do with Chinese .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Are there between 7 and 13 main regional groups of Chinese ( depending on classification scheme ) , of which the most spoken by far is Mandarin ( about 960 million ) , followed by Wu ( 80 million ) , Yue ( 60 million ) and Min ( 70 million ) ?
+
+
+[1.4243675262874786, 0.2630005085386944, 0.2469198317414508]
+Possible sentences:
+
+There are between 7 and 13 main regional groups of Chinese ( depending on classification scheme ) , of which the most spoken by far is Mandarin ( about 960 million ) , followed by Wu ( 80 million ) , Yue ( 60 million ) and Min ( 70 million ) .
+
+print fail, continue
+For instance , Wuzhou is about 120 miles ( 190 km ) upstream from Guangzhou , but the Yue variety spoken there is more like that of Guangzhou than is that of Taishan , 60 miles ( 95 km ) southwest of Guangzhou and separated from it by several rivers .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Are most of these groups mutually unintelligible , although some , like Xiang and the Southwest Mandarin dialects , may share common terms and some degree of intelligibility ?
+
+
+[0.6594966984382618, 0.2194063828373123, 0.1668567960854292]
+Possible sentences:
+
+Most of these groups are mutually unintelligible , although some , like Xiang and the Southwest Mandarin dialects , may share common terms and some degree of intelligibility .
+
+As Campbell ( 2008 ) explains , linguists often ignore mutual intelligibility when varieties share intelligibility with a central variety ( i.e. prestige variety , such as Standard Mandarin ) , as the issue requires some careful handling when mutual intelligibility is inconsistent with language identity .
+
+As a result , these terms are virtually indistinguishable from native Chinese words : indeed , there is some dispute over some of these terms as to whether the Japanese or Chinese coined them first .
+
+
+
+Answer:
+
+YES
+
+
+Answering:What is spoken by the Han majority and many other ethnic groups in China ?
+
+
+[0.3010709347240574, 0.11504893293272964, 0.11234691947338059]
+Possible sentences:
+
+Chinese is spoken by the Han majority and many other ethnic groups in China .
+
+There are between 7 and 13 main regional groups of Chinese ( depending on classification scheme ) , of which the most spoken by far is Mandarin ( about 960 million ) , followed by Wu ( 80 million ) , Yue ( 60 million ) and Min ( 70 million ) .
+
+John DeFrancis considers the mutual unintelligibility too great for the term " dialects " to be used to refer to the different varieties , but also objects to considering them as separate languages , as it incorrectly implies a set of disruptive " religious , economic , political , and other differences " between speakers that exist , for example , between French Catholics and English Protestants in Canada , but not between speakers of Cantonese and Mandarin in China , owing to China 's near - uninterrupted history of centralized government .
+
+
+
+Answer:
+
+Chinese
+
+
+Answering:What ( around 16 % of the world 's population ) speak some form of Chinese as their first language ?
+
+
+[0.47504985671243477, 0.19775021196025974, 0.1741496583571874]
+Possible sentences:
+
+Nearly 1.2 billion people ( around 16 % of the world 's population ) speak some form of Chinese as their first language .
+
+print fail, continue
+print fail, continue
+
+
+Answer:
+
+NO
+
+
+Answering:What of Chinese are usually described by native speakers as dialects of a single Chinese language , but linguists note that they are as diverse as a language family ?
+
+
+[0.5945478760293033, 0.21978321717565621, 0.21417960619352608]
+Possible sentences:
+
+The varieties of Chinese are usually described by native speakers as dialects of a single Chinese language , but linguists note that they are as diverse as a language family .
+
+John DeFrancis considers the mutual unintelligibility too great for the term " dialects " to be used to refer to the different varieties , but also objects to considering them as separate languages , as it incorrectly implies a set of disruptive " religious , economic , political , and other differences " between speakers that exist , for example , between French Catholics and English Protestants in Canada , but not between speakers of Cantonese and Mandarin in China , owing to China 's near - uninterrupted history of centralized government .
+
+Mutual intelligibility is considered by some linguists to be the main criterion for determining whether varieties are separate languages or dialects of a single language , although others do not regard it as decisive , particularly when cultural factors interfere as they do with Chinese .
+
+
+
+Answer:
+
+The varieties
+
+
+Answering:What of Chinese has been likened to that of the Romance languages , but may be even more varied ?
+
+
+[0.363600590504157, 0.14429622648033943, 0.12828260737149624]
+Possible sentences:
+
+The internal diversity of Chinese has been likened to that of the Romance languages , but may be even more varied .
+
+John DeFrancis considers the mutual unintelligibility too great for the term " dialects " to be used to refer to the different varieties , but also objects to considering them as separate languages , as it incorrectly implies a set of disruptive " religious , economic , political , and other differences " between speakers that exist , for example , between French Catholics and English Protestants in Canada , but not between speakers of Cantonese and Mandarin in China , owing to China 's near - uninterrupted history of centralized government .
+
+To Chinese nationalists , the idea of Chinese as a language family may suggest that the Chinese identity is much more fragmented and disunified than it actually is and as such is often looked upon as culturally and politically provocative .
+
+
+
+Answer:
+
+The internal diversity
+
+
+Answering:What of Chinese are tonal and analytic ?
+
+
+[0.10860536276882451, 0.0633150184989369, 0.06327936783729195]
+Possible sentences:
+
+All varieties of Chinese are tonal and analytic .
+
+R. L. G. " Language borrowing Why so little Chinese in English ? "
+
+print fail, continue
+
+
+Answer:
+
+All varieties
+
+
+Answering:In cases where Simplified and Traditional taiwanese scripts are identical , is the Chinese term written once ?
+
+
+[0.3799761902560781, 0.15174803643581222, 0.14378640165199494]
+Possible sentences:
+
+In cases where Simplified and Traditional Chinese scripts are identical , the Chinese term is written once .
+
+Calligraphy artists can write in traditional and simplified characters , but they tend to use traditional characters for traditional art .
+
+Various other written styles are also used in Chinese calligraphy , including seal script , cursive script and clerical script .
+
+
+
+Answer:
+
+NO
+
+
+Answering:Is taiwanese spoken by the Han majority and many other ethnic groups in China ?
+
+
+[0.3010709347240574, 0.13697663520259803, 0.1346234943332534]
+Possible sentences:
+
+Chinese is spoken by the Han majority and many other ethnic groups in China .
+
+Min Nan , part of the Min group , is widely spoken in southern Fujian , in neighboring Taiwan ( where it is known as Taiwanese or Hoklo ) and in Southeast Asia ( also known as Hokkien in the Philippines , Singapore , and Malaysia ) .
+
+A Taiwanese may commonly mix pronunciations , phrases , and words from Mandarin and other Taiwanese languages , and this mixture is considered normal in daily or informal speech .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Are the varieties of Chinese usually described by adopted speakers as dialects of a single Chinese language , but linguists note that they are as diverse as a language family ?
+
+
+[0.5755766761804444, 0.23770081186793676, 0.23209720088580668]
+Possible sentences:
+
+The varieties of Chinese are usually described by native speakers as dialects of a single Chinese language , but linguists note that they are as diverse as a language family .
+
+John DeFrancis considers the mutual unintelligibility too great for the term " dialects " to be used to refer to the different varieties , but also objects to considering them as separate languages , as it incorrectly implies a set of disruptive " religious , economic , political , and other differences " between speakers that exist , for example , between French Catholics and English Protestants in Canada , but not between speakers of Cantonese and Mandarin in China , owing to China 's near - uninterrupted history of centralized government .
+
+Mutual intelligibility is considered by some linguists to be the main criterion for determining whether varieties are separate languages or dialects of a single language , although others do not regard it as decisive , particularly when cultural factors interfere as they do with Chinese .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Are there between 7 and 13 independent regional groups of Chinese ( depending on classification scheme ) , of which the most spoken by far is Mandarin ( about 960 million ) , followed by Wu ( 80 million ) , Yue ( 60 million ) and Min ( 70 million ) ?
+
+
+[1.3790415313559463, 0.2630005085386944, 0.2469198317414508]
+Possible sentences:
+
+There are between 7 and 13 main regional groups of Chinese ( depending on classification scheme ) , of which the most spoken by far is Mandarin ( about 960 million ) , followed by Wu ( 80 million ) , Yue ( 60 million ) and Min ( 70 million ) .
+
+print fail, continue
+For instance , Wuzhou is about 120 miles ( 190 km ) upstream from Guangzhou , but the Yue variety spoken there is more like that of Guangzhou than is that of Taishan , 60 miles ( 95 km ) southwest of Guangzhou and separated from it by several rivers .
+
+
+
+Answer:
+
+NO
+
+
+Answering:Are most of these groups mutually intelligible , although some , like Xiang and the Southwest Mandarin dialects , may share common terms and some degree of intelligibility ?
+
+
+[0.6226079038971224, 0.2194063828373123, 0.1668567960854292]
+Possible sentences:
+
+Most of these groups are mutually unintelligible , although some , like Xiang and the Southwest Mandarin dialects , may share common terms and some degree of intelligibility .
+
+As Campbell ( 2008 ) explains , linguists often ignore mutual intelligibility when varieties share intelligibility with a central variety ( i.e. prestige variety , such as Standard Mandarin ) , as the issue requires some careful handling when mutual intelligibility is inconsistent with language identity .
+
+As a result , these terms are virtually indistinguishable from native Chinese words : indeed , there is some dispute over some of these terms as to whether the Japanese or Chinese coined them first .
+
+
+
+Answer:
+
+NO
+
+

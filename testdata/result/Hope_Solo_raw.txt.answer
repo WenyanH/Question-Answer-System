@@ -1,0 +1,155 @@
+Reading data for NLP task...
+Done
+
+Reading file...
+Done. Parsing text...
+Done
+
+Reading file...
+Done. Parsing text...
+Done
+
+Answering:Hope Amelia Stevens ( born July 30 , 1981 ) , commonly known by her maiden name , Hope Solo , is an American soccer goalkeeper , a two - time Olympic gold medalist and a World Cup gold medalist ?
+
+
+[1.0745515126025669, 0.41223468733629676, 0.30949806386953654]
+Possible sentences:
+
+Hope Amelia Stevens ( born July 30 , 1981 ) , commonly known by her maiden name , Hope Solo , is an American soccer goalkeeper , a two - time Olympic gold medalist and a World Cup gold medalist .
+
+As of December 17 , 2015 , Solo holds several U.S. goalkeeper records including appearances ( 185 ) , starts ( 175 ) , wins ( 139 ) , shutouts ( 90 ) , wins in a season ( 26 ) , consecutive minutes played ( 1,256 ) , and longest undefeated streak ( 55 games ) .
+
+print fail, continue
+
+
+Answer:
+
+YES
+
+
+Answering:Is solo regarded as one of the top female goalkeepers in the world and currently holds the U.S. record for most career clean sheets ?
+
+
+[0.5634879783136363, 0.15568146589307655, 0.13636288193707993]
+Possible sentences:
+
+Solo is regarded as one of the top female goalkeepers in the world and currently holds the U.S. record for most career clean sheets .
+
+As of December 17 , 2015 , Solo holds several U.S. goalkeeper records including appearances ( 185 ) , starts ( 175 ) , wins ( 139 ) , shutouts ( 90 ) , wins in a season ( 26 ) , consecutive minutes played ( 1,256 ) , and longest undefeated streak ( 55 games ) .
+
+print fail, continue
+
+
+Answer:
+
+YES
+
+
+Answering:Was she the starting goalkeeper for the majority of the 2007 FIFA Women 's World Cup and helped lead the U.S. national team to the semifinals having given up only two goals in four games , including three consecutive shutouts ?
+
+
+[0.8444743978464169, 0.5240264029900432, 0.23215649869300642]
+Possible sentences:
+
+She was the starting goalkeeper for the majority of the 2007 FIFA Women 's World Cup and helped lead the U.S. national team to the semifinals having given up only two goals in four games , including three consecutive shutouts .
+
+Solo was the starting goalkeeper for the United States in the 2007 FIFA Women 's World Cup , giving up two goals in four games including consecutive shutouts of Sweden , Nigeria and England .
+
+These next two years are huge for the national team with the World Cup and Olympics on the horizon and I wanted to make sure that I would be giving my team and my country my best on the field , " Solo said of the surgery .
+
+
+
+Answer:
+
+YES
+
+
+Answering:During the 2011 FIFA Women 's World Cup , was her exceptional skill highlighted especially during a quarter - final match against Brazil , in which the U.S. defeated Brazil in penalty kicks ?
+
+
+[0.8212404545902284, 0.21612637479469302, 0.20858945719911762]
+Possible sentences:
+
+During the 2011 FIFA Women 's World Cup , her exceptional skill was highlighted especially during a quarter - final match against Brazil , in which the U.S. defeated Brazil in penalty kicks .
+
+After defeating the Washington Spirit 2 - 1 in the playoff semi - finals , the Reign were defeated 2 - 1 by FC Kansas City during the championship final .
+
+print fail, continue
+
+
+Answer:
+
+YES
+
+
+Answering:Was she twice named a Parade All American ?
+
+
+[0.20866313179955953, 0.1585138885131847, 0.0949642116306099]
+Possible sentences:
+
+She was twice named a Parade All American .
+
+She was a four - time All - Pac-10 selection and was named an NSCAA All - American as a sophomore , junior and senior .
+
+There was some debate in the media about whether this exemplified a double standard in professional American sports after pro football players Ray Rice and Adrian Peterson were recently suspended by the National Football League after Rice was shown in a previously undisclosed video assaulting his wife in a hotel elevator and Peterson was indicted by a grand jury on a felony charge of child abuse .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Who ( born July 30 , 1981 ) , commonly known by her maiden name , Hope Solo , is an American soccer goalkeeper , a two - time Olympic gold medalist and a World Cup gold medalist ?
+
+
+[0.9902112231010123, 0.41223468733629676, 0.30949806386953654]
+Possible sentences:
+
+Hope Amelia Stevens ( born July 30 , 1981 ) , commonly known by her maiden name , Hope Solo , is an American soccer goalkeeper , a two - time Olympic gold medalist and a World Cup gold medalist .
+
+As of December 17 , 2015 , Solo holds several U.S. goalkeeper records including appearances ( 185 ) , starts ( 175 ) , wins ( 139 ) , shutouts ( 90 ) , wins in a season ( 26 ) , consecutive minutes played ( 1,256 ) , and longest undefeated streak ( 55 games ) .
+
+print fail, continue
+
+
+Answer:
+
+NO
+
+
+Answering:When , she played in the Women 's Professional Soccer ( WPS ) for Saint Louis Athletica , Atlanta Beat and magicJack ?
+
+
+[0.4702471187117945, 0.397193913368534, 0.2835926788696901]
+Possible sentences:
+
+From 2009 to 2011 , she played in the Women 's Professional Soccer ( WPS ) for Saint Louis Athletica , Atlanta Beat and magicJack .
+
+As of December 17 , 2015 , Solo holds several U.S. goalkeeper records including appearances ( 185 ) , starts ( 175 ) , wins ( 139 ) , shutouts ( 90 ) , wins in a season ( 26 ) , consecutive minutes played ( 1,256 ) , and longest undefeated streak ( 55 games ) .
+
+In May 2010 , the Saint Louis Athletica folded and Solo signed with WPS expansion team , Atlanta Beat , along with her St. Louis teammates , Tina Ellertson and Eniola Aluko .
+
+
+
+Answer:
+
+YES
+
+
+Answering:What is regarded as one of the top female goalkeepers in the world and currently holds the U?S ? record for most career clean sheets ?
+
+
+[0.5357620910912386, 0.14188320234218577, 0.1294314101314805]
+Possible sentences:
+
+Solo is regarded as one of the top female goalkeepers in the world and currently holds the U.S. record for most career clean sheets .
+
+Now is what matters , and that 's what I think . " Many viewed her comments as being critical of Scurry 's performance , although Solo released an apologetic statement the following day saying that was not her intent .
+
+print fail, continue
+
+
+Answer:
+

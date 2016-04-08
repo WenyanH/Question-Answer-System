@@ -1,0 +1,283 @@
+Reading data for NLP task...
+Done
+
+Reading file...
+Done. Parsing text...
+Done
+
+Reading file...
+Done. Parsing text...
+Done
+
+Answering:Often considered the best player in the world and rated by many in the sport as the greatest of all time , is messi the only football player in history to win the FIFA Ballon d'Or five times , four of which he won consecutively , and the first player to win three European Golden Shoes ?
+
+
+[1.0355759568943075, 0.5108323060829423, 0.409015927760825]
+Possible sentences:
+
+Often considered the best player in the world and rated by many in the sport as the greatest of all time , Messi is the only football player in history to win the FIFA Ballon d'Or five times , four of which he won consecutively , and the first player to win three European Golden Shoes .
+
+print fail, continue
+Although Messi has at times denied any rivalry , they are widely believed to push one another in their aim to be the best player in the world : since 2008 , Ronaldo has won three Ballons d'Or to Messi 's five , and four European Golden Shoes to Messi 's three .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Born and raised in central Argentina , was messi diagnosed with a growth hormone deficiency as a child ?
+
+
+[0.43588607737037877, 0.22639948337951146, 0.17978066886690244]
+Possible sentences:
+
+Born and raised in central Argentina , Messi was diagnosed with a growth hormone deficiency as a child .
+
+However , his future as a professional player was threatened when , at age 10 , he was diagnosed with a growth hormone deficiency .
+
+Messi has also invested in youth football in Argentina : he financially supports Sarmiento , a football club based in the Rosario neighbourhood where he was born , committing in 2013 to the refurbishment of their facilities and the installation of all - weather pitches , and funds the management of several youth players at Newell 's Old Boys and rival club Rosario Central , as well as at River Plate and Boca Juniors in Buenos Aires .
+
+
+
+Answer:
+
+YES
+
+
+Answering:On his father 's side , he is of Italian and Spanish heritage , the great - grandson of immigrants from Marche and Catalonia , and on his mother 's side , is he of primarily Italian descent ?
+
+
+[0.9061191700397913, 0.19600957661191987, 0.18481577441693964]
+Possible sentences:
+
+On his father 's side , he is of Italian and Spanish heritage , the great - grandson of immigrants from Marche and Catalonia , and on his mother 's side , he is of primarily Italian descent .
+
+print fail, continue
+print fail, continue
+
+
+Answer:
+
+YES
+
+
+Answering:However , was his future as a professional player threatened when , at age 10 , he was diagnosed with a growth hormone deficiency ?
+
+
+[0.5652553740284121, 0.22615255725360775, 0.21946801157391208]
+Possible sentences:
+
+However , his future as a professional player was threatened when , at age 10 , he was diagnosed with a growth hormone deficiency .
+
+As he lacked the stamina of his teammates , the result of his former growth hormone deficiency , he was used as a substitute in six of the nine games , proving more effective when coming on in the second half .
+
+Born and raised in central Argentina , Messi was diagnosed with a growth hormone deficiency as a child .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Was he scouted by Buenos Aires club River Plate , whose playmaker , Pablo Aimar , he idolised , but they were also unable to pay for his treatment due to the country 's economic collapse ?
+
+
+[1.042432058400915, 0.3107406563229276, 0.2563056625590023]
+Possible sentences:
+
+He was scouted by Buenos Aires club River Plate , whose playmaker , Pablo Aimar , he idolised , but they were also unable to pay for his treatment due to the country 's economic collapse .
+
+Messi has also invested in youth football in Argentina : he financially supports Sarmiento , a football club based in the Rosario neighbourhood where he was born , committing in 2013 to the refurbishment of their facilities and the installation of all - weather pitches , and funds the management of several youth players at Newell 's Old Boys and rival club Rosario Central , as well as at River Plate and Boca Juniors in Buenos Aires .
+
+Once when he was in training with the national team in Buenos Aires , he made a three - hour trip by car to Rosario immediately after practice to have dinner with his family , spent the night with them , and returned to Buenos Aires the next day in time for practice .
+
+
+
+Answer:
+
+YES
+
+
+Answering:What , Messi holds the Guinness World Records titles for most goals scored in La Liga ( 296 ) , a La Liga season ( 50 ) , a calendar year ( 91 ) , a Champions League match ( five ) , and most Champions League seasons ( five ) ?
+
+
+[1.223918411592353, 0.35482488429978654, 0.29350233279145066]
+Possible sentences:
+
+A prolific goalscorer , Messi holds the Guinness World Records titles for most goals scored in La Liga ( 296 ) , a La Liga season ( 50 ) , a calendar year ( 91 ) , a Champions League match ( five ) , and most Champions League seasons ( five ) .
+
+print fail, continue
+print fail, continue
+
+
+Answer:
+
+A prolific goalscorer
+
+
+Answering:What followed , with Messi winning three consecutive FIFA Ballons d'Or , including an unprecedented fourth ?
+
+
+[0.4195140842038434, 0.20140000608527348, 0.18199990181599224]
+Possible sentences:
+
+Three successful seasons followed , with Messi winning three consecutive FIFA Ballons d'Or , including an unprecedented fourth .
+
+His club performances in 2010 earned him the inaugural FIFA Ballon d'Or , an amalgamation of the Ballon d'Or and the FIFA World Player of the Year award , though his win was met with some criticism due to his lack of success with Argentina at the 2010 FIFA World Cup .
+
+For his efforts in 2011 , he again received the FIFA Ballon d'Or , becoming only the fourth player in history to win the Ballon d'Or three times , after Johan Cruyff , Michel Platini , and Marco van Basten .
+
+
+
+Answer:
+
+Three successful seasons
+
+
+Answering:What of play as a diminutive , left - footed dribbler drew comparisons with compatriot Diego Maradona , who declared the teenager his successor ?
+
+
+[0.6426586687300946, 0.33556490290793745, 0.2577614947782272]
+Possible sentences:
+
+His style of play as a diminutive , left - footed dribbler drew comparisons with compatriot Diego Maradona , who declared the teenager his successor .
+
+Throughout his career , Messi has been compared with his compatriot Diego Maradona , due to their similar playing styles as diminutive , left - footed dribblers .
+
+print fail, continue
+
+
+Answer:
+
+NO
+
+
+Answering:What was born on 24 June 1987 in Rosario , Santa Fe , the third of four children of Jorge Messi , a steel factory manager , and his wife Celia Cuccittini , who worked in a magnet manufacturing workshop ?
+
+
+[1.1050306320548042, 0.223222780703673, 0.1788497646362423]
+Possible sentences:
+
+print fail, continue
+print fail, continue
+Messi has also invested in youth football in Argentina : he financially supports Sarmiento , a football club based in the Rosario neighbourhood where he was born , committing in 2013 to the refurbishment of their facilities and the installation of all - weather pitches , and funds the management of several youth players at Newell 's Old Boys and rival club Rosario Central , as well as at River Plate and Boca Juniors in Buenos Aires .
+
+
+
+Answer:
+
+answer print fail, continue
+Answering:What of Newell 's Old Boys , Messi joined the Rosario club when he was six years old ?
+
+
+[0.36515137084603816, 0.2883380737594913, 0.21342124721402939]
+Possible sentences:
+
+A lifelong supporter of Newell 's Old Boys , Messi joined the Rosario club when he was six years old .
+
+Messi has also invested in youth football in Argentina : he financially supports Sarmiento , a football club based in the Rosario neighbourhood where he was born , committing in 2013 to the refurbishment of their facilities and the installation of all - weather pitches , and funds the management of several youth players at Newell 's Old Boys and rival club Rosario Central , as well as at River Plate and Boca Juniors in Buenos Aires .
+
+Following an irregular start to the new season under manager Tata Martino , formerly of his boyhood club Newell 's Old Boys , Messi suffered his fifth injury that year when he tore his hamstring on 10 November , leaving him side - lined for two months .
+
+
+
+Answer:
+
+NO
+
+
+Answering:Often considered the worst player in the world and rated by many in the sport as the greatest of all time , is messi the only football player in history to win the FIFA Ballon d'Or five times , four of which he won consecutively , and the first player to win three European Golden Shoes ?
+
+
+[1.0115970041663238, 0.4628744006269748, 0.3850369750328413]
+Possible sentences:
+
+Often considered the best player in the world and rated by many in the sport as the greatest of all time , Messi is the only football player in history to win the FIFA Ballon d'Or five times , four of which he won consecutively , and the first player to win three European Golden Shoes .
+
+print fail, continue
+Although Messi has at times denied any rivalry , they are widely believed to push one another in their aim to be the best player in the world : since 2008 , Ronaldo has won three Ballons d'Or to Messi 's five , and four European Golden Shoes to Messi 's three .
+
+
+
+Answer:
+
+NO
+
+
+Answering:Born and brocaded in central Argentina , was messi diagnosed with a growth hormone deficiency as a child ?
+
+
+[0.38668626811209755, 0.22639948337951146, 0.17978066886690244]
+Possible sentences:
+
+Born and raised in central Argentina , Messi was diagnosed with a growth hormone deficiency as a child .
+
+However , his future as a professional player was threatened when , at age 10 , he was diagnosed with a growth hormone deficiency .
+
+Messi has also invested in youth football in Argentina : he financially supports Sarmiento , a football club based in the Rosario neighbourhood where he was born , committing in 2013 to the refurbishment of their facilities and the installation of all - weather pitches , and funds the management of several youth players at Newell 's Old Boys and rival club Rosario Central , as well as at River Plate and Boca Juniors in Buenos Aires .
+
+
+
+Answer:
+
+NO
+
+
+Answering:On his don 's side , he is of Italian and Spanish heritage , the great - grandson of immigrants from Marche and Catalonia , and on his mother 's side , is he of primarily Italian descent ?
+
+
+[0.865514739934327, 0.18481577441693964, 0.13179121711222938]
+Possible sentences:
+
+On his father 's side , he is of Italian and Spanish heritage , the great - grandson of immigrants from Marche and Catalonia , and on his mother 's side , he is of primarily Italian descent .
+
+print fail, continue
+print fail, continue
+
+
+Answer:
+
+NO
+
+
+Answering:However , was his past as a professional player threatened when , at age 10 , he was diagnosed with a growth hormone deficiency ?
+
+
+[0.512025274237028, 0.22615255725360775, 0.21946801157391208]
+Possible sentences:
+
+However , his future as a professional player was threatened when , at age 10 , he was diagnosed with a growth hormone deficiency .
+
+As he lacked the stamina of his teammates , the result of his former growth hormone deficiency , he was used as a substitute in six of the nine games , proving more effective when coming on in the second half .
+
+Born and raised in central Argentina , Messi was diagnosed with a growth hormone deficiency as a child .
+
+
+
+Answer:
+
+NO
+
+
+Answering:Was he scouted by Buenos Aires cabaret River Plate , whose playmaker , Pablo Aimar , he idolised , but they were also unable to pay for his treatment due to the country 's economic collapse ?
+
+
+[1.0194062074709747, 0.2646889544630467, 0.2563056625590023]
+Possible sentences:
+
+He was scouted by Buenos Aires club River Plate , whose playmaker , Pablo Aimar , he idolised , but they were also unable to pay for his treatment due to the country 's economic collapse .
+
+Messi has also invested in youth football in Argentina : he financially supports Sarmiento , a football club based in the Rosario neighbourhood where he was born , committing in 2013 to the refurbishment of their facilities and the installation of all - weather pitches , and funds the management of several youth players at Newell 's Old Boys and rival club Rosario Central , as well as at River Plate and Boca Juniors in Buenos Aires .
+
+Once when he was in training with the national team in Buenos Aires , he made a three - hour trip by car to Rosario immediately after practice to have dinner with his family , spent the night with them , and returned to Buenos Aires the next day in time for practice .
+
+
+
+Answer:
+
+NO
+
+
