@@ -125,7 +125,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
         if count >= num_hard:
             break
         sen = get_string_of_sent(doc)
-        result = asking_hard.hard_question_generator(sen, get_root_of_doc(doc))
+        result = asking_hard.hard_question_generator(sen, get_root_of_doc(doc), nlp)
         if result:
             try:
                 print(result + '\n')
