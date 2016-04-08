@@ -23,5 +23,7 @@ It would be better if you could give me some advice. Or, need we complete this f
 
 02/22/2016 - xc2
 
-1. I have updated the file of creating easy question. The file deals with the verbs of be(is, are, am, was, were). One of the problem is to identify whether the first word is proper noun or not. My thought is to record the appearance of each word in the dictionary. Then we check whether the lower case of the first word is in the dictionary. If it is in the dictionary, it has lowercase format. So it is not a proper noun.  
-2. something have to do: 调整asking easy策略： 加入dependency tree的root
+1. something have to do: 
+  question type: strategy
+2. Proper Noun
+3. Answer error
