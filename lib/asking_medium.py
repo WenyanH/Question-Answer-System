@@ -7,7 +7,7 @@ def create_question(sentence, replace_from, replace_to):
 	if replace_from.lower() in ['it', 'that', 'this', 'these', 'those', 'he', 'she', 'they', 'his', 'him', 'her', 'their', 'its']:
 		return None
 	sentence = sentence.replace(replace_from, replace_to, 1)
-	sentence = sentence.replace('.', '?')
+	sentence = sentence[:-1] + '?'
 	return sentence
 
 def asking_wh(doc, sentence):
@@ -15,7 +15,10 @@ def asking_wh(doc, sentence):
 	ent = list(doc.ents)[0] if len(doc.ents) > 0 else None
 	if ent and sentence.startswith(ent.orth_):
 		if ent.label_ in ['PERSON']:
-			return create_question(sentence, ent.orth_, 'Who')
+			question = create_question(sentence, ent.orth_, 'Who')
+			question = question.replace('Who \'s', 'Whose')
+			question = question.replace('Who \'re', 'Whose')
+			return question
 		elif ent.label_ in ['LOC', 'LOC']:
 			return create_question(sentence, ent.orth_, 'Where')
 		elif ent.label_ in ['DATE', 'TIME']:
