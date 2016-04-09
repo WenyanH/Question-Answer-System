@@ -94,6 +94,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
         line = get_string_of_sent(doc)
         if ';' in line or ':' in line or line.count('-') == 2 or '(' in line:
             to_be_removed.append(doc)
+    for doc in to_be_removed:
         docs.remove(doc)
 
     # sentences = [
