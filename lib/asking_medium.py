@@ -21,8 +21,8 @@ def asking_wh(doc, sentence):
 			return question
 		elif ent.label_ in ['LOC', 'LOC']:
 			return create_question(sentence, ent.orth_, 'Where')
-		elif ent.label_ in ['DATE', 'TIME']:
-			return create_question(sentence, ent.orth_, 'When')
+		# elif ent.label_ in ['DATE', 'TIME']:
+		# 	return create_question(sentence, ent.orth_, 'When')
 		elif ent.label_ in ['ORG', 'NORP', 'PRODUCT', 'EVENT', 'WORK_OF_ART', 'LAW', 'LANGUAGE']:
 			return create_question(sentence, ent.orth_, 'What')
 		elif ent.labe_ in ['CARDINAL']:
