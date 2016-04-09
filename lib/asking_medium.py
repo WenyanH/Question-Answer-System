@@ -13,7 +13,7 @@ def create_question(sentence, replace_from, replace_to):
 def asking_wh(doc, sentence):
 	# Who / When / Where Question
 	ent = list(doc.ents)[0] if len(doc.ents) > 0 else None
-	if ent and sentence.startswith(ent.orth_):
+	if ent and sentence.startswith(ent.orth_) and get_next_token_pos(doc, ent) == 'VERB':
 		if ent.label_ in ['PERSON']:
 			question = create_question(sentence, ent.orth_, 'Who')
 			question = question.replace('Who \'s', 'Whose')
@@ -23,17 +23,25 @@ def asking_wh(doc, sentence):
 			return create_question(sentence, ent.orth_, 'Where')
 		elif ent.label_ in ['DATE', 'TIME']:
 			return create_question(sentence, ent.orth_, 'When')
-		elif ent.label_ in ['ORG']:
+		elif ent.label_ in ['ORG', 'NORP', 'PRODUCT', 'EVENT', 'WORK_OF_ART', 'LAW', 'LANGUAGE']:
 			return create_question(sentence, ent.orth_, 'What')
+		elif ent.labe_ in ['CARDINAL']:
+			return create_question(sentence, ent.orth_, 'How many')
 
 	# What Question
-	try:
-		chunk = doc.noun_chunks.next()
-		if chunk and sentence.startswith(chunk.orth_):
-			if sentence.startswith(chunk.orth_):
-				return create_question(sentence, chunk.orth_, 'What')
-	except:
-		pass
+	# try:
+	# 	chunk = doc.noun_chunks.next()
+	# 	if chunk and sentence.startswith(chunk.orth_):
+	# 		if sentence.startswith(chunk.orth_):
+	# 			return create_question(sentence, chunk.orth_, 'What')
+	# except:
+	# 	pass
+	return None
+
+def get_next_token_pos(doc, ent):
+	for token in doc:
+		if token.orth_ not in ent.orth_:
+			return token.pos_
 	return None
 #
 # def parse_location(text):
