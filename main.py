@@ -7,6 +7,7 @@ from lib.question_type import question_type
 from spacy.en import English
 
 nlp = None
+wiki_title = None
 
 def main():
     # parser = argparse.ArgumentParser()
@@ -67,12 +68,19 @@ def question_format(text):
             continue
     return result
 
+def get_article_title(text):
+    lines = text.split('\n')
+    return unicode(lines[0].strip())
+
 def read_sentences_from_file(file_name, wiki=True, question=False):
     text = []
     print 'Reading file...'
     with codecs.open(file_name, encoding='utf-8') as f:
         text = f.read()
     if wiki:
+        global wiki_title
+        wiki_title = get_article_title(text)
+        text = text.replace(wiki_title, 'wikiarticletitle')
         text = wiki_article_format(text)
     if question:
         text = question_format(text)
@@ -109,6 +117,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
         result = asking_easy.easy_question_generator(doc, get_root_of_doc(doc))
         if result:
             try:
+                result = result.replace('wikiarticletitle', wiki_title)
                 print(result + '\n')
                 count += 1
             except:
@@ -124,6 +133,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
         result = asking_medium.medium_question_generator(doc, get_string_of_sent(doc))
         if result:
             try:
+                result = result.replace('wikiarticletitle', wiki_title)
                 print(result + '\n')
                 count += 1
             except:
@@ -138,6 +148,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
         result = asking_hard.hard_question_generator(sen, get_root_of_doc(doc), nlp)
         if result:
             try:
+                result = result.replace('wikiarticletitle', wiki_title)
                 print(result + '\n')
                 count += 1
             except:
@@ -199,6 +210,7 @@ def answering(docs, docs_q):
         # Upper the first letter of question_answer
         question_answer = question_answer[0].upper() + question_answer[1:]
         try:
+            question_answer = question_answer.replace('wikiarticletitle', wiki_title)
             print(question_answer + '\n\n')
         except:
             print('answer print fail, continue')

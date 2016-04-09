@@ -9,11 +9,11 @@ def easy_question_generator(line_, position):
 
 	if position == 0:
 		return None
-	
+
 	line = []
 	for token in line_:
 		line.append(token)
-	
+
 	col_out = []
 	#line = line.strip()
 	#arr = line.split(" ")
@@ -22,7 +22,7 @@ def easy_question_generator(line_, position):
 	for i in range(position):
 		if line[i].orth_ == unicode(","):
 			mark = i
-	demon_status = False		
+	demon_status = False
 	question_word = -1
 	for i in range(mark + 1, position + 1):
 		if line[i].orth_ in  demon or line[i].orth_ in demon_up:
@@ -39,9 +39,9 @@ def easy_question_generator(line_, position):
 	#print "mark" + str(mark)
 	#if line[position - 1].pos_ == "VERB":
 	#	position = position - 1
-	if line[question_word - 1].orth_ == unicode(","):	
+	if line[question_word - 1].orth_ == unicode(","):
 		col_out.append(line[question_word].orth_.encode('utf8')[0].upper() + line[question_word].orth_.encode('utf8')[1: len(line[question_word].orth_)])
-		
+
 		#uppercase or lowercase for the first word
 		col_out.append(line[0].orth_.encode('utf8').lower())
 
@@ -72,9 +72,9 @@ def easy_question_generator(line_, position):
 		#determine uppercase or lowercase
 		if i == (mark + 1):
 			col_out.append(line[mark + 1].orth_.encode('utf8').lower())
-		
 
-		#add question word	
+
+		#add question word
 		elif i == question_word:
 			continue
 		else:
@@ -83,7 +83,7 @@ def easy_question_generator(line_, position):
 	#for m in col_out:
 	#	print m,
 	return ' '.join(col_out)
-	
+
 
 
 if __name__ == "__main__":
