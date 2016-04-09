@@ -190,7 +190,8 @@ def answer_yesno(question_old, sentence_list_old):
 		sentence_list.append(sentence_one)
 		sentence_one = []
 	#print sentence_list
-
+	#print "type of question element"
+	#print type(question[0])
 
 	negative_words= []
 	dic_antonyms = {}
@@ -204,12 +205,22 @@ def answer_yesno(question_old, sentence_list_old):
 	f = open("data/antonyms.txt", "r")
 	for item in f.readlines():
 		arr = item.split(" ")
-		dic_antonyms[unicode(arr[0].strip().lower())] = unicode(arr[1].strip().lower())
+		if dic_antonyms.get(unicode(arr[0].strip().lower())) == None:
+			list_antonym = []
+			list_antonym.append(unicode(arr[1].strip().lower()))
+			dic_antonyms[unicode(arr[0].strip().lower())] = list_antonym
+		else:
+			dic_antonyms.get(unicode(arr[0].strip().lower())).append(unicode(arr[1].strip().lower()))
 		#dic_antonyms[arr[1]] = arr[0]
 	f = open("data/synonyms.txt", "r")
 	for item in f.readlines():
 		arr = item.split(" ")
-		dic_synonyms[unicode(arr[0].strip().lower())] = unicode(arr[1].strip().lower())
+		if dic_synonyms.get(unicode(arr[0].strip().lower())) == None:
+			list_synonym = []
+			list_synonym.append(unicode(arr[1].strip().lower()))
+			dic_synonyms[unicode(arr[0].strip().lower())] = list_synonym
+		else:
+			dic_synonyms.get(unicode(arr[0].strip().lower())).append(unicode(arr[1].strip().lower()))
 		#dic_synonyms[arr[1]] = arr[0]
 
 	index = 0
@@ -241,13 +252,43 @@ def answer_yesno(question_old, sentence_list_old):
 			#print "1"
 			# find antonyms
 			#!!!original form
-			if question[int(arr[0])].lemma_.lower() in dic_antonyms and dic_antonyms.get(question[int(arr[0])].lemma_.lower()) == sentence_list[index][int(arr[1])].lemma_.lower():
+			#print "check type:"
+			#print type(question[int(arr[0])].lemma_.lower())
+			'''
+			print "lemma:"
+			print question[int(arr[0])].lemma_.lower()
+			print sentence_list[index][int(arr[1])].lemma_.lower()
+			print "origin:"
+			print question[int(arr[0])].orth_.lower()
+			print sentence_list[index][int(arr[1])].orth_.lower()
+			
+			print "boolean_synonym:"
+			print question[int(arr[0])].lemma_.lower() in dic_synonyms
+			print sentence_list[index][int(arr[1])].lemma_.lower() in dic_synonyms
+			#print unicode("configuration") in dic_synonyms
+			print "boolean_antonym:"
+			print question[int(arr[0])].lemma_.lower() in dic_antonyms
+			print sentence_list[index][int(arr[1])].lemma_.lower() in dic_antonyms
+			print "second in_antonym"
+			print sentence_list[index][int(arr[1])].lemma_.lower() in dic_antonyms.get(question[int(arr[0])].lemma_.lower(), [unicode("!")])
+			print question[int(arr[0])].lemma_.lower() in dic_antonyms.get(sentence_list[index][int(arr[1])].lemma_.lower(), [unicode("!")])
+			print "second in_synonym"
+			print sentence_list[index][int(arr[1])].lemma_.lower() in dic_synonyms.get(question[int(arr[0])].lemma_.lower(), [unicode("!")])
+			print question[int(arr[0])].lemma_.lower() in dic_synonyms.get(sentence_list[index][int(arr[1])].lemma_.lower(), [unicode("!")])
+			#print unicode("constellation") in dic_synonyms.get(question[int(arr[0])].lemma_.lower(), [unicode("!")])
+			print dic_synonyms.get("configuration", [unicode("!")])
+			'''
+			
+			if (question[int(arr[0])].lemma_.lower() in dic_antonyms and sentence_list[index][int(arr[1])].lemma_.lower() in dic_antonyms.get(question[int(arr[0])].lemma_.lower(), [unicode("!")])) or (sentence_list[index][int(arr[1])].orth_.lower() in dic_antonyms and question[int(arr[0])].orth_.lower() in dic_antonyms.get(sentence_list[index][int(arr[1])].orth_.lower(), [unicode("!")])):
 				#print "question[int(arr[0])].lemma_.lower():" + question[int(arr[0])].lemma_.lower()
-				antonyms = True
+					antonyms = True
+					#print "1"
 			# find synonyms
-			elif question[int(arr[0])].lemma_.lower() in dic_synonyms and dic_synonyms.get(question[int(arr[0])].lemma_.lower()) == sentence_list[index][int(arr[1])].lemma_.lower():
-				continue
+			elif (question[int(arr[0])].lemma_.lower() in dic_synonyms and sentence_list[index][int(arr[1])].lemma_.lower() in dic_synonyms.get(question[int(arr[0])].lemma_.lower(), [unicode("!")])) or (sentence_list[index][int(arr[1])].orth_.lower() in dic_synonyms and question[int(arr[0])].orth_.lower() in dic_synonyms.get(sentence_list[index][int(arr[1])].orth_.lower(), [unicode("!")])):
+					#print "2"
+					continue
 			else:
+				#print "3"
 				#print question[int(arr[0])].lemma_.lower()
 				if question[int(arr[0])].pos_.lower() == sentence_list[index][int(arr[1])].pos_.lower():
 					return "NO"
@@ -278,6 +319,7 @@ def answer_yesno(question_old, sentence_list_old):
 		return "NO"
 
 	f.close()
+
 
 def find_possible_sentences(docs, question):
 	potential_sentences_index = []
