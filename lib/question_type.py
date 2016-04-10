@@ -16,6 +16,14 @@ def question_type(line, position):
 	#if question words are not in the sentence, return "YES/NO"
 	arr = line.split(" ")
 	
+	if len(arr) > 0 and arr[0] in question_word:
+		for word in question_word:
+			if arr[0] == word:
+				if word.upper() == "HOW":
+					return (arr[0] + " " + arr[1]).upper()
+				return word.upper()
+
+
 	#if position == 0, root can not be question words.
 	if position == 0:
 		if arr[0] in question_word:
