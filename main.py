@@ -45,6 +45,8 @@ def wiki_article_format(text):
             continue
         if '\n' in line:
             line = line.split('\n')[-1]
+        if 'won\'t' in line:
+            line = line.replace('won\'t', 'will not')
         if 'n\'t' in line:
             line = line.replace('n\'t', ' not')
         try:
@@ -74,10 +76,8 @@ def get_article_title(text):
 
 def get_article_nouns(docs):
     nouns = []
-    all_doc_string = ""
     for doc in docs:
         temp = []
-        all_doc_string += get_string_of_sent(doc)
         # get every words with its first letter upper case
         for index, token in enumerate(doc):
             if index == 0:
@@ -91,12 +91,17 @@ def get_article_nouns(docs):
             if index - 1 != past_index:
                 nouns.append(word)
             else:
-                nouns[len(nouns) - 1] = nouns[len(nouns) - 1] + (unicode(' ') + word)
+                nouns[len(nouns) - 1] += (unicode(' ') + word)
             past_index = index
     candidates = list(set(nouns))
     nouns = []
     for noun in candidates:
-        if noun.lower() not in all_doc_string:
+        should_be_skipped = False
+        for doc in docs:
+            for token in doc:
+                if noun.lower() == token.orth_:
+                    should_be_skipped = True
+        if not should_be_skipped:
             nouns.append(noun)
 
     # for n in nouns:
