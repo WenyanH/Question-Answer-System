@@ -24,6 +24,6 @@ It would be better if you could give me some advice. Or, need we complete this f
 02/22/2016 - xc2
 
 1. something have to do: 
-  question type: strategy
+  easy question answer： no
 2. Proper Noun
-3. Answer error
+
