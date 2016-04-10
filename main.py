@@ -72,6 +72,38 @@ def get_article_title(text):
     lines = text.split('\n')
     return unicode(lines[0].strip())
 
+def get_article_nouns(docs):
+    nouns = []
+    all_doc_string = ""
+    for doc in docs:
+        temp = []
+        all_doc_string += get_string_of_sent(doc)
+        # get every words with its first letter upper case
+        for index, token in enumerate(doc):
+            if index == 0:
+                continue
+            if token.orth_[0].lower() != token.orth_[0]:
+                temp.append((token.text, index))
+
+        # merge continuous words
+        past_index = -1;
+        for (word, index) in temp:
+            if index - 1 != past_index:
+                nouns.append(word)
+            else:
+                nouns[len(nouns) - 1] = nouns[len(nouns) - 1] + (unicode(' ') + word)
+            past_index = index
+    candidates = list(set(nouns))
+    nouns = []
+    for noun in candidates:
+        if noun.lower() not in all_doc_string:
+            nouns.append(noun)
+
+    # for n in nouns:
+    #     print n, ',',
+
+    return nouns
+
 def read_sentences_from_file(file_name, wiki=True, question=False):
     text = []
     print 'Reading file...'
@@ -105,6 +137,9 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
     for doc in to_be_removed:
         docs.remove(doc)
 
+    # get words that should be in upper case
+    upper_words = get_article_nouns(docs)
+
     # sentences = [
     #     "Weixiang was born in China in 1993 .",
     #     "Guanxi is taking photos ."
@@ -114,7 +149,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
     for doc in docs:
         if count >= num_easy:
             break
-        result = asking_easy.easy_question_generator(doc, get_root_of_doc(doc))
+        result = asking_easy.easy_question_generator(doc, get_root_of_doc(doc), upper_words)
         if result:
             try:
                 result = result.replace('wikiarticletitle', wiki_title)
@@ -145,7 +180,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
         if count >= num_hard:
             break
         sen = get_string_of_sent(doc)
-        result = asking_hard.hard_question_generator(sen, get_root_of_doc(doc), nlp)
+        result = asking_hard.hard_question_generator(sen, get_root_of_doc(doc), nlp, upper_words)
         if result:
             try:
                 result = result.replace('wikiarticletitle', wiki_title)

@@ -1,5 +1,5 @@
 import string
-def easy_question_generator(line_, position):
+def easy_question_generator(line_, position, upper_words):
 	#collection delete "will"
 	col = ["is", "are", "am", "was", "were", "can", "could", "must", "should", "may", "might", "would", "shall"]
 	col_up = ["Is", "Are", "Am", "Was", "Were", "Can", "Could", "Must", "Should", "May", "Might", "Would", "Shall"]
