@@ -62,6 +62,8 @@ def question_format(text):
         line = line.strip()
         if len(line) < 20 or '?' not in line:
             continue
+        if 'won\'t' in line:
+            line = line.replace('won\'t', 'will not')
         if 'n\'t' in line:
             line = line.replace('n\'t', ' not')
         try:
