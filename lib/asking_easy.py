@@ -37,13 +37,17 @@ def easy_question_generator(line_, position, upper_words):
 	#print line
 	#print "position" + str(position)
 	#print "mark" + str(mark)
-	#if line[position - 1].pos_ == "VERB":
-	#	position = position - 1
+	if line[position - 1].pos_ == "VERB":
+		position = position - 1
 	if line[question_word - 1].orth_ == unicode(","):
 		col_out.append(line[question_word].orth_.encode('utf8')[0].upper() + line[question_word].orth_.encode('utf8')[1: len(line[question_word].orth_)])
 
+
 		#uppercase or lowercase for the first word
-		col_out.append(line[0].orth_.encode('utf8').lower())
+		if line[0].orth_.encode('utf8') in upper_words:
+			col_out.append(line[0].orth_.encode('utf8'))
+		else:
+			col_out.append(line[0].orth_.encode('utf8').lower())
 
 		for i in range(1, len(line) - 1):
 			if i == question_word:
@@ -63,6 +67,8 @@ def easy_question_generator(line_, position, upper_words):
 	#upper_lower = line[mark + 1].orth_.encode('utf8').lower()
 
 
+
+
 	if (mark == -1):
 		col_out.append(line[question_word].orth_.encode('utf8')[0].upper() + line[question_word].orth_.encode('utf8')[1: len(line[question_word].orth_)])
 	else:
@@ -71,7 +77,10 @@ def easy_question_generator(line_, position, upper_words):
 	for i in range(mark + 1, len(line) - 1):
 		#determine uppercase or lowercase
 		if i == (mark + 1):
-			col_out.append(line[mark + 1].orth_.encode('utf8').lower())
+			if line[mark + 1].orth_.encode('utf8') in upper_words:
+				col_out.append(line[mark + 1].orth_.encode('utf8'))
+			else:
+				col_out.append(line[mark + 1].orth_.encode('utf8').lower())
 
 
 		#add question word
