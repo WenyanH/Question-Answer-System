@@ -17,7 +17,6 @@ def asking_wh(doc, sentence):
 		if ent.label_ in ['PERSON']:
 			question = create_question(sentence, ent.orth_, 'Who')
 			question = question.replace('Who \'s', 'Whose')
-			question = question.replace('Who \'re', 'Whose')
 			return question
 		elif ent.label_ in ['LOC', 'LOC']:
 			return create_question(sentence, ent.orth_, 'Where')
