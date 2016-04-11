@@ -1,10 +1,10 @@
 import math
 import heapq
 
-def question_evalution(question_list):
+def question_evalution(question_doc_list, wiki_doc_list, n):
 	heap = []
-	total_number_questions = len(question_list)
-	for sent in question_list:
+	total_number_questions = len(question_doc_list)
+	for sent in question_doc_list:
 		number_of_words = len(sent)
 		weight = 0
 		frequency_in_sentence = {}
@@ -39,4 +39,4 @@ def question_evalution(question_list):
 		heapq.heappush(heap, (weight * -1, s))
 
 if __name__ == "__main__":
-	
+	pass
