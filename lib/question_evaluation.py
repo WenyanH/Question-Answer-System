@@ -4,6 +4,7 @@ import heapq
 def question_evalution(question_doc_list, wiki_doc_list, n):
 	heap = []
 	final_questions = []
+	demon = ['i', 'I', "it", "its", "this", "that", "those", "these", "me", "my", "mine", "we", "us", "our", "ours", "you", "your", "yours", "he", "him", "his", "she", "her", "hers","they", "them", "their", "theirs"]
 	total_number_questions = len(wiki_doc_list)
 	for sent in question_doc_list:
 		number_of_words = len(sent)
@@ -18,6 +19,8 @@ def question_evalution(question_doc_list, wiki_doc_list, n):
 			else:
 				frequency_in_sentence[token.lemma_] = 1
 		for token in sent:
+			if token in demon:
+				continue
 			count = 0
 			for sent2 in wiki_doc_list:
 				for token2 in sent2:
