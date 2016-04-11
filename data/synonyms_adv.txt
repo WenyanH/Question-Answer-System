@@ -53,7 +53,6 @@ plum plumb
 amiss imperfectly
 to_the_full fully
 full fully
-good well
 badly ill
 poorly ill
 easily well
@@ -75,7 +74,6 @@ bad badly
 mischievously badly
 naughtily badly
 yet even
-still even
 just_as even_as
 kind_of rather
 kinda rather
@@ -122,7 +120,6 @@ in_any_event anyhow
 anyway anyhow
 nevertheless however
 withal however
-still however
 yet however
 all_the_same however
 even_so however
@@ -153,7 +150,6 @@ fantastically fabulously
 incredibly fabulously
 mightily mighty
 powerful mighty
-right mighty
 henceforward henceforth
 just_now just
 outright instantaneously
@@ -195,7 +191,6 @@ in_spades decidedly
 by_all_odds decidedly
 genuinely truly
 really truly
-so indeed
 really in_truth
 truly in_truth
 of_course naturally
@@ -248,9 +243,6 @@ far_and_away by_far
 out_and_away by_far
 overly excessively
 to_a_fault excessively
-too excessively
-too besides
-also besides
 likewise besides
 as_well besides
 in_time yet
@@ -296,10 +288,8 @@ diversely variously
 multifariously variously
 tirelessly indefatigably
 inexhaustibly indefatigably
-fine very_well
 alright very_well
 all_right very_well
-OK very_well
 alright all_right
 fleetly swiftly
 presumptively presumably
@@ -331,7 +321,6 @@ straight directly
 lots a_lot
 a_good_deal a_lot
 a_great_deal a_lot
-much a_lot
 very_much a_lot
 a_great_deal much
 often much
@@ -348,7 +337,6 @@ afterward subsequently
 after subsequently
 later_on subsequently
 suddenly abruptly
-short abruptly
 dead abruptly
 all_of_a_sudden suddenly
 of_a_sudden suddenly
@@ -391,7 +379,6 @@ forrader ahead
 out_front ahead
 in_the_lead ahead
 right_along all_along
-on along
 likewise alike
 out_loud aloud
 loud loudly
@@ -410,7 +397,6 @@ around about
 around about
 desperately urgently
 almost about
-most about
 nearly about
 near about
 nigh about
@@ -646,7 +632,6 @@ collectively jointly
 conjointly jointly
 together_with jointly
 atrociously outrageously
-so then
 and_so then
 and_then then
 irrespective regardless
@@ -920,16 +905,6 @@ videlicet namely
 very_much_like much_as
 exaggeratedly hyperbolically
 nimbly agilely
-et_al. et_al
-et_alibi et_al
-et_al. et_al
-et_alii et_al
-et_aliae et_al
-et_alia et_al
-cf. cf
-i.e. i
-ie i
-id_est i
 empathetically sympathetically
 gracefully graciously
 ungracefully ungraciously
@@ -952,7 +927,6 @@ staggeringly enormously
 munificently liberally
 generously liberally
 conveniently handily
-over all_over
 kinaesthetically kinesthetically
 haptically tactually
 contumaciously rebelliously
@@ -974,11 +948,9 @@ inanely fatuously
 clearly intelligibly
 understandably intelligibly
 ununderstandably unintelligibly
-right correctly
 aright correctly
 wrongly incorrectly
 wrong incorrectly
-right justly
 justly rightly
 justifiedly rightly
 in_darkness darkly
@@ -1080,9 +1052,6 @@ immeasurably boundlessly
 infinitely boundlessly
 strictly rigorously
 vauntingly boastfully
-big boastfully
-large boastfully
-o'er over
 strictly_speaking properly_speaking
 to_be_precise properly_speaking
 exultingly exultantly
@@ -1653,7 +1622,6 @@ perspicuously lucidly
 tepidly lukewarmly
 manly manfully
 unmanly unmanfully
-light lightly
 lightsomely light-heartedly
 trippingly lightsomely
 protractedly lingeringly
@@ -1703,7 +1671,6 @@ head-to-head neck_and_neck
 nip_and_tuck neck_and_neck
 never_again nevermore
 nigh near
-close near
 at_close_range close_up
 every_night nightly
 nine_times ninefold
@@ -1927,8 +1894,6 @@ in_theory in_principle
 in_essence in_principle
 for_each_person per_capita
 of_each_person per_capita
-inwards in
-inward in
 especially specially
 mildly gently
 sharp sharply

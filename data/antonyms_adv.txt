@@ -6,12 +6,8 @@ partly wholly
 wholly partly
 perfectly imperfectly
 imperfectly perfectly
-well ill
-ill well
 well badly
 badly well
-well ill
-ill well
 well badly
 advantageously disadvantageously
 badly well
@@ -24,8 +20,6 @@ ever never
 never ever
 conventionally unconventionally
 unconventionally conventionally
-still no_longer
-no_longer still
 frequently infrequently
 often rarely
 rarely often
@@ -115,8 +109,6 @@ upriver downriver
 upstream downstream
 downriver upriver
 downstream upstream
-more less
-less more
 more less
 less more
 early late
@@ -260,7 +252,6 @@ unintelligibly intelligibly
 diplomatically undiplomatically
 undiplomatically diplomatically
 correctly incorrectly
-right wrongly
 incorrectly correctly
 wrongly right
 accurately inaccurately
@@ -683,9 +674,6 @@ tactfully tactlessly
 tactlessly tactfully
 tastefully tastelessly
 tastelessly tastefully
-thinly thickly
-thickly thinly
-thinly thickly
 thinly thickly
 thickly thinly
 unchivalrously chivalrously

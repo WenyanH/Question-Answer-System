@@ -80,8 +80,6 @@ uncooperative disobliging
 faithful close
 hi-fi high-fidelity
 dead_on_target true
-right veracious
-outside away
 incorrect faulty
 wrong faulty
 wide_of_the_mark wide
@@ -128,7 +126,6 @@ inactive passive
 supine resistless
 unresisting resistless
 inactive dormant
-live alive
 dynamic active
 existent actual
 possible potential
@@ -225,15 +222,12 @@ left-handed bumbling
 tactless inept
 nonmechanical unmechanical
 good beneficial
-positive plus
 preferential discriminatory
-negative minus
 adventuresome adventurous
 daring audacious
 venturesome audacious
 venturous audacious
 swashbuckling swaggering
-best better
 unadvisable inadvisable
 advised well-advised
 unadvised ill-advised
@@ -339,12 +333,8 @@ infrangible absolute
 inviolable absolute
 unassignable nontransferable
 untransferable nontransferable
-live alive
 at_peace asleep
 at_rest asleep
-deceased asleep
-departed asleep
-gone asleep
 exsanguine bloodless
 exsanguinous bloodless
 inanimate breathless
@@ -352,7 +342,6 @@ pulseless breathless
 d.o.a. d
 deathly deathlike
 exanimate lifeless
-out extinct
 alphabetical alphabetic
 alphabetised alphabetized
 selfless altruistic
@@ -372,9 +361,7 @@ determined compulsive
 driven compulsive
 would-be manque
 ambitionless unambitious
-good full
 wide-cut wide
-full wide
 meagre meager
 meagerly meager
 stingy meager
@@ -453,7 +440,6 @@ prefatorial introductory
 prefatory introductory
 preparative preparatory
 propaedeutic preparatory
-old previous
 consecutive back-to-back
 undermentioned following
 next following
@@ -463,14 +449,11 @@ antepartum prenatal
 postpartum postnatal
 a.m. ante_meridiem
 p.m. post_meridiem
-hind back
-hinder back
 appetising appetizing
 savory mouth-watering
 savoury mouth-watering
 unappetising unappetizing
 standoffish offish
-right proper
 wrong improper
 cod collect
 collectable collectible
@@ -679,7 +662,6 @@ for_sale purchasable
 unobtainable inaccessible
 unprocurable inaccessible
 untouchable inaccessible
-up astir
 sleepless insomniac
 watchful insomniac
 wide-awake unsleeping
@@ -781,7 +763,6 @@ overbold fresh
 smart fresh
 saucy fresh
 sassy fresh
-wise fresh
 assuming assumptive
 presumptuous assumptive
 barrelled barreled
@@ -827,7 +808,6 @@ awny awned
 supporting load-bearing
 bonnie bonny
 comely bonny
-fair bonny
 sightly bonny
 good-looking fine-looking
 better-looking fine-looking
@@ -1385,7 +1365,6 @@ changeable mutable
 changeless immutable
 symptomatic diagnostic
 typical distinctive
-live hot
 electronegative negative
 negatively_charged negative
 electropositive positive
@@ -1403,7 +1382,6 @@ vestal pure
 virgin pure
 virginal pure
 virtuous pure
-light easy
 loose easy
 promiscuous easy
 sluttish easy
@@ -1430,7 +1408,6 @@ disconsolate blue
 dismal blue
 gloomy blue
 grim blue
-sorry blue
 drab blue
 drear blue
 dreary blue
@@ -1939,8 +1916,6 @@ near approximate
 buddy-buddy chummy
 thick chummy
 closely_knit close-knit
-good dear
-near dear
 intimate familiar
 clad clothed
 attired appareled
@@ -1967,7 +1942,6 @@ bare-ass bare-assed
 in_the_altogether bare-assed
 in_the_buff bare-assed
 in_the_raw bare-assed
-raw bare-assed
 peeled bare-assed
 naked_as_a_jaybird bare-assed
 stark_naked bare-assed
@@ -2189,7 +2163,6 @@ utter dead
 thorough exhaustive
 thoroughgoing exhaustive
 full-clad fleshed_out
-total full
 uncomplete incomplete
 unelaborated sketchy
 all-embracing across-the-board
@@ -2224,7 +2197,6 @@ self-collected collected
 self-contained collected
 self-possessed collected
 coolheaded cool
-nerveless cool
 unflustered unflurried
 unperturbed unflurried
 unruffled unflurried
@@ -2279,7 +2251,6 @@ shared_out divided
 spread-out fanned
 widespread far-flung
 spaced separated
-thin sparse
 unfocussed unfocused
 concentrical concentric
 homocentric concentric
@@ -2416,7 +2387,6 @@ egregious crying
 flagrant crying
 glaring crying
 gross crying
-rank crying
 prominent outstanding
 salient outstanding
 spectacular outstanding
@@ -2614,7 +2584,6 @@ unembodied discorporate
 bodiless discorporate
 unbodied discorporate
 disembodied discorporate
-right correct
 exact accurate
 precise accurate
 word-perfect letter-perfect
@@ -3291,7 +3260,6 @@ rude crude
 embryotic embryonic
 inchoate incipient
 later late
-New modern
 worried apprehensive
 unstable precarious
 eastward eastbound
@@ -3323,7 +3291,6 @@ unlearned ignorant
 unlettered ignorant
 untaught unschooled
 untutored unschooled
-good effective
 in_effect effective
 in_force effective
 in_operation operational
@@ -3362,7 +3329,6 @@ physical forcible
 strong-arm forcible
 unforceful forceless
 wimpy wimpish
-live bouncy
 lively bouncy
 resilient bouncy
 springy bouncy
@@ -3568,8 +3534,6 @@ fifty-fifty even
 isochronous isochronal
 isoclinic isoclinal
 isometrical isometric
-even tied
-level tied
 unsymmetrical anisometric
 uneven mismatched
 unequalised unequalized
@@ -3609,12 +3573,10 @@ life-sustaining vital
 unessential inessential
 nonessential incidental
 vital critical
-low abject
 low-down abject
 miserable abject
 scummy abject
 scurvy abject
-mean bastardly
 pitiable pathetic
 pitiful pathetic
 eulogistic encomiastic
@@ -3641,7 +3603,6 @@ inoffensive euphemistic
 offensive dysphemistic
 distressed dysphoric
 unhappy dysphoric
-level flat
 plane flat
 flatbottomed flatbottom
 straight true
@@ -3671,7 +3632,6 @@ unconvertible inconvertible
 unexchangeable inconvertible
 substitutable commutable
 permutable transposable
-warm quick
 flighty skittish
 spooky skittish
 nervous skittish
@@ -3713,8 +3673,6 @@ damning damnatory
 recriminatory recriminative
 spent exhausted
 left_over leftover
-left leftover
-odd leftover
 remaining leftover
 unexpended leftover
 unexpended unspent
@@ -3725,7 +3683,6 @@ missing lacking
 wanting lacking
 destitute barren
 devoid barren
-free barren
 innocent barren
 living surviving
 nonextant extinct
@@ -3743,7 +3700,6 @@ opportunistic opportunist
 timeserving opportunist
 carpetbagging carpetbag
 high-ticket big-ticket
-dear costly
 high-priced costly
 pricey costly
 pricy costly
@@ -3768,7 +3724,6 @@ veteran seasoned
 inexperient inexperienced
 unfledged fledgling
 callow fledgling
-new raw
 uninitiated uninitiate
 naive uninitiate
 unpractised unpracticed
@@ -3826,7 +3781,6 @@ internal inner
 private secret
 sharp-eyed keen-eyed
 round-eyed saucer-eyed
-just fair
 antitrust antimonopoly
 sporting clean
 sporty clean
@@ -4210,7 +4164,6 @@ vulgar common
 epistolatory epistolary
 nonliterary unliterary
 happy felicitous
-well good
 providential heaven-sent
 miraculous heaven-sent
 calamitous black
@@ -4268,9 +4221,7 @@ odourless odorless
 inodorous odorless
 conjugated conjugate
 conjugated conjugate
-firm fast
 immobile fast
-free detached
 unsteady unfirm
 escaped at_large
 loose at_large
@@ -4303,7 +4254,6 @@ steady regular
 undecomposed good
 unspoiled good
 unspoilt good
-warm strong
 spoiled bad
 spoilt bad
 maggoty flyblown
@@ -4328,7 +4278,6 @@ brine-cured salted
 smoke-cured smoked
 smoke-dried smoked
 sundried sun-dried
-sweet fresh
 briny brackish
 amiable affable
 cordial affable
@@ -4756,14 +4705,12 @@ harmonical consonant
 harmonized consonant
 harmonised consonant
 sympathetic harmonic
-true on-key
 symphonious symphonic
 unharmonious inharmonious
 disharmonious discordant
 dissonant discordant
 inharmonic discordant
 off-key false
-sour false
 dissonant unresolved
 anthelminthic anthelmintic
 helminthic anthelmintic
@@ -4792,7 +4739,6 @@ operative surgical
 rose-cheeked flushed
 rosy flushed
 rosy-cheeked flushed
-sound good
 whole hale
 full-blooded hearty
 lusty hearty
@@ -4919,7 +4865,6 @@ flat-growing low-growing
 ground-hugging low-growing
 low-altitude low-level
 low-set lowset
-under nether
 underslung squat
 lifted upraised
 hi-tech high-tech
@@ -5343,7 +5288,6 @@ familiar conversant
 enlightened educated
 hip hep
 hip_to hep
-wise knowing
 wise_to knowing
 knowing knowledgeable
 unknowledgeable ignorant
@@ -5353,7 +5297,6 @@ unacquainted innocent
 unenlightened uninstructed
 naive uninstructed
 artless ingenuous
-open candid
 heart-to-heart candid
 artful disingenuous
 misrepresented distorted
@@ -5457,9 +5400,7 @@ clever apt
 brilliant brainy
 smart_as_a_whip brainy
 smart bright
-born natural
 innate natural
-ready quick
 trenchant searching
 stupid unintelligent
 headless brainless
@@ -5784,7 +5725,6 @@ outlawed illegitimate
 unlawful illegitimate
 mislabeled misbranded
 punishable penal
-fair clean
 decipherable clear
 readable clear
 foul dirty
@@ -5816,7 +5756,6 @@ different unlike
 similar alike
 like alike
 dissimilar unalike
-same like
 liable apt
 implausible farfetched
 remote outside
@@ -5946,7 +5885,6 @@ rotund orotund
 round orotund
 pear-shaped orotund
 sonorous heavy
-soft piano
 loud forte
 loveable lovable
 endearing adorable
@@ -6007,7 +5945,6 @@ unaffectionate detached
 uncaring detached
 minuscule little
 small little
-great capital
 majuscule capital
 luckless unlucky
 jinxed hexed
@@ -6073,7 +6010,6 @@ unsuited ill-sorted
 unmatched odd
 unmated odd
 unpaired odd
-big adult
 full-grown adult
 fully_grown adult
 grown adult
@@ -6136,14 +6072,6 @@ unmusical unmelodious
 melodious tuneful
 untuneful tuneless
 unmelodious tuneless
-3-membered three-membered
-4-membered four-membered
-5-membered five-membered
-6-membered six-membered
-7-membered seven-membered
-8-membered eight-membered
-9-membered nine-membered
-10-membered ten-membered
 nonmusical unmusical
 nonmusical unmusical
 liquid melted
@@ -6160,7 +6088,6 @@ metabolous metabolic
 ametabolous ametabolic
 soft gentle
 temperate moderate
-big bad
 unrelenting brutal
 overwhelming consuming
 keen exquisite
@@ -6251,11 +6178,9 @@ medium average
 conservative cautious
 fairish fair
 reasonable fair
-small modest
 overdone exaggerated
 overstated exaggerated
 inordinate excessive
-undue excessive
 unreasonable excessive
 extortionate exorbitant
 outrageous exorbitant
@@ -6342,12 +6267,9 @@ writhing wiggly
 unmoving nonmoving
 motionless inactive
 static inactive
-still inactive
-set fixed
 rigid fixed
 rooted frozen
 stock-still frozen
-cut mown
 uncut unmown
 seamanly seamanlike
 landlubberly lubberly
@@ -6465,7 +6387,6 @@ vulgar common
 unwashed common
 ungentle ignoble
 untitled ignoble
-mean average
 average median
 average modal
 unnatural abnormal
@@ -6497,7 +6418,6 @@ southwestern southwest
 southwesterly southwest
 southwest southwesterly
 circumboreal boreal
-Federal union
 gray grey
 pug-nose pug-nosed
 short-nosed pug-nosed
@@ -6549,10 +6469,8 @@ clogged choked
 stalemated deadlocked
 stopped-up stopped
 stopped_up stopped
-open clear
 engaged busy
 in_use busy
-free spare
 detestable abhorrent
 obscene abhorrent
 repugnant abhorrent
@@ -6691,7 +6609,6 @@ broached abroach
 combat-ready active
 fighting active
 inactive nonoperational
-right good
 ripe good
 seasonable timely
 well-timed timely
@@ -6861,7 +6778,6 @@ defoliated defoliate
 two-lipped bilabiate
 liplike labiate
 unlipped lipless
-open overt
 barefaced bald
 raw naked
 backstairs backstair
@@ -6977,11 +6893,9 @@ agone ago
 bypast bygone
 departed bygone
 foregone bygone
-gone bygone
 knightly chivalric
 medieval chivalric
 former early
-other early
 former erstwhile
 old erstwhile
 onetime erstwhile
@@ -7101,7 +7015,6 @@ revokable revocable
 voidable rescindable
 irrevokable irrevocable
 allowable permissible
-out forbidden
 prohibited forbidden
 proscribed forbidden
 taboo forbidden
@@ -7143,7 +7056,6 @@ individualised individualized
 personalized individualized
 personalised individualized
 in_the_flesh in-person
-ain own
 ingratiatory coaxing
 telling cogent
 weighty cogent
@@ -7466,7 +7378,6 @@ secluded privy
 secret privy
 head-to-head tete-a-tete
 unrestricted unexclusive
-only alone
 inner inside
 privileged inside
 disadvantaged deprived
@@ -7523,8 +7434,6 @@ comme_il_faut becoming
 decent becoming
 decorous becoming
 seemly becoming
-right correct
-right correct
 prim priggish
 prissy priggish
 prudish priggish
@@ -7664,7 +7573,6 @@ undefiled immaculate
 maculate defiled
 fresh clean
 clear clean
-light clean
 unclouded clean
 sheer plain
 unmingled plain
@@ -7748,7 +7656,6 @@ excited activated
 indifferent inert
 neutral inert
 primed fit
-set fit
 ready_and_waiting waiting
 off-guard napping
 off_guard napping
@@ -8180,7 +8087,6 @@ reprehensible condemnable
 vicious condemnable
 immoral base
 mistaken misguided
-just good
 upright good
 unholy sinful
 wicked sinful
@@ -8293,7 +8199,6 @@ spiritual religious
 sublime reverend
 tabu taboo
 secular profane
-lay laic
 secular laic
 riskless risk-free
 unhazardous risk-free
@@ -8408,7 +8313,6 @@ fair_to_middling adequate
 tolerable adequate
 fine all_right
 o.k. all_right
-ok all_right
 okay all_right
 hunky-dory all_right
 cheering comforting
@@ -8475,7 +8379,6 @@ lowly junior-grade
 petty junior-grade
 secondary junior-grade
 subaltern junior-grade
-jr. younger
 shocking lurid
 sensationalistic scandalmongering
 yellow scandalmongering
@@ -8545,7 +8448,6 @@ flyaway flighty
 head-in-the-clouds flighty
 scatterbrained flighty
 light-minded flippant
-light idle
 frolicsome coltish
 frolicky coltish
 rollicking coltish
@@ -8574,7 +8476,6 @@ operable functional
 operational functional
 burnt-out burned-out
 placed located
-set located
 situated located
 resettled relocated
 drifting aimless
@@ -8640,7 +8541,6 @@ vegetative vegetal
 unsexed castrated
 neutered altered
 emasculated cut
-gelded cut
 intact entire
 aphrodisiacal aphrodisiac
 sexy aphrodisiac
@@ -8824,7 +8724,6 @@ mazy labyrinthine
 devout dear
 earnest dear
 heartfelt dear
-true genuine
 unfeigned genuine
 wholehearted heart-whole
 whole-souled heart-whole
@@ -11744,7 +11643,6 @@ multinomial polynomial
 praetorial praetorian
 pretorian praetorian
 pretorial praetorian
-Punic carthaginian
 purging purgatorial
 purifying purgatorial
 pyaemic pyemic
@@ -11753,19 +11651,15 @@ pyrogenous pyrogenic
 pyrogenetic pyrogenic
 pyrolignic pyroligneous
 pyrotechnical pyrotechnic
-Katari qatari
 quadriphonic quadraphonic
 quadrasonic quadraphonic
 quadrisonic quadraphonic
 quincentenary quincentennial
-Kechuan quechuan
 recessive recessionary
 redemptional redemptive
 redemptory redemptive
 antiphonal responsive
 rhomboidal rhomboid
-Romani romany
-Ruandan rwandan
 sabbatic sabbatical
 satyrical satyric
 Saudi saudi-arabian
@@ -11773,34 +11667,15 @@ saxatile saxicolous
 saxicoline saxicolous
 schismatical schismatic
 schizophrenic schizoid
-Semitic semite
-Tai thai
-Siamese thai
-Tai thai
-Siamese thai
-Tai thai
-Siamese thai
-Sinhalese singhalese
-Singhalese sinhala
-Sinhalese sinhala
-Ceylonese sri_lankan
-Slavic slavonic
 small-capitalisation small-capitalization
 small-cap small-capitalization
 Somali somalian
 sulfuric sulphuric
-Chinese taiwanese
-Formosan taiwanese
 voyeuristical voyeuristic
-Cambrian welsh
 whole-wheat wheaten
 wholemeal wheaten
 woollen woolen
-Zairese zairean
-zonary zonal
 philhellene philhellenic
-Graecophile philhellenic
-Graecophilic philhellenic
 alar axillary
 rupicolous rupestral
 shallow-draught shallow-draft
@@ -11820,18 +11695,6 @@ virucidal viricidal
 cuneal wedge-shaped
 cuneiform wedge-shaped
 yeastlike yeasty
-.22_caliber 
-.22-caliber 
-.22_calibre 
-.22-calibre 
-.38_caliber 
-.38-caliber 
-.38_calibre 
-.38-calibre 
-.45_caliber 
-.45-caliber 
-.45_calibre 
-.45-calibre 
 graduated calibrated
 gathered collected
 ungathered uncollected
