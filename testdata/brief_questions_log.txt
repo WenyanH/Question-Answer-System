@@ -1,0 +1,74 @@
+Sent:
+Is Spanish a part of the Ibero - Romance group of languages , which evolved from several dialects of common Latin in Iberia after the collapse of the Western Roman Empire in the 5th century ?
+Brief:
+Is Spanish a part of the Ibero - Romance group of languages ?
+
+Sent:
+Beginning in the early 16th century , was Spanish taken to the colonies of the Spanish Empire , most notably to the Americas , as well as territories in Africa , Oceania and the Philippines ?
+Brief:
+Beginning in the early 16th century , was Spanish taken to the colonies of the Spanish Empire , most notably to the Americas , as well as territories in Africa ?
+
+Sent:
+Is Spanish one of the six official languages of the United Nations , and it is used as an official language by the European Union , the Organization of American States , and the Union of South American Nations , among many other international organizations ?
+Brief:
+Is Spanish one of the six official languages of the United Nations , and it is used as an official language by the European Union ?
+
+Sent:
+Is Spanish the official or national language in Spain , Equatorial Guinea , and 19 countries in the Americas ?
+Brief:
+Is Spanish the official or national language in Spain , Equatorial Guinea , and 19 countries in the Americas ?
+
+Sent:
+In the European Union , is Spanish the mother tongue of 8 % of the population , with an additional 7 % speaking it as a second language ?
+Brief:
+In the European Union , is Spanish the mother tongue of 8 % of the population , with an additional 7 % speaking it as a second language ?
+
+Sent:
+What claims that there are an estimated 470 million Spanish speakers with native competence and 559 million Spanish speakers as a first or second language , including speakers with limited competence and more than 21 million students of Spanish as a foreign language ?
+Brief:
+What claims that there are an estimated 470 million Spanish speakers with native competence and 559 million Spanish speakers as a first or second language ?
+
+Sent:
+What lengua castellana , written in Salamanca in 1492 by Elio Antonio de Nebrija , was the first grammar written for a modern European language ?
+Brief:
+What lengua castellana was the first grammar written for a modern European language ?
+
+Sent:
+What is spoken by some small communities in Angola because of the Cuban influence from the Cold War and in South Sudan among South Sudanese natives that relocated to Cuba during the Sudanese wars and returned in time for their country 's independence ?
+Brief:
+What is spoken by some small communities in Angola because of the Cuban influence from the Cold War and in South Sudan among South Sudanese natives that relocated to Cuba during the Sudanese wars and returned in time for their country 's independence ?
+
+Sent:
+What was an official language of the Philippines from the beginning of Spanish rule in 1565 to a constitutional change in 1973 ?
+Brief:
+What was an official language of the Philippines from the beginning of Spanish rule in 1565 to a constitutional change in 1973 ?
+
+Sent:
+What was removed from official status in 1973 under the administration of Ferdinand Marcos , but regained its status as an official language two months later under Presidential Decree No . 155 , dated 15 March 1973 ?
+Brief:
+What was removed from official status in 1973 under the administration of Ferdinand Marcos , but regained its status as an official language two months later under Presidential Decree No ?
+
+Sent:
+Is Spanish a partially of the Ibero - Romance group of languages , which evolved from several dialects of common Latin in Iberia after the collapse of the Western Roman Empire in the 5th century ?
+Brief:
+Is Spanish a partially of the Ibero - Romance group of languages ?
+
+Sent:
+Beginning in the early_on 16th century , was Spanish taken to the colonies of the Spanish Empire , most notably to the Americas , as well as territories in Africa , Oceania and the Philippines ?
+Brief:
+Beginning in the early_on 16th century , was Spanish taken to the colonies of the Spanish Empire , most notably to the Americas , as well as territories in Africa ?
+
+Sent:
+Is Spanish one of the six unofficial languages of the United Nations , and it is used as an official language by the European Union , the Organization of American States , and the Union of South American Nations , among many other international organizations ?
+Brief:
+Is Spanish one of the six unofficial languages of the United Nations , and it is used as an official language by the European Union ?
+
+Sent:
+Is Spanish the unofficial or national language in Spain , Equatorial Guinea , and 19 countries in the Americas ?
+Brief:
+Is Spanish the unofficial or national language in Spain ?
+
+Sent:
+In the European Union , is Spanish the beget tongue of 8 % of the population , with an additional 7 % speaking it as a second language ?
+Brief:
+In the European Union , is Spanish the beget tongue of 8 % of the population , with an additional 7 % speaking it as a second language ?
