@@ -44,7 +44,7 @@ def easy_question_generator(line_, position, upper_words):
 
 
 		#uppercase or lowercase for the first word
-		if line[0].orth_.encode('utf8') in upper_words:
+		if line[0].orth_ in upper_words:
 			col_out.append(line[0].orth_.encode('utf8'))
 		else:
 			col_out.append(line[0].orth_.encode('utf8').lower())
@@ -77,7 +77,7 @@ def easy_question_generator(line_, position, upper_words):
 	for i in range(mark + 1, len(line) - 1):
 		#determine uppercase or lowercase
 		if i == (mark + 1):
-			if line[mark + 1].orth_.encode('utf8') in upper_words:
+			if line[mark + 1].orth_ in upper_words:
 				col_out.append(line[mark + 1].orth_.encode('utf8'))
 			else:
 				col_out.append(line[mark + 1].orth_.encode('utf8').lower())

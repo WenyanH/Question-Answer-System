@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import sys, codecs, argparse
 from random import shuffle
-from lib import asking_easy, asking_medium, asking_hard
+from lib import asking_easy, asking_medium, asking_hard, brief_sentence, question_evaluation
 from lib import answering as answer
 from lib.question_type import question_type
 from spacy.en import English
@@ -151,50 +151,69 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
     #     "Weixiang was born in China in 1993 .",
     #     "Guanxi is taking photos ."
     # ]
-    print("\nEasy\n\n")
-    count = 0
+    # print("\nEasy\n\n")
+    # count = 0
+    print '* Easy:'
+    easy_questions = []
     for doc in docs:
-        if count >= num_easy:
-            break
+        # if count >= num_easy:
+        #     break
         result = asking_easy.easy_question_generator(doc, get_root_of_doc(doc), upper_words)
         if result:
             try:
                 result = result.replace('wikiarticletitle', wiki_title)
-                print(result + '\n')
-                count += 1
             except:
-                pass
+                continue
+            result = nlp(brief_sentence.brief(nlp(result)))
+            easy_questions.append(result)
+            # print(result + '\n')
+            # co
             # print sen + '\n'
+    easy_questions = question_evaluation.question_evalution(easy_questions, docs, num_easy)
+    for q in easy_questions:
+        try:
+            print q
+        except:
+            pass
 
-
-    print("\nMedium\n\n")
-    count = 0
+    print '*Medium'
+    medium_questions = []
     for doc in docs:
-        if count >= num_medium:
-            break
         result = asking_medium.medium_question_generator(doc, get_string_of_sent(doc))
         if result:
             try:
                 result = result.replace('wikiarticletitle', wiki_title)
-                print(result + '\n')
-                count += 1
             except:
-                pass
+                continue
+            result = nlp(brief_sentence.brief(nlp(result)))
+            medium_questions.append(result)
 
-    print("\nHard\n\n")
-    count = 0
+    medium_questions = question_evaluation.question_evalution(medium_questions, docs, num_medium)
+    for q in medium_questions:
+        try:
+            print q
+        except:
+            pass
+
+    print '*Hard:'
+    hard_questions = []
     for doc in docs:
-        if count >= num_hard:
-            break
         sen = get_string_of_sent(doc)
         result = asking_hard.hard_question_generator(sen, get_root_of_doc(doc), nlp, upper_words)
         if result:
             try:
                 result = result.replace('wikiarticletitle', wiki_title)
-                print(result + '\n')
-                count += 1
             except:
-                pass
+                continue
+            result = nlp(brief_sentence.brief(nlp(result)))
+            hard_questions.append(result)
+
+    hard_questions = question_evaluation.question_evalution(hard_questions, docs, num_hard)
+    for q in hard_questions:
+        try:
+            print q
+        except:
+            pass
 
 def get_root_of_doc(doc):
     for index, token in enumerate(doc):

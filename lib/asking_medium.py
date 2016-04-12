@@ -24,7 +24,7 @@ def asking_wh(doc, sentence):
 		# 	return create_question(sentence, ent.orth_, 'When')
 		elif ent.label_ in ['ORG', 'NORP', 'PRODUCT', 'EVENT', 'WORK_OF_ART', 'LAW', 'LANGUAGE']:
 			return create_question(sentence, ent.orth_, 'What')
-		elif ent.labe_ in ['CARDINAL']:
+		elif ent.label_ in ['CARDINAL']:
 			return create_question(sentence, ent.orth_, 'How many')
 
 	# What Question
