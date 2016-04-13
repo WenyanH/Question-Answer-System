@@ -134,6 +134,8 @@ def _answer_what(question, sentence):
 
 	# get the most possible candidate
 	result_head = find_shallowest_token(sentence, parent_answer_head.keys())
+	if result_head == None:
+		return get_string_of_sent(sentence), 0.1
 	result_chunk = parent_answer_head[result_head]
 
 	# calc the probabilty of this answer
@@ -261,7 +263,7 @@ def answer_yesno(question_old, sentence_list_old):
 			print "origin:"
 			print question[int(arr[0])].orth_.lower()
 			print sentence_list[index][int(arr[1])].orth_.lower()
-			
+
 			print "boolean_synonym:"
 			print question[int(arr[0])].lemma_.lower() in dic_synonyms
 			print sentence_list[index][int(arr[1])].lemma_.lower() in dic_synonyms
@@ -278,7 +280,7 @@ def answer_yesno(question_old, sentence_list_old):
 			#print unicode("constellation") in dic_synonyms.get(question[int(arr[0])].lemma_.lower(), [unicode("!")])
 			print dic_synonyms.get("configuration", [unicode("!")])
 			'''
-			
+
 			if (question[int(arr[0])].lemma_.lower() in dic_antonyms and sentence_list[index][int(arr[1])].lemma_.lower() in dic_antonyms.get(question[int(arr[0])].lemma_.lower(), [unicode("!")])) or (sentence_list[index][int(arr[1])].orth_.lower() in dic_antonyms and question[int(arr[0])].orth_.lower() in dic_antonyms.get(sentence_list[index][int(arr[1])].orth_.lower(), [unicode("!")])):
 				#print "question[int(arr[0])].lemma_.lower():" + question[int(arr[0])].lemma_.lower()
 					antonyms = True

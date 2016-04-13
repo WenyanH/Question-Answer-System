@@ -9,25 +9,7 @@ Reading file...
 Done. Parsing text...
 Done
 
-Answering:Is its name Latin for cross , and it is dominated by a cross - shaped or kite - like asterism that is commonly known as the Southern Cross ?
-
-
-[0.5760259574386166, 0.21073404264331433, 0.18501155604388286]
-Possible sentences:
-
-Its name is Latin for cross , and it is dominated by a cross - shaped or kite - like asterism that is commonly known as the Southern Cross .
-
-Mark Twain 's travelogue Following the Equator features Twain remarking on the viewing the Southern Cross for the first time , " It is ingeniously named , for it looks just as a cross would look if it looked like something else . "
-
-print fail, continue
-
-
-Answer:
-
-YES
-
-
-Answering:However , was cadamosto 's accompanying diagram inaccurate ?
+Answering:However , was Cadamosto 's accompanying diagram inaccurate ?
 
 
 [0.25544677991066295, 0.04795790545596741, 0.044308167988433136]
@@ -46,17 +28,37 @@ Answer:
 YES
 
 
-Answering:Is another early modern description clearly describing Crux as a separate constellation attributed to Andreas Corsali , an Italian navigator who from 1515 to 1517 sailed to China and the East Indies in an expedition sponsored by King Manuel ?
+Answering:Is royer sometimes wrongly cited as initially distinguishing Crux ?
 
 
-[1.2618436581425758, 0.18026697624793175, 0.163527211912215]
+[0.2936935898633929, 0.11634222319926409, 0.044308167988433136]
 Possible sentences:
 
-Another early modern description clearly describing Crux as a separate constellation is attributed to Andreas Corsali , an Italian navigator who from 1515 to 1517 sailed to China and the East Indies in an expedition sponsored by King Manuel I.
+Royer is sometimes wrongly cited as initially distinguishing wikiarticletitle .
 
-In 1516 , Corsali wrote a letter to the monarch describing his observations of the southern sky , which included a rather crude map of the stars around the south celestial pole including the Southern Cross and the two Magellanic Clouds seen in an external orientation , as on a globe .
+Emery Molyneux and Petrus Plancius have also been cited as the first uranographers to distinguish wikiarticletitle as a separate constellation ; their representations date from 1592 , the former depicting it on his celestial globe and the latter in one of the small celestial maps on his large wall map .
 
-print fail, continue
+Later adopters of the constellation included Jakob Bartsch in 1624 and Augustin Royer in 1679 .
+
+
+
+Answer:
+
+NO
+
+
+Answering:Was the cluster given its name by John Herschel ?
+
+
+[0.25791774783403, 0.13328818040700816, 0.0861031916940572]
+Possible sentences:
+
+The cluster was given its name by John Herschel .
+
+About seven million years old , an age that makes it one of the youngest open clusters in the Milky Way , it appears to have the shape of a letter A. The Jewel Box Clusters is a Shapley class g and Trumpler class I 3 r cluster ; it is a very rich , centrally - concentrated cluster detached from the surrounding star field .
+
+Kappa Crucis is a true member of the cluster that bears its name , and is one of the brighter stars at magnitude 5.9 .
+
 
 
 Answer:
@@ -64,34 +66,15 @@ Answer:
 YES
 
 
-Answering:Was crux first shown in its correct position on the celestial globes of Petrus Plancius and Jodocus Hondius in 1598 and 1600 ?
+Answering:Is mu Crucis divisible in small amateur telescopes or large binoculars ?
 
 
-[0.6330251311518748, 0.30394889119799784, 0.11739582835584235]
+[0.34810059597285475, 0.2703688591680294, 0.08435549202375726]
 Possible sentences:
 
-Crux was first shown in its correct position on the celestial globes of Petrus Plancius and Jodocus Hondius in 1598 and 1600 .
+Mu Crucis is divisible in small amateur telescopes or large binoculars .
 
-Emery Molyneux and Petrus Plancius have also been cited as the first uranographers to distinguish Crux as a separate constellation ; their representations date from 1592 , the former depicting it on his celestial globe and the latter in one of the small celestial maps on his large wall map .
-
-In 1516 , Corsali wrote a letter to the monarch describing his observations of the southern sky , which included a rather crude map of the stars around the south celestial pole including the Southern Cross and the two Magellanic Clouds seen in an external orientation , as on a globe .
-
-
-
-Answer:
-
-YES
-
-
-Answering:Were its stars first catalogued separately from Centaurus by Frederick de Houtman in 1603 ?
-
-
-[0.44610839186801066, 0.13020516681046299, 0.11038238887820111]
-Possible sentences:
-
-Its stars were first catalogued separately from Centaurus by Frederick de Houtman in 1603 .
-
-Discovered in October 1969 , it has become redder and brighter ( mean magnitude changing from 8.047 to 7.762 ) and its period lengthened by 25 % in the first thirty years since its discovery .
+The two close components are divisible in a small amateur telescope and the wide component is divisible in a pair of binoculars .
 
 Predominating the asterism is the most southerly first - magnitude star and brightest star in the constellation , the blue - white Alpha Crucis or Acrux , followed by four other stars , descending in clockwise order by magnitude : Beta , Gamma ( one of the closest red giants to Earth ) , Delta and Epsilon Crucis .
 
@@ -102,104 +85,112 @@ Answer:
 YES
 
 
-Answering:What is a constellation located in the southern sky in a bright portion of the Milky Way , and is the smallest but one of the most distinctive of the 88 modern constellations ?
+Answering:Are Lambda Crucis and Theta2 Crucis also Beta Cepheid stars ?
 
 
-[0.5504803547226934, 0.15921040810406478, 0.1495856069606295]
+[0.23977678927396595, 0.11613603032723674, 0.09041685005946043]
 Possible sentences:
 
-print fail, continue
+Lambda Crucis and Theta2 Crucis are also Beta Cepheid stars .
+
+Predominating the asterism is the most southerly first - magnitude star and brightest star in the constellation , the blue - white Alpha Crucis or Acrux , followed by four other stars , descending in clockwise order by magnitude : Beta , Gamma ( one of the closest red giants to Earth ) , Delta and Epsilon Crucis .
+
+Like Beta it is a Beta Cepheid .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Who is sometimes wrongly cited as initially distinguishing Crux ?
+
+
+[0.24938542187495977, 0.11634222319926409, 0.0541164605185504]
+Possible sentences:
+
+Royer is sometimes wrongly cited as initially distinguishing wikiarticletitle .
+
+Emery Molyneux and Petrus Plancius have also been cited as the first uranographers to distinguish wikiarticletitle as a separate constellation ; their representations date from 1592 , the former depicting it on his celestial globe and the latter in one of the small celestial maps on his large wall map .
+
+wikiarticletitle was known to the Ancient Greeks due to the fact that it can be seen from southern Egypt ; Ptolemy , who regarded it as part of the constellation Centaurus .
+
+
+
+Answer:
+
+Royer
+
+
+Answering:What is the most prominent dark nebula in the skies ?
+
+
+[0.31031465948871334, 0.11500690927301886, 0.0855333223803211]
+Possible sentences:
+
 The Coalsack Nebula is the most prominent dark nebula in the skies , easily visible to the naked eye as a prominent dark patch in the southern Milky Way .
 
-print fail, continue
+wikiarticletitle also contains the bright and colourful open cluster known Jewel Box ( NGC 4755 ) and , to the southwest , the extensive dark nebula , known as the Coalsack Nebula .
 
-
-Answer:
-
-answer print fail, continue
-Answering:What is Latin for cross , and it is dominated by a cross - shaped or kite - like asterism that is commonly known as the Southern Cross ?
-
-
-[0.5232448108463115, 0.18501155604388286, 0.18434346934716178]
-Possible sentences:
-
-Its name is Latin for cross , and it is dominated by a cross - shaped or kite - like asterism that is commonly known as the Southern Cross .
-
-print fail, continue
-Mark Twain 's travelogue Following the Equator features Twain remarking on the viewing the Southern Cross for the first time , " It is ingeniously named , for it looks just as a cross would look if it looked like something else . "
+In Australian Aboriginal astronomy , wikiarticletitle and the Coalsack mark the head of the ' Emu in the Sky ' in several Aboriginal cultures , while wikiarticletitle itself is said to be a possum sitting in a tree and a representation of the sky deity Mirrabooka .
 
 
 
 Answer:
 
-Its name
+The Coalsack Nebula
 
 
-Answering:What also contains four Cepheid variables that are visible to the naked eye under optimum conditions ?
+Answering:What uses a stylized image of the Southern Cross as a corporate logo ?
 
 
-[0.4417191543392566, 0.19505306961913327, 0.13456753447821218]
+[0.2672436692120421, 0.09672563813902955, 0.0899516499031115]
 Possible sentences:
 
-The constellation also contains four Cepheid variables that are visible to the naked eye under optimum conditions .
+The Commonwealth Bank of Australia uses a stylized image of the Southern Cross as a corporate logo .
 
-Crux boasts four Cepheid variables that reach naked eye visibility .
+In the Southern Hemisphere , the Southern Cross is frequently used for navigation in much the same way that the Polaris is used in the Northern Hemisphere .
 
-BH Crucis , also known as Welch 's Red Variable , is a Mira variable that ranges from magnitude 6.6 to 9.8 over 530 days .
+The Southern Cross was included in the lyrics of the Brazilian National Anthem ( 1909 ) : " A imagem do Cruzeiro resplandece " ( " the image of the Cross shines " ) .
 
 
 
 Answer:
 
-The constellation
+The Commonwealth Bank of Australia
 
 
-Answering:What also contains the bright and colourful open cluster known Jewel Box ( NGC 4755 ) and , to the southwest , the extensive dark nebula , known as the Coalsack Nebula ?
+Answering:What are well known for using it for night orientation in the vast Pampas and Patagonic regions ?
 
 
-[0.7604409753994511, 0.329396357699438, 0.274843146545861]
+[0.4653245734481819, 0.12209586464829972, 0.10247927958806517]
 Possible sentences:
 
-Crux also contains the bright and colourful open cluster known Jewel Box ( NGC 4755 ) and , to the southwest , the extensive dark nebula , known as the Coalsack Nebula .
+Argentine Gauchos are well known for using it for night orientation in the vast Pampas and Patagonic regions .
 
-print fail, continue
-About seven million years old , an age that makes it one of the youngest open clusters in the Milky Way , it appears to have the shape of a letter A. The Jewel Box Clusters is a Shapley class g and Trumpler class I 3 r cluster ; it is a very rich , centrally - concentrated cluster detached from the surrounding star field .
+They also appear on the flags of the Australian state of Victoria , the Australian Capital Territory , the Northern Territory , as well as the flag of Magallanes Region of Chile , the flag of Londrina ( Brazil ) and several Argentine provincial flags and emblems ( for example , Tierra del Fuego and Santa Cruz ) .
+
+In the Southern Hemisphere , the Southern Cross is frequently used for navigation in much the same way that the Polaris is used in the Northern Hemisphere .
 
 
 
 Answer:
 
-Crux
+Argentine Gauchos
 
 
-Answering:What was known to the Ancient Greeks due to the fact that it can be seen from southern Egypt ; Ptolemy , who regarded it as part of the constellation Centaurus ?
+Answering:Is royer sometimes right cited as initially distinguishing Crux ?
 
 
-[0.7240107735114869, 0.13582316670796563, 0.13343905647351564]
+[0.24239460271416216, 0.11634222319926409, 0.044308167988433136]
 Possible sentences:
 
-Crux was known to the Ancient Greeks due to the fact that it can be seen from southern Egypt ; Ptolemy , who regarded it as part of the constellation Centaurus .
+Royer is sometimes wrongly cited as initially distinguishing wikiarticletitle .
 
-About seven million years old , an age that makes it one of the youngest open clusters in the Milky Way , it appears to have the shape of a letter A. The Jewel Box Clusters is a Shapley class g and Trumpler class I 3 r cluster ; it is a very rich , centrally - concentrated cluster detached from the surrounding star field .
+Emery Molyneux and Petrus Plancius have also been cited as the first uranographers to distinguish wikiarticletitle as a separate constellation ; their representations date from 1592 , the former depicting it on his celestial globe and the latter in one of the small celestial maps on his large wall map .
 
-print fail, continue
-
-
-Answer:
-
-Crux
-
-
-Answering:Is its diagnose Latin for cross , and it is dominated by a cross - shaped or kite - like asterism that is commonly known as the Southern Cross ?
-
-
-[0.549635384142464, 0.18501155604388286, 0.18434346934716178]
-Possible sentences:
-
-Its name is Latin for cross , and it is dominated by a cross - shaped or kite - like asterism that is commonly known as the Southern Cross .
-
-print fail, continue
-Mark Twain 's travelogue Following the Equator features Twain remarking on the viewing the Southern Cross for the first time , " It is ingeniously named , for it looks just as a cross would look if it looked like something else . "
+Later adopters of the constellation included Jakob Bartsch in 1624 and Augustin Royer in 1679 .
 
 
 
@@ -208,7 +199,7 @@ Answer:
 NO
 
 
-Answering:However , was cadamosto 's accompanying diagram accurate ?
+Answering:However , was Cadamosto 's accompanying diagram accurate ?
 
 
 [0.20414779276143222, 0.04795790545596741, 0.044308167988433136]
@@ -227,35 +218,17 @@ Answer:
 NO
 
 
-Answering:Is another late modern description clearly describing Crux as a separate constellation attributed to Andreas Corsali , an Italian navigator who from 1515 to 1517 sailed to China and the East Indies in an expedition sponsored by King Manuel ?
+Answering:Are Lambda Crucis and Theta2 Crucis besides Beta Cepheid stars ?
 
 
-[1.2105446709933452, 0.18026697624793175, 0.163527211912215]
+[0.21780454350060377, 0.11613603032723674, 0.09041685005946043]
 Possible sentences:
 
-Another early modern description clearly describing Crux as a separate constellation is attributed to Andreas Corsali , an Italian navigator who from 1515 to 1517 sailed to China and the East Indies in an expedition sponsored by King Manuel I.
+Lambda Crucis and Theta2 Crucis are also Beta Cepheid stars .
 
-In 1516 , Corsali wrote a letter to the monarch describing his observations of the southern sky , which included a rather crude map of the stars around the south celestial pole including the Southern Cross and the two Magellanic Clouds seen in an external orientation , as on a globe .
+Predominating the asterism is the most southerly first - magnitude star and brightest star in the constellation , the blue - white Alpha Crucis or Acrux , followed by four other stars , descending in clockwise order by magnitude : Beta , Gamma ( one of the closest red giants to Earth ) , Delta and Epsilon Crucis .
 
-print fail, continue
-
-
-Answer:
-
-NO
-
-
-Answering:Was southern_cross first shown in its correct position on the celestial globes of Petrus Plancius and Jodocus Hondius in 1598 and 1600 ?
-
-
-[0.619162187540676, 0.2900859475867989, 0.11739582835584235]
-Possible sentences:
-
-Crux was first shown in its correct position on the celestial globes of Petrus Plancius and Jodocus Hondius in 1598 and 1600 .
-
-Emery Molyneux and Petrus Plancius have also been cited as the first uranographers to distinguish Crux as a separate constellation ; their representations date from 1592 , the former depicting it on his celestial globe and the latter in one of the small celestial maps on his large wall map .
-
-In 1516 , Corsali wrote a letter to the monarch describing his observations of the southern sky , which included a rather crude map of the stars around the south celestial pole including the Southern Cross and the two Magellanic Clouds seen in an external orientation , as on a globe .
+Like Beta it is a Beta Cepheid .
 
 
 
@@ -264,17 +237,36 @@ Answer:
 YES
 
 
-Answering:Were its stars last catalogued separately from Centaurus by Frederick de Houtman in 1603 ?
+Answering:Is mu Crucis indivisible in small amateur telescopes or large binoculars ?
 
 
-[0.41838250464561283, 0.10247927958806517, 0.0926709870579479]
+[0.3037924279844216, 0.1817525231911631, 0.08435549202375726]
 Possible sentences:
 
-Its stars were first catalogued separately from Centaurus by Frederick de Houtman in 1603 .
+Mu Crucis is divisible in small amateur telescopes or large binoculars .
 
-Discovered in October 1969 , it has become redder and brighter ( mean magnitude changing from 8.047 to 7.762 ) and its period lengthened by 25 % in the first thirty years since its discovery .
+The two close components are divisible in a small amateur telescope and the wide component is divisible in a pair of binoculars .
 
-The rhea 's body is marked by the four main stars of Crux , while its head is Gamma Centauri and its feet are the bright stars of Musca .
+Predominating the asterism is the most southerly first - magnitude star and brightest star in the constellation , the blue - white Alpha Crucis or Acrux , followed by four other stars , descending in clockwise order by magnitude : Beta , Gamma ( one of the closest red giants to Earth ) , Delta and Epsilon Crucis .
+
+
+
+Answer:
+
+NO
+
+
+Answering:Is iota Crucis a binary star 125 dark - years from Earth ?
+
+
+[0.27562914965428315, 0.15484804043631561, 0.13559513181778984]
+Possible sentences:
+
+Iota Crucis is a binary star 125 light - years from Earth .
+
+BG Crucis ranges from magnitude 5.34 to 5.58 over 3.3428 days , T Crucis ranges from 6.32 to 6.83 over 6.73331 days , S Crucis ranges from 6.22 to 6.92 over 4.68997 days , and R Crucis ranges from 6.4 to 7.23 over 5.82575 days .
+
+Delta Crucis is a blue - white hued star of magnitude 2.8 , 364 light - years from Earth .
 
 
 

@@ -9,36 +9,36 @@ Reading file...
 Done. Parsing text...
 Done
 
-Answering:In cases where Simplified and Traditional Chinese scripts are identical , is the Chinese term written once ?
+Answering:Are there also sizable Hakka and Shanghainese diasporas ?
 
 
-[0.3799761902560781, 0.15174803643581222, 0.14378640165199494]
+[0.3108986374662568, 0.07714231144849086, 0.071608459066643]
 Possible sentences:
 
-In cases where Simplified and Traditional Chinese scripts are identical , the Chinese term is written once .
+There are also sizable Hakka and Shanghainese diasporas , for example in Taiwan , where most Hakka communities are also conversant in Taiwanese and Standard Chinese .
 
-Calligraphy artists can write in traditional and simplified characters , but they tend to use traditional characters for traditional art .
+Southern Chinese varieties like Cantonese and Hakka preserved more of the rimes of Middle Chinese and also have more tones .
+
+For example , in addition to putonghua , a resident of Shanghai might speak Shanghainese ; and , if he or she grew up elsewhere , then he or she may also be likely to be fluent in the particular dialect of that local area .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Are modern characters styled after the regular script ?
+
+
+[0.22478184957703923, 0.14938255953134916, 0.0702553831463852]
+Possible sentences:
+
+Modern characters are styled after the regular script .
 
 Various other written styles are also used in Chinese calligraphy , including seal script , cursive script and clerical script .
 
-
-
-Answer:
-
-YES
-
-
-Answering:Is chinese spoken by the Han majority and many other ethnic groups in China ?
-
-
-[0.3080024065296568, 0.12198040473832909, 0.11626254150277232]
-Possible sentences:
-
-Chinese is spoken by the Han majority and many other ethnic groups in China .
-
-There are between 7 and 13 main regional groups of Chinese ( depending on classification scheme ) , of which the most spoken by far is Mandarin ( about 960 million ) , followed by Wu ( 80 million ) , Yue ( 60 million ) and Min ( 70 million ) .
-
-Other terms were coined by the Japanese by giving new senses to existing Chinese terms or by referring to expressions used in classical Chinese literature .
+In modern spoken Mandarin , however , tremendous ambiguity would result if all of these words could be used as - is ; Yuen Ren Chao 's modern poem Lion - Eating Poet in the Stone Den exploits this , consisting of 92 characters all pronounced shi .
 
 
 
@@ -47,36 +47,17 @@ Answer:
 YES
 
 
-Answering:Are the varieties of Chinese usually described by native speakers as dialects of a single Chinese language , but linguists note that they are as diverse as a language family ?
+Answering:Can calligraphy artists write in traditional and simplified characters ?
 
 
-[0.6124654707215837, 0.23770081186793676, 0.23209720088580668]
+[0.37195155507659655, 0.10596634733096075, 0.08987196820661973]
 Possible sentences:
 
-The varieties of Chinese are usually described by native speakers as dialects of a single Chinese language , but linguists note that they are as diverse as a language family .
+Calligraphy artists can write in traditional and simplified characters , but they tend to use traditional characters for traditional art .
 
-John DeFrancis considers the mutual unintelligibility too great for the term " dialects " to be used to refer to the different varieties , but also objects to considering them as separate languages , as it incorrectly implies a set of disruptive " religious , economic , political , and other differences " between speakers that exist , for example , between French Catholics and English Protestants in Canada , but not between speakers of Cantonese and Mandarin in China , owing to China 's near - uninterrupted history of centralized government .
-
-Mutual intelligibility is considered by some linguists to be the main criterion for determining whether varieties are separate languages or dialects of a single language , although others do not regard it as decisive , particularly when cultural factors interfere as they do with Chinese .
-
-
-
-Answer:
-
-YES
-
-
-Answering:Are there between 7 and 13 main regional groups of Chinese ( depending on classification scheme ) , of which the most spoken by far is Mandarin ( about 960 million ) , followed by Wu ( 80 million ) , Yue ( 60 million ) and Min ( 70 million ) ?
-
-
-[1.4243675262874786, 0.2630005085386944, 0.2469198317414508]
-Possible sentences:
-
-There are between 7 and 13 main regional groups of Chinese ( depending on classification scheme ) , of which the most spoken by far is Mandarin ( about 960 million ) , followed by Wu ( 80 million ) , Yue ( 60 million ) and Min ( 70 million ) .
+Today Japanese is written with a composite script using both Chinese characters ( Kanji ) and kana , but Korean is written exclusively with Hangul in North Korea , and supplementary Chinese characters ( Hanja ) are increasingly rarely used in the South .
 
 print fail, continue
-For instance , Wuzhou is about 120 miles ( 190 km ) upstream from Guangzhou , but the Yue variety spoken there is more like that of Guangzhou than is that of Taishan , 60 miles ( 95 km ) southwest of Guangzhou and separated from it by several rivers .
-
 
 
 Answer:
@@ -84,23 +65,96 @@ Answer:
 YES
 
 
-Answering:Are most of these groups mutually unintelligible , although some , like Xiang and the Southwest Mandarin dialects , may share common terms and some degree of intelligibility ?
+Answering:Is the most widespread the Palladius system ?
 
 
-[0.6594966984382618, 0.2194063828373123, 0.1668567960854292]
+[0.1561694969435668, 0.05638354669333746, 0.05278114659230517]
 Possible sentences:
 
-Most of these groups are mutually unintelligible , although some , like Xiang and the Southwest Mandarin dialects , may share common terms and some degree of intelligibility .
+The most widespread is the Palladius system .
 
-As Campbell ( 2008 ) explains , linguists often ignore mutual intelligibility when varieties share intelligibility with a central variety ( i.e. prestige variety , such as Standard Mandarin ) , as the issue requires some careful handling when mutual intelligibility is inconsistent with language identity .
+R. L. G. " Language borrowing Why so little Chinese in English ? "
 
-As a result , these terms are virtually indistinguishable from native Chinese words : indeed , there is some dispute over some of these terms as to whether the Japanese or Chinese coined them first .
+Other systems of romanization for Chinese include Gwoyeu Romatzyh , the French EFEO , the Yale ( invented during WWII for U.S. troops ) , as well as separate systems for Cantonese , Min Nan , Hakka , and other Chinese varieties .
 
 
 
 Answer:
 
 YES
+
+
+Answering:Are Chinese characters morphemes independent of phonetic change ?
+
+
+[0.20963283889640047, 0.10329571947847027, 0.07244227515603349]
+Possible sentences:
+
+Chinese characters are morphemes independent of phonetic change .
+
+In 100 CE , the famed Han dynasty scholar Xu Shen classified characters into six categories , namely pictographs , simple ideographs , compound ideographs , phonetic loans , phonetic compounds and derivative characters .
+
+Scholars have attempted to reconstruct the phonology of Old Chinese by comparing later varieties of Chinese with the rhyming practice of the Classic of Poetry and the phonetic elements found in the majority of Chinese characters .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Who called this practice misleading , pointing out that Wu ?
+
+
+[0.3834527200301807, 0.07262628600974241, 0.06867974408970293]
+Possible sentences:
+
+Jerry Norman called this practice misleading , pointing out that Wu , which itself contains many mutually unintelligible varieties , could not be properly called a single language under the same criterion , and that the same is true for each of the other groups .
+
+Conventional English - language usage in Chinese linguistics is to use dialect for the speech of a particular place ( regardless of status ) while regional groupings like Mandarin and Wu are called dialect groups .
+
+Putonghua/Guoyu , often called " Mandarin " , is the official standard language used by the People 's Republic of China , the Republic of China ( Taiwan ) , and Singapore ( where it is called " Huayu " or simply Chinese ) .
+
+
+
+Answer:
+
+Jerry Norman
+
+
+Answering:What is written with a Latin - based alphabet ?
+
+
+[0.18594970129049057, 0.18530431607911485, 0.09862665558015872]
+Possible sentences:
+
+print fail, continue
+Vietnamese is written with a Latin - based alphabet .
+
+Today Japanese is written with a composite script using both Chinese characters ( Kanji ) and kana , but Korean is written exclusively with Hangul in North Korea , and supplementary Chinese characters ( Hanja ) are increasingly rarely used in the South .
+
+
+
+Answer:
+
+Vietnamese
+
+
+Answering:What is often described as a " monosyllabic " language ?
+
+
+[0.675963923222322, 0.35407634073550204, 0.23184455960117095]
+Possible sentences:
+
+print fail, continue
+print fail, continue
+In speech , the meaning of a syllable is determined by context ( for example , in English , " some " as the opposite of " none " as opposed to " sum " in arithmetic ) or by the word it is found in ( " some " or " sum " vs. " summer " ) .
+
+
+
+Answer:
+
+CIF
 
 
 Answering:What is spoken by the Han majority and many other ethnic groups in China ?
@@ -122,16 +176,55 @@ Answer:
 Chinese
 
 
-Answering:What ( around 16 % of the world 's population ) speak some form of Chinese as their first language ?
+Answering:Who estimated that there are hundreds of mutually unintelligible varieties of Chinese ?
 
 
-[0.47504985671243477, 0.19775021196025974, 0.1741496583571874]
+[0.2509305793395195, 0.14585618779660348, 0.09862665558015872]
 Possible sentences:
 
-Nearly 1.2 billion people ( around 16 % of the world 's population ) speak some form of Chinese as their first language .
+Jerry Norman estimated that there are hundreds of mutually unintelligible varieties of Chinese .
+
+Jerry Norman called this practice misleading , pointing out that Wu , which itself contains many mutually unintelligible varieties , could not be properly called a single language under the same criterion , and that the same is true for each of the other groups .
 
 print fail, continue
-print fail, continue
+
+
+Answer:
+
+Jerry Norman
+
+
+Answering:Could scholars from unlike lands communicate ?
+
+
+[0.20933285566407392, 0.06104793232414986, 0.06104793232414986]
+Possible sentences:
+
+Scholars from different lands could communicate , albeit only in writing , using Literary Chinese .
+
+Although many of the finer details remain unclear , most scholars agree that Old Chinese differed from Middle Chinese in lacking retroflex and palatal obstruents but having initial consonant clusters of some sort , and in having voiceless nasals and liquids .
+
+Because varieties from different groups are not mutually intelligible , some scholars prefer to describe Wu and so on as languages .
+
+
+
+Answer:
+
+YES
+
+
+Answering:Is the least widespread the Palladius system ?
+
+
+[0.13219054421558307, 0.08277411998949004, 0.05638354669333746]
+Possible sentences:
+
+The most widespread is the Palladius system .
+
+There are also at least two systems of cyrillization for Chinese .
+
+R. L. G. " Language borrowing Why so little Chinese in English ? "
+
 
 
 Answer:
@@ -139,91 +232,15 @@ Answer:
 NO
 
 
-Answering:What of Chinese are usually described by native speakers as dialects of a single Chinese language , but linguists note that they are as diverse as a language family ?
+Answering:Are all varieties of taiwanese tonal and analytic ?
 
 
-[0.5945478760293033, 0.21978321717565621, 0.21417960619352608]
-Possible sentences:
-
-The varieties of Chinese are usually described by native speakers as dialects of a single Chinese language , but linguists note that they are as diverse as a language family .
-
-John DeFrancis considers the mutual unintelligibility too great for the term " dialects " to be used to refer to the different varieties , but also objects to considering them as separate languages , as it incorrectly implies a set of disruptive " religious , economic , political , and other differences " between speakers that exist , for example , between French Catholics and English Protestants in Canada , but not between speakers of Cantonese and Mandarin in China , owing to China 's near - uninterrupted history of centralized government .
-
-Mutual intelligibility is considered by some linguists to be the main criterion for determining whether varieties are separate languages or dialects of a single language , although others do not regard it as decisive , particularly when cultural factors interfere as they do with Chinese .
-
-
-
-Answer:
-
-The varieties
-
-
-Answering:What of Chinese has been likened to that of the Romance languages , but may be even more varied ?
-
-
-[0.363600590504157, 0.14429622648033943, 0.12828260737149624]
-Possible sentences:
-
-The internal diversity of Chinese has been likened to that of the Romance languages , but may be even more varied .
-
-John DeFrancis considers the mutual unintelligibility too great for the term " dialects " to be used to refer to the different varieties , but also objects to considering them as separate languages , as it incorrectly implies a set of disruptive " religious , economic , political , and other differences " between speakers that exist , for example , between French Catholics and English Protestants in Canada , but not between speakers of Cantonese and Mandarin in China , owing to China 's near - uninterrupted history of centralized government .
-
-To Chinese nationalists , the idea of Chinese as a language family may suggest that the Chinese identity is much more fragmented and disunified than it actually is and as such is often looked upon as culturally and politically provocative .
-
-
-
-Answer:
-
-The internal diversity
-
-
-Answering:What of Chinese are tonal and analytic ?
-
-
-[0.10860536276882451, 0.0633150184989369, 0.06327936783729195]
+[0.15003671003273983, 0.10471071510120727, 0.10130144923150136]
 Possible sentences:
 
 All varieties of Chinese are tonal and analytic .
 
-R. L. G. " Language borrowing Why so little Chinese in English ? "
-
 print fail, continue
-
-
-Answer:
-
-All varieties
-
-
-Answering:In cases where Simplified and Traditional taiwanese scripts are identical , is the Chinese term written once ?
-
-
-[0.3799761902560781, 0.15174803643581222, 0.14378640165199494]
-Possible sentences:
-
-In cases where Simplified and Traditional Chinese scripts are identical , the Chinese term is written once .
-
-Calligraphy artists can write in traditional and simplified characters , but they tend to use traditional characters for traditional art .
-
-Various other written styles are also used in Chinese calligraphy , including seal script , cursive script and clerical script .
-
-
-
-Answer:
-
-NO
-
-
-Answering:Is taiwanese spoken by the Han majority and many other ethnic groups in China ?
-
-
-[0.3010709347240574, 0.13697663520259803, 0.1346234943332534]
-Possible sentences:
-
-Chinese is spoken by the Han majority and many other ethnic groups in China .
-
-Min Nan , part of the Min group , is widely spoken in southern Fujian , in neighboring Taiwan ( where it is known as Taiwanese or Hoklo ) and in Southeast Asia ( also known as Hokkien in the Philippines , Singapore , and Malaysia ) .
-
 A Taiwanese may commonly mix pronunciations , phrases , and words from Mandarin and other Taiwanese languages , and this mixture is considered normal in daily or informal speech .
 
 
@@ -233,36 +250,17 @@ Answer:
 YES
 
 
-Answering:Are the varieties of Chinese usually described by adopted speakers as dialects of a single Chinese language , but linguists note that they are as diverse as a language family ?
+Answering:Can calligraphy artists write in nontraditional and simplified characters ?
 
 
-[0.5755766761804444, 0.23770081186793676, 0.23209720088580668]
+[0.2570923131819237, 0.10596634733096075, 0.08987196820661973]
 Possible sentences:
 
-The varieties of Chinese are usually described by native speakers as dialects of a single Chinese language , but linguists note that they are as diverse as a language family .
+Calligraphy artists can write in traditional and simplified characters , but they tend to use traditional characters for traditional art .
 
-John DeFrancis considers the mutual unintelligibility too great for the term " dialects " to be used to refer to the different varieties , but also objects to considering them as separate languages , as it incorrectly implies a set of disruptive " religious , economic , political , and other differences " between speakers that exist , for example , between French Catholics and English Protestants in Canada , but not between speakers of Cantonese and Mandarin in China , owing to China 's near - uninterrupted history of centralized government .
-
-Mutual intelligibility is considered by some linguists to be the main criterion for determining whether varieties are separate languages or dialects of a single language , although others do not regard it as decisive , particularly when cultural factors interfere as they do with Chinese .
-
-
-
-Answer:
-
-YES
-
-
-Answering:Are there between 7 and 13 independent regional groups of Chinese ( depending on classification scheme ) , of which the most spoken by far is Mandarin ( about 960 million ) , followed by Wu ( 80 million ) , Yue ( 60 million ) and Min ( 70 million ) ?
-
-
-[1.3790415313559463, 0.2630005085386944, 0.2469198317414508]
-Possible sentences:
-
-There are between 7 and 13 main regional groups of Chinese ( depending on classification scheme ) , of which the most spoken by far is Mandarin ( about 960 million ) , followed by Wu ( 80 million ) , Yue ( 60 million ) and Min ( 70 million ) .
+Today Japanese is written with a composite script using both Chinese characters ( Kanji ) and kana , but Korean is written exclusively with Hangul in North Korea , and supplementary Chinese characters ( Hanja ) are increasingly rarely used in the South .
 
 print fail, continue
-For instance , Wuzhou is about 120 miles ( 190 km ) upstream from Guangzhou , but the Yue variety spoken there is more like that of Guangzhou than is that of Taishan , 60 miles ( 95 km ) southwest of Guangzhou and separated from it by several rivers .
-
 
 
 Answer:
@@ -270,17 +268,16 @@ Answer:
 NO
 
 
-Answering:Are most of these groups mutually intelligible , although some , like Xiang and the Southwest Mandarin dialects , may share common terms and some degree of intelligibility ?
+Answering:Is Vietnamese spoken with a Latin - based alphabet ?
 
 
-[0.6226079038971224, 0.2194063828373123, 0.1668567960854292]
+[0.20056487911406534, 0.1781844133955006, 0.11324183340373352]
 Possible sentences:
 
-Most of these groups are mutually unintelligible , although some , like Xiang and the Southwest Mandarin dialects , may share common terms and some degree of intelligibility .
+Vietnamese is written with a Latin - based alphabet .
 
-As Campbell ( 2008 ) explains , linguists often ignore mutual intelligibility when varieties share intelligibility with a central variety ( i.e. prestige variety , such as Standard Mandarin ) , as the issue requires some careful handling when mutual intelligibility is inconsistent with language identity .
-
-As a result , these terms are virtually indistinguishable from native Chinese words : indeed , there is some dispute over some of these terms as to whether the Japanese or Chinese coined them first .
+print fail, continue
+As a result of this loaning , Chinese , Korean , Japanese , and Vietnamese share a corpus of linguistic terms describing modern terminology , paralleling the similar corpus of terms built from Greco - Latin and shared among European languages .
 
 
 
