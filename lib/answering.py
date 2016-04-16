@@ -325,26 +325,32 @@ def answer_yesno(question_old, sentence_list_old):
 def calc_all_words_weight(docs):
 	word_count = []
 	total_number_sentence = len(docs)
+	frequency_in_docs = {}
 	#print total_number_sentence
 	for sent in docs:
-		weight = 0
-		frequency_in_sentence = {}
 		exist_token = {}
+		for token in sent:
+			if token.lemma_ in frequency_in_docs:
+				if token.lemma_ not in exist_token:
+					frequency_in_docs[token.lemma_] += 1
+					exist_token[token.lemma_] = 1
+			else:
+				frequency_in_docs[token.lemma_] = 1
+				exist_token[token.lemma_] = 1
+
+	for sent in docs:
+		frequency_in_sentence = {}
 		for token in sent:
 			if token.lemma_ in frequency_in_sentence:
 				frequency_in_sentence[token.lemma_] += 1
 			else:
 				frequency_in_sentence[token.lemma_] = 1
+
 		word_frequency = {}
 		for token in sent:
-			count = 0
-			for sent2 in docs:
-				for token2 in sent2:
-					if token2.lemma_ == token.lemma_:
-						count = count + 1
-						break
-			weight_temp = frequency_in_sentence[token.lemma_] * math.log(total_number_sentence / count)
+			weight_temp = frequency_in_sentence[token.lemma_] * math.log(total_number_sentence / frequency_in_docs[token.lemma_])
 			word_frequency[token] = weight_temp
+
 		word_count.append(word_frequency)
 
 	return word_count
@@ -358,14 +364,14 @@ def find_possible_sentences(docs, question, word_count):
 		weight = 0
 		frequency_in_sentence = {}
 		exist_token = {}
-		for token in sent:
+		for key,value in sent.iteritems():
 			for token_question in question:
-				if token_question.lemma_ == token[0].lemma_:
-					if token[0].lemma_ in exist_token:
+				if token_question.lemma_ == key.lemma_:
+					if key.lemma_ in exist_token:
 						continue
 					else:
-						weight += token[1]
-						exist_token[token[0].lemma_] = 1
+						weight += value
+						exist_token[key.lemma_] = 1
 		#print weight
 		heapq.heappush(heap, (weight * -1, word_count.index(sent)))
 
