@@ -109,6 +109,8 @@ def get_article_nouns(docs):
     # for n in nouns:
     #     print n, ',',
 
+    if 'I' not in nouns:
+        nouns.append('I')
     return nouns
 
 def read_sentences_from_file(file_name, wiki=True, question=False):

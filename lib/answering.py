@@ -322,6 +322,8 @@ def answer_yesno(question_old, sentence_list_old):
 
 	f.close()
 
+def calc_all_words_weigth(docs):
+	pass
 
 def find_possible_sentences(docs, question):
 	potential_sentences_index = []
