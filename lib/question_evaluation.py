@@ -20,7 +20,7 @@ def question_evalution(question_doc_list, wiki_doc_list, n):
 				frequency_in_sentence[token.lemma_] = 1
 		for token in sent:
 			if token in demon:
-				continue
+				break
 			count = 0
 			for sent2 in wiki_doc_list:
 				for token2 in sent2:
