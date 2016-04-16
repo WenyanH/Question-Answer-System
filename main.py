@@ -230,13 +230,14 @@ def get_last_token_of_doc(doc):
     return result
 
 def answering(docs, docs_q):
+    word_count = answer.calc_all_words_weight(docs)
     for question_doc in docs_q:
         # print 'Answering:' + get_string_of_sent(question_doc) + '\n'
         print('Answering:' + get_string_of_sent(question_doc) + '\n\n')
         type_of_question = question_type(get_string_of_sent(question_doc), get_root_of_doc(question_doc))
         # print type_of_question
 
-        possible_sentences_index, possible_sentences_prob = answer.find_possible_sentences(docs, question_doc)
+        possible_sentences_index, possible_sentences_prob = answer.find_possible_sentences(docs, question_doc, word_count)
         possible_sentences = []
         print('Possible sentences:\n')
         for index in possible_sentences_index:

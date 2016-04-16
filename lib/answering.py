@@ -322,7 +322,7 @@ def answer_yesno(question_old, sentence_list_old):
 
 	f.close()
 
-def calc_all_words_weigth(docs):
+def calc_all_words_weight(docs):
 	word_count = []
 	total_number_sentence = len(docs)
 	#print total_number_sentence
