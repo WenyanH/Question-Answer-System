@@ -29,7 +29,7 @@ def generate_special(line, root_index, nlp, upper_words):
 
 
 def generate_antonyms(line, root_index, nlp, upper_words):
-	fin_antonyms = open('data/antonyms.txt', 'r')
+	fin_antonyms = open('data/antonyms_ask.txt', 'r')
 	antonyms1 = []
 	antonyms2 = []
 	for pairs in fin_antonyms:
@@ -53,7 +53,7 @@ def generate_antonyms(line, root_index, nlp, upper_words):
 		return asking_easy.easy_question_generator(nlp(unicode(s)), root_index, upper_words)
 
 def generate_synonyms(line, root_index, nlp, upper_words):
-	fin_synonyms = open('data/synonyms.txt', 'r')
+	fin_synonyms = open('data/synonyms_ask.txt', 'r')
 	synonyms1 = []
 	synonyms2 = []
 	for pairs in fin_synonyms:
