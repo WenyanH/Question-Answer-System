@@ -23,10 +23,10 @@ def main():
     #     parser.print_help()
     #     sys.exit(1)
 
-    print 'Reading data for NLP task...'
+    # print 'Reading data for NLP task...'
     global nlp
     nlp = English()
-    print 'Done\n'
+    # print 'Done\n'
 
     # docs = read_sentences_from_file(args.wiki_article)
     # docs_q = read_sentences_from_file(args.question_text, False, True)
@@ -115,7 +115,7 @@ def get_article_nouns(docs):
 
 def read_sentences_from_file(file_name, wiki=True, question=False):
     text = []
-    print 'Reading file...'
+    # print 'Reading file...'
     with codecs.open(file_name, encoding='utf-8') as f:
         text = f.read()
     if wiki:
@@ -125,16 +125,16 @@ def read_sentences_from_file(file_name, wiki=True, question=False):
         text = wiki_article_format(text)
     if question:
         text = question_format(text)
-    print 'Done. Parsing text...'
+    # print 'Done. Parsing text...'
     docs = list(nlp.pipe(text, batch_size=50, n_threads=4))
-    print 'Done\n'
+    # print 'Done\n'
     return docs
 
 def get_string_of_sent(sent):
     return unicode(' '.join([token.orth_ for token in sent]))
 
 def asking(docs, num_easy=5, num_medium=5, num_hard=5):
-    print "Asking..."
+    # print "Asking..."
 
     # discard some docs
     docs = list(docs)
@@ -155,7 +155,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
     # ]
     # print("\nEasy\n\n")
     # count = 0
-    print '* Easy:'
+    # print '* Easy:'
     easy_questions = []
     for doc in docs:
         # if count >= num_easy:
@@ -178,7 +178,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
         except:
             pass
 
-    print '*Medium'
+    # print '*Medium'
     medium_questions = []
     for doc in docs:
         result = asking_medium.medium_question_generator(doc, get_string_of_sent(doc))
@@ -197,7 +197,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
         except:
             pass
 
-    print '*Hard:'
+    # print '*Hard:'
     hard_questions = []
     for doc in docs:
         sen = get_string_of_sent(doc)
@@ -232,24 +232,23 @@ def get_last_token_of_doc(doc):
 def answering(docs, docs_q):
     word_count = answer.calc_all_words_weight(docs)
     for question_doc in docs_q:
-        # print 'Answering:' + get_string_of_sent(question_doc) + '\n'
-        print('Answering:' + get_string_of_sent(question_doc) + '\n\n')
+        # print('Answering:' + get_string_of_sent(question_doc) + '\n\n')
         type_of_question = question_type(get_string_of_sent(question_doc), get_root_of_doc(question_doc))
         # print type_of_question
 
         possible_sentences_index, possible_sentences_prob = answer.find_possible_sentences(docs, question_doc, word_count)
         possible_sentences = []
-        print('Possible sentences:\n')
+        # print('Possible sentences:\n')
         for index in possible_sentences_index:
-            try:
-                print(get_string_of_sent(docs[index]) + '\n')
-            except:
-                print('print fail, continue')
-                pass
+            # try:
+            #     print(get_string_of_sent(docs[index]) + '\n')
+            # except:
+            #     print('print fail, continue')
+            #     pass
             possible_sentences.append(docs[index])
-        print('\n')
+        # print('\n')
 
-        print('Answer:' + '\n')
+        # print('Answer:' + '\n')
         question_answer = None
         if type_of_question == 'WHAT' or type_of_question == 'WHICH':
             question_answer = answer.answer_what(question_doc, possible_sentences, possible_sentences_prob)
@@ -275,9 +274,9 @@ def answering(docs, docs_q):
         question_answer = question_answer[0].upper() + question_answer[1:]
         try:
             question_answer = question_answer.replace('wikiarticletitle', wiki_title)
-            print(question_answer + '\n\n')
+            print(question_answer)
         except:
-            print('answer print fail, continue')
+            # print('answer print fail, continue')
             pass
 
 

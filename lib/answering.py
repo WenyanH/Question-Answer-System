@@ -387,7 +387,7 @@ def find_possible_sentences(docs, question, word_count):
 			potential_sentences_index.append(pairs[1])
 			potential_sentences_prob.append(-1 * pairs[0] / 100.0)
 
-	print potential_sentences_prob
+	# print potential_sentences_prob
 	return potential_sentences_index, potential_sentences_prob
 
 	# @param

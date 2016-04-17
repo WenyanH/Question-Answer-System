@@ -2,10 +2,30 @@
 
 import main, sys
 
-wiki_article = sys.argv[1]
-number = int(sys.argv[2])
+try:
+    wiki_article = sys.argv[1]
+    number = int(sys.argv[2])
+except:
+    print 'ERROR: args error'
+    sys.exit(1)
 
-main.main()
+try:
+    main.main()
+except:
+    print 'ERROR: nlp data reading error'
+    sys.exit(1)
 
-docs = main.read_sentences_from_file(wiki_article)
-main.asking(docs, number - (2 * number/3), number/3, number/3)
+try:
+    docs = main.read_sentences_from_file(wiki_article)
+except:
+    print 'ERROR: docs reading error'
+    sys.exit(1)
+
+try:
+    num_medium = number / 2
+    num_easy = number * 3 / 10
+    num_hard = number - num_medium - num_easy
+    main.asking(docs, num_easy, num_medium, num_hard)
+except:
+    print 'ERROR: answering error'
+    sys.exit(1)
