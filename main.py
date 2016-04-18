@@ -277,6 +277,7 @@ def answering(docs, docs_q):
             print(question_answer)
         except:
             # print('answer print fail, continue')
+            print("")
             pass
 
 
