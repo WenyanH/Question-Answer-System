@@ -176,7 +176,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
     easy_questions = question_evaluation.question_evalution(easy_questions, docs, num_easy)
     for q in easy_questions:
         try:
-            print q
+            print q.encode('utf-8')
         except:
             print ""
             pass
@@ -196,7 +196,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
     medium_questions = question_evaluation.question_evalution(medium_questions, docs, num_medium)
     for q in medium_questions:
         try:
-            print q
+            print q.encode('utf-8')
         except:
             print ""
             pass
@@ -217,7 +217,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
     hard_questions = question_evaluation.question_evalution(hard_questions, docs, num_hard)
     for q in hard_questions:
         try:
-            print q
+            print q.encode('utf-8')
         except:
             print ""
             pass
@@ -278,7 +278,7 @@ def answering(docs, docs_q):
         # Upper the first letter of question_answer
         question_answer = unicode(question_answer[0].upper() + question_answer[1:])
         try:
-            question_answer = question_answer.replace('wikiarticletitle', wiki_title)
+            question_answer = question_answer.replace('wikiarticletitle', wiki_title).encode('utf-8')
             print(question_answer)
         except:
             # print('answer print fail, continue')
