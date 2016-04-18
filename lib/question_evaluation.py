@@ -34,9 +34,9 @@ def question_evalution(question_doc_list, wiki_doc_list, n):
 			weight += weight_temp
 		#print weight
 		weight = weight / (number_of_words**2)
-		s = ''
+		s = u''
 		for word in sent:
-			s += word.orth_ + ' '
+			s += word.orth_ + u' '
 		s = s.rstrip()
 		heapq.heappush(heap, (weight * -1, s))
 

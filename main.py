@@ -176,6 +176,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
         try:
             print q
         except:
+            print ""
             pass
 
     # print '*Medium'
@@ -195,6 +196,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
         try:
             print q
         except:
+            print ""
             pass
 
     # print '*Hard:'
@@ -215,6 +217,7 @@ def asking(docs, num_easy=5, num_medium=5, num_hard=5):
         try:
             print q
         except:
+            print ""
             pass
 
 def get_root_of_doc(doc):
