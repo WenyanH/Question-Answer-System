@@ -24,7 +24,7 @@ def _answer_why(sentence, keyword):
 	else:
 		return None
 
-	result = ""
+	result = u''
 	for token in tree_root.subtree:
 		result += token.orth_ + ' '
 	return result
@@ -104,7 +104,7 @@ def _answer_how(sentence, keyword):
 	else:
 		return None
 
-	result = ""
+	result = u''
 	for token in tree_root.subtree:
 		result += token.orth_ + ' '
 	return result
@@ -160,7 +160,7 @@ def find_shallowest_token(doc, token_list):
 			nodes.append(child)
 
 def get_string_of_sent(sent):
-    return ' '.join([token.orth_ for token in sent])
+    return u' '.join([token.orth_ for token in sent])
 
 
 def answer_yesno(question_old, sentence_list_old):

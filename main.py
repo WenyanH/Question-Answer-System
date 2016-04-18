@@ -274,7 +274,7 @@ def answering(docs, docs_q):
                 question_answer = answer.answer_how_something(question_doc, possible_sentences, possible_sentences_prob, type_of_question)
 
         # Upper the first letter of question_answer
-        question_answer = question_answer[0].upper() + question_answer[1:]
+        question_answer = unicode(question_answer[0].upper() + question_answer[1:])
         try:
             question_answer = question_answer.replace('wikiarticletitle', wiki_title)
             print(question_answer)
