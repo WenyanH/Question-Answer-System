@@ -1,4 +1,6 @@
 #!/usr/bin/python
+# coding=utf-8
+
 import sys, codecs, argparse
 from random import shuffle
 from lib import asking_easy, asking_medium, asking_hard, brief_sentence, question_evaluation
